@@ -1,0 +1,55 @@
+{
+  "name": "kiboku-vscode",
+  "displayName": "Kiboku",
+  "description": "Kiboku color theme for vscode",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "nodemon build.js",
+    "build": "node build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mskri/kiboku-vscode"
+  },
+  "author": {
+    "name": "Sakari Mursu",
+    "email": "sakari@mursu.dev",
+    "url": "https://mursu.dev/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mskri/kiboku-vscode/issues"
+  },
+  "engines": {
+    "vscode": "^1.44.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "icon": "static/icon.png",
+  "contributes": {
+    "themes": [
+      {
+        "label": "Kiboku",
+        "uiTheme": "vs-dark",
+        "path": "./dist/kiboku-color-theme.json"
+      }
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "nodemon": "^2.0.3",
+    "prettier": "^2.0.5",
+    "pretty-quick": "^2.0.1"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "dist/*"
+    ]
+  }
+}
