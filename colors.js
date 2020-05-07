@@ -1,42 +1,45 @@
-module.exports = {
-  blue: "#79B8FF",
-  purple: "#BEA1F7",
-  purple2: "#99A7D6",
-  lightPurple: "#676E95",
-  pink: "#FF94C8",
-  green: "#aad395",
-  white: "#EEEFF1",
-  red: "#FF8484",
-  orange: "#FF9257",
-  yellow: "#ffd491",
-  neon: "#33E1ED",
+const chroma = require('chroma-js');
 
-  background1: "#0e0f15",
-  background2: "#14161e",
-  background3: "#282C34", // editor background
-  background4: "#292c38",
-  selection: "#413b4f",
-  dim1: "#494c59",
-  dim2: "#5e6173",
-  dim3: "#88898f",
-  dim4: "#c3b5d3",
-  pure1: "#dfdfdf",
-  pure2: "#d7d7d7",
-  const: "#af98e6",
-  accent1: "#51c7da",
-  accent2: "#fdad5d",
-  call: "#76c5a4",
-  base1: "#fb7da7",
-  base2: "#e3cf65",
-  translucent: "#161821bf",
-  translucent2: "#ffffff26",
-  translucent3: "#ffffff0c",
-  translucent4: "#76c5a40c",
-  translucent5: "#76c5a426",
-  translucent6: "#ff84ad0c",
-  translucent7: "#ff84ad26",
-  translucent8: "#00000000",
-  translucent9: "#ffffff12",
+const palette = {
+  white: "#6a737d",
+  blue: "#5A9BCF",
+}
+
+module.exports = {
+
+  blue: "#6495EE",
+  blue2: "#61AFEF",
+  purple: "#BEA1F7",
+  purple2: "#8A97C3",
+  pink: "#ff9ce6",
+  green: "#98C379",
+  white: '#e1e4e8',
+  red: "#E06C75",
+  orange: "#FF9070",
+  yellow: "#ffea7f",
+  yellow2: '#C9CC3F',
+  cyan: '#8ECCFF',
+
+  foreground: '#959da5',
+  background: '#2E3440',
+
+
+  ansiBlack: "#21252B",
+  ansiBlue: "#61AFEF",
+  ansiCyan: "#56B6C2",
+  ansiGreen: "#98C379",
+  ansiMagenta: "#B57EDC",
+  ansiRed: "#E06C75",
+  ansiWhite: "#A9B2C3",
+  ansiYellow: "#D19A66",
+  ansiBrightBlack: "#5F6672",
+  ansiBrightBlue: "#1085FF",
+  ansiBrightCyan: "#08E8DE",
+  ansiBrightGreen: "#69c52e",
+  ansiBrightMagenta: "#8B00FF",
+  ansiBrightRed: "#D74E42",
+  ansiBrightWhite: "#C6CCD7",
+  ansiBrightYellow: "#E9D16C",
 };
 
 // module.exports = {
