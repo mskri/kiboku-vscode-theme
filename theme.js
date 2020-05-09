@@ -5,6 +5,164 @@ module.exports = function getColor({ name, colors }) {
     semanticHighlighting: true,
     name: name,
     type: "dark",
+    colors: {
+      "focusBorder": "#005cc5",
+      "foreground": colors.foreground,
+      "descriptionForeground": colors.foregroundDarker,
+      "errorForeground": colors.error,
+      "textLink.foreground": "#79b8ff",
+      "textLink.activeForeground": "#c8e1ff",
+      "textBlockQuote.background": colors.background,
+      "textBlockQuote.border": "#444d56",
+      "textCodeBlock.background": "#2f363d",
+      "textPreformat.foreground": colors.foreground,
+      "textSeparator.foreground": "#586069",
+      "button.background": "#176f2c",
+      "button.foreground": "#dcffe4",
+      "button.hoverBackground": "#22863a",
+      "checkbox.background": "#444d56",
+      "checkbox.border": "#1b1f23",
+      "dropdown.background": "#2f363d",
+      "dropdown.border": "#1b1f23",
+      "dropdown.foreground": colors.foregroundBrighter,
+      "dropdown.listBackground": colors.background,
+      "input.background": "#2f363d",
+      "input.border": "#1b1f23",
+      "input.foreground": colors.foregroundBrighter,
+      "input.placeholderForeground": colors.foregroundDarker,
+      "badge.foreground": "#c8e1ff",
+      "badge.background": "#044289",
+      "progressBar.background": "#0366d6",
+      "titleBar.activeForeground": colors.foregroundBrighter,
+      "titleBar.activeBackground": colors.background,
+      "titleBar.inactiveForeground": colors.foregroundDarker,
+      "titleBar.inactiveBackground": "#1f2428",
+      "titleBar.border": "#1b1f23",
+
+
+      "activityBar.foreground": colors.foregroundBrighter,
+      "activityBar.inactiveForeground": colors.inactiveForeground,
+      "activityBar.background": colors.background,
+      "activityBarBadge.foreground": "#fff",
+      // Activity notification badge background color.
+      "activityBarBadge.background": colors.blue,
+      "activityBar.activeBorder": colors.activeBorder,
+      "activityBar.border": "#1b1f23",
+
+
+      "sideBar.foreground": "#e1e4e8",
+      "sideBar.background": "#1f2428",
+      "sideBar.border": "#1b1f23",
+      "sideBarTitle.foreground": colors.foregroundBrighter,
+      "sideBarSectionHeader.foreground": colors.foregroundBrighter,
+      "sideBarSectionHeader.background": "#1f2428",
+      "sideBarSectionHeader.border": "#1b1f23",
+      "list.hoverForeground": colors.foregroundBrighter,
+      "list.inactiveSelectionForeground": colors.foregroundBrighter,
+      "list.activeSelectionForeground": colors.foregroundBrighter,
+      "list.hoverBackground": colors.background,
+      "list.inactiveSelectionBackground": "#282e34",
+      "list.activeSelectionBackground": "#39414a",
+      "list.inactiveFocusBackground": "#1d2d3e",
+      "list.focusBackground": "#044289",
+      "tree.indentGuidesStroke": "#2f363d",
+      "notificationCenterHeader.background": colors.background,
+      "pickerGroup.border": "#444d56",
+      "pickerGroup.foreground": colors.foregroundBrighter,
+      "quickInput.background": colors.background,
+      "quickInput.foreground": colors.foregroundBrighter,
+      "statusBar.foreground": colors.foreground,
+      "statusBar.background": colors.background,
+      "statusBar.border": "#1b1f23",
+      "statusBar.noFolderBackground": colors.background,
+      "statusBar.debuggingBackground": "#931c06",
+      "statusBar.debuggingForeground": "#1b1f23",
+      "editorGroupHeader.tabsBackground": "#1f2428",
+      "editorGroupHeader.tabsBorder": "#1b1f23",
+      "editorGroup.border": "#1b1f23",
+      "tab.activeForeground": colors.foregroundBrighter,
+      "tab.inactiveForeground": colors.foregroundDarker,
+      "tab.inactiveBackground": "#1f2428",
+      "tab.activeBackground": colors.background,
+      "tab.hoverBackground": colors.background,
+      "tab.unfocusedHoverBackground": colors.background,
+      "tab.border": "#1b1f23",
+      "tab.unfocusedActiveBorderTop": "#1b1f23",
+      "tab.activeBorder": colors.background,
+      "tab.unfocusedActiveBorder": colors.background,
+      "tab.activeBorderTop": colors.activeBorder,
+      "breadcrumb.foreground": colors.foregroundDarker,
+      "breadcrumb.focusForeground": colors.foregroundBrighter,
+      "breadcrumb.activeSelectionForeground": colors.foreground,
+      "breadcrumbPicker.background": "#2b3036",
+      "editor.foreground": colors.editorForeground,
+      "editor.background": colors.background,
+      "editor.foldBackground": "#282e33",
+      "editor.lineHighlightBackground": "#2b3036",
+      "editorLineNumber.foreground": "#444d56",
+      "editorLineNumber.activeForeground": colors.foregroundBrighter,
+      "editorIndentGuide.background": "#2f363d",
+      "editorIndentGuide.activeBackground": "#444d56",
+      "editorWhitespace.foreground": colors.inactiveForeground,
+      "editorCursor.foreground": "#c8e1ff",
+      "editor.inactiveSelectionBackground": "#79b8ff11",
+      "editor.selectionBackground": "#2188ff33",
+      "editor.wordHighlightBackground": "#2188ff22",
+      "editor.findMatchBackground": "#ffd33d44",
+      "editor.findMatchHighlightBackground": "#ffd33d22",
+      "editorBracketMatch.background": "#005cc5",
+      "editorBracketMatch.border": "#005cc5",
+      "editorGutter.modifiedBackground": colors.modified,
+      "editorGutter.addedBackground": "#28a745",
+      "editorGutter.deletedBackground": colors.deleted,
+
+      // Foreground color of error squiggles in the editor
+      "editorError.foreground": colors.error,
+      // Foreground color of warning squiggles in the editor.
+      "editorWarning.foreground": colors.orange,
+      // Border color of info boxes in the editor.
+      "editorInfo.border": colors.yellow,
+
+      "diffEditor.insertedTextBackground": "#28a74511",
+      "diffEditor.removedTextBackground": "#d73a4918",
+
+      // Scrollbar slider shadow to indicate that the view is scrolled
+      "scrollbar.shadow": "#0008",
+      "scrollbarSlider.background": "#6a737d33",
+      "scrollbarSlider.hoverBackground": "#6a737d44",
+      "scrollbarSlider.activeBackground": "#6a737d88",
+
+      // -------------------------
+      // Overview ruler
+      // -------------------------
+
+      // Color of the overview ruler border.
+      "editorOverviewRuler.border": "#1b1f23",
+
+
+
+      "panel.background": "#1f2428",
+      "panel.border": "#1b1f23",
+      "panelTitle.activeBorder": colors.activeBorder,
+      "panelTitle.activeForeground": colors.foregroundBrighter,
+      "panelTitle.inactiveForeground": colors.foregroundDarker,
+      "panelInput.border": "#2f363d",
+      "terminal.foreground": colors.foreground,
+      "gitDecoration.addedResourceForeground": colors.added,
+      "gitDecoration.modifiedResourceForeground": colors.modified,
+      "gitDecoration.deletedResourceForeground": colors.deleted,
+      "gitDecoration.untrackedResourceForeground": colors.untracked,
+      "gitDecoration.ignoredResourceForeground": colors.ignored,
+      "gitDecoration.conflictingResourceForeground": colors.conflict,
+      "gitDecoration.submoduleResourceForeground": colors.ignored,
+      "debugToolBar.background": "#2b3036",
+      "editor.stackFrameHighlightBackground": "#b08800",
+      "editor.focusedStackFrameHighlightBackground": "#dbab09",
+      "settings.headerForeground": colors.foregroundBrighter,
+      "settings.modifiedItemIndicator": "#0366d6",
+      "welcomePage.buttonBackground": "#2f363d",
+      "welcomePage.buttonHoverBackground": "#444d56"
+    },
     semanticTokenColors: {
       // "variable": "#ffff00",
       // "variable.declaration.readonly": "#69c52e",
@@ -44,10 +202,6 @@ module.exports = function getColor({ name, colors }) {
       // "function": "#ffff00"
       "function.declaration.readonly": colors.blue, // defining function, e.g. const MakeRainbow = () => {}
     },
-    colors: {
-      "editor.background": colors.background,
-      "editor.foreground": colors.foreground,
-    },
     tokenColors: [
       {
         name: "Imported alias name, variables defined outside of scope where they are used in, i.e. imports or top leve",
@@ -67,7 +221,7 @@ module.exports = function getColor({ name, colors }) {
         name: "Components",
         scope: "support.class.component",
         settings: {
-          foreground: colors.cyan,
+          foreground: colors.red,
         },
       },
       {
@@ -105,6 +259,13 @@ module.exports = function getColor({ name, colors }) {
       //     foreground: colors.white
       //   }
       // },
+      {
+        name: "Punctuations - , ;",
+        scope: "punctuation.separator.comma, punctuation.terminator.rule, punctuation.terminator.statement",
+        settings: {
+          foreground: colors.red
+        }
+      },
       // {
       //   name: "Entity",
       //   scope: "entity.other",
@@ -141,286 +302,36 @@ module.exports = function getColor({ name, colors }) {
           fontStyle: "italic",
         },
       },
-      // {
-      //   name: "Function",
-      //   scope: "entity.name.function, support.function",
-      //   settings: {
-      //     foreground: colors.blue,
-      //   },
-      // },
-      // {
-      //   name: "Invalid",
-      //   scope: "invalid",
-      //   settings: {
-      //     foreground: colors.orange,
-      //   },
-      // },
-      // {
-      //   name:
-      //     "Keywords - assignments, colon, semicolon, comma, comma, artimethric",
-      //   scope:
-      //     "keyword.operator.assignment, keyword.operator.type.annotation, punctuation.terminator.statement, punctuation.separator.comma, punctuation.separator.parameter, keyword.operator.arithmetic",
-      //   settings: {
-      //     foreground: colors.white,
-      //   },
-      // },
-      // {
-      //   name: "Punctuator accessor '?' ",
-      //   scope: "punctuation.accessor",
-      //   settings: {
-      //     foreground: colors.white,
-      //     fontStyle: "bold",
-      //   },
-      // },
-      // {
-      //   // Could be simplified to keyword.operator, keyword.control ?
-      //   name:
-      //     "Keywords - if, else, comparison, logical, control, switch, break, try, catch, new, await, array, ternary, import, from, as, export, pipe, module",
-      //   scope:
-      //     "keyword.operator.comparison, keyword.operator.logical, keyword.control.conditional, keyword.control.switch, keyword.control.loop, keyword.control.trycatch, keyword.operator.new, keyword.control.flow, keyword.operator.ternary, keyword.control.import, keyword.control.from, keyword.control.as, keyword.control.export, keyword.operator.type, keyword.operator.accessor, keyword.control.shell",
-      //   settings: {
-      //     foreground: colors.purple,
-      //   },
-      // },
-      // {
-      //   name: "Module variable",
-      //   scope: "entity.name.type.module",
-      //   settings: {
-      //     foreground: colors.red,
-      //   },
-      // },
-      // {
-      //   name: "New",
-      //   scope: "new.expr",
-      //   settings: {
-      //     foreground: colors.blue,
-      //   },
-      // },
-      // {
-      //   name:
-      //     "Types - interface, inherited class, primitive types, custom type annotations, alias, declaration, parameters",
-      //   scope:
-      //     "entity.name.type.interface, entity.other.inherited-class, support.type.primitive, meta.type.annotation, entity.name.type.alias, meta.type.declaration, meta.type.parameters",
-      //   settings: {
-      //     foreground: colors.pink,
-      //   },
-      // },
-      // {
-      //   name: "Storage - const, let, var",
-      //   scope: "storage",
-      //   settings: {
-      //     foreground: colors.purple2,
-      //   },
-      // },
-      // {
-      //   name: "String",
-      //   scope: "string.quoted",
-      //   settings: {
-      //     foreground: colors.green,
-      //   },
-      // },
-      // {
-      //   name: "Braces, brackets, block, tag open, tag close",
-      //   scope:
-      //     "meta.brace.round, meta.brace.square, punctuation.definition.block, punctuation.definition.tag.begin, punctuation.definition.tag.end, punctuation.definition.block",
-      //   settings: {
-      //     foreground: colors.white,
-      //   },
-      // },
-      // {
-      //   name: "Variable - template literal",
-      //   scope: "meta.embedded.line",
-      //   settings: {
-      //     foreground: colors.white,
-      //   },
-      // },
-      // {
-      //   name: "Template literal expression ${}",
-      //   scope:
-      //     "punctuation.definition.template-expression.begin, punctuation.definition.template-expression.end",
-      //   settings: {
-      //     foreground: colors.blue,
-      //   },
-      // },
-      // // Already defined by member.defaultLibrary
-      // // Needed for fallback
-      // {
-      //   name: "Component",
-      //   scope: "support.class.component",
-      //   settings: {
-      //     foreground: colors.cyan,
-      //   },
-      // },
-      // {
-      //   name: "Component props",
-      //   // "scope": "meta.tag.attributes",
-      //   scope: "entity.other.attribute-name",
-      //   settings: {
-      //     foreground: colors.purple2,
-      //   },
-      // },
-      // {
-      //   name: "Support: import all *, Math, console.log",
-      //   scope:
-      //     "constant.language.import-export-all, support.constant, support.class, support.variable.property",
-      //   settings: {
-      //     foreground: colors.cyan,
-      //   },
-      // },
-      // {
-      //   name: "Import names",
-      //   scope: "variable.other.readwrite.alias",
-      //   settings: {
-      //     foreground: colors.white,
-      //   },
-      // },
-      // {
-      //   name:
-      //     "Variables - object property, property, type key, type key, type optional",
-      //   scope:
-      //     "variable.other.object.property, variable.other.property, variable.object.property, keyword.operator.optional, variable.other.constant.property",
-      //   settings: {
-      //     foreground: colors.white,
-      //   },
-      // },
-      // {
-      //   name: "Variable name - object, const, let",
-      //   scope: "meta.definition.variable, variable.other.constant",
-      //   settings: {
-      //     foreground: colors.variables,
-      //   },
-      // },
-      // {
-      //   name: "Used variable name",
-      //   scope: "variable.other.readwrite",
-      //   settings: {
-      //     foreground: colors.variables,
-      //   },
-      // },
-      // {
-      //   name: "Function parameter",
-      //   scope: "variable.parameter, meta.function.arrow.js",
-      //   settings: {
-      //     foreground: colors.yellow,
-      //   },
-      // },
-      // {
-      //   name: "Variables being called, variables assigned to prop keys",
-      //   scope: "meta.function-call, variable.other.object, meta.embedded.expression",
-      //   settings: {
-      //     foreground: colors.variables,
-      //   },
-      // },
-      // {
-      //   name: "Object keys",
-      //   scope: "meta.object-literal, constant.other.object.key.js", //, constant.other.object.key.js",
-      //   settings: {
-      //     foreground: colors.red,
-      //   },
-      // },
-      // {
-      //   name: "Booleans, numbers",
-      //   scope: "constant.language.boolean, constant.numeric",
-      //   settings: {
-      //     foreground: colors.orange,
-      //   },
-      // },
-      // {
-      //   name: "Markup Heading",
-      //   scope: "markup.heading",
-      //   settings: {
-      //     foreground: colors.red,
-      //   },
-      // },
-      // {
-      //   name: "Markup Bold",
-      //   scope: "markup.bold",
-      //   settings: {
-      //     foreground: colors.yellow,
-      //   },
-      // },
-      // {
-      //   name: "Markup Link Title",
-      //   scope:
-      //     "string.other.link.title, punctuation.definition.string.begin.markdown, punctuation.definition.string.end.markdown",
-      //   settings: {
-      //     foreground: colors.blue,
-      //   },
-      // },
-      // {
-      //   name: "Markup Underline Link",
-      //   scope: "markup.underline.link, meta.link.inline",
-      //   settings: {
-      //     foreground: colors.green,
-      //   },
-      // },
-      // {
-      //   name: "Markup code fences",
-      //   scope:
-      //     "fenced_code.block.language.markdown, punctuation.definition.markdown",
-      //   settings: {
-      //     foreground: colors.purple,
-      //   },
-      // },
-      // {
-      //   name: "JSON keys, YAML keys",
-      //   scope: "support.type.property-name.json",
-      //   settings: {
-      //     foreground: colors.red,
-      //   },
-      // },
-      // {
-      //   name: "CSS class, id, :root, presudo-classes etc.",
-      //   scope: "entity.name.tag.css, entity.other.attribute-name.class.css, entity.other.attribute-name.pseudo-class.css",
-      //   settings: {
-      //     foreground: colors.red,
-      //   },
-      // },
-      // {
-      //   name: "CSS: selector, at-rule (font-face etc.), variables",
-      //   scope: "meta.selector.css, variable.css",
-      //   settings: {
-      //     foreground: colors.red,
-      //   },
-      // },
-      // {
-      //   name: "CSS property key",
-      //   scope:
-      //     "support.type.property-name.css, support.type.vendored.property-name.css, variable.parameter.postcss",
-      //   settings: {
-      //     foreground: colors.purple2,
-      //   },
-      // },
-      // {
-      //   name: "CSS keywords, property values",
-      //   scope:
-      //     "keyword.control.at-rule, support.constant.vendored.property-value.css, support.constant.font-name.css, support.constant.property-value.css",
-      //   settings: {
-      //     foreground: colors.red,
-      //   },
-      // },
-      // {
-      //   name: "CSS units",
-      //   scope:
-      //     "keyword.other.unit.css",
-      //   settings: {
-      //     foreground: colors.orange,
-      //   },
-      // },
-      // {
-      //   name: "CSS support",
-      //   scope: "entity.other.attribute-name.css",
-      //   settings: {
-      //     foreground: colors.cyan,
-      //   },
-      // },
-      // {
-      //   name: "CSS functions",
-      //   scope: "support.function.misc.css",
-      //   settings: {
-      //     foreground: colors.blue,
-      //   },
-      // },
+      {
+        name: "CSS class, id, tag",
+        scope: "entity.other.attribute-name, entity.name.tag.css",
+        settings: {
+          foreground: colors.white,
+          // fontStyle: "italic",
+        },
+      },
+      {
+        name: "CSS value",
+        scope: "support.constant.property-value.css",
+        settings: {
+          foreground: colors.purple,
+        },
+      },
+      {
+        name: "CSS units",
+        scope: "keyword.other.unit.css",
+        settings: {
+          foreground: colors.orange,
+        },
+      },
+      {
+        name: "CSS numbers",
+        scope: "constant.numeric.css",
+        settings: {
+          foreground: colors.orange,
+        },
+      },
+
     ],
   };
 };

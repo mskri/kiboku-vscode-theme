@@ -1,29 +1,44 @@
 const chroma = require('chroma-js');
 
-const palette = {
-  white: "#6a737d",
-  blue: "#5A9BCF",
-}
-
 module.exports = {
 
   blue: "#6495EE",
-  blue2: "#61AFEF",
+  blue2: "#79B8FF",
   purple: "#BEA1F7",
   purple2: "#8A97C3",
   pink: "#ff9ce6",
-  green: "#98C379",
+  green: '#B1DC91', // '#98C379'
   white: '#e1e4e8',
-  red: "#E06C75",
+  red: "#F97583", // "#E06C75",
   orange: "#FF9070",
+  orange2: "#FFAB70",
   yellow: "#ffea7f",
   yellow2: '#C9CC3F',
-  cyan: '#8ECCFF',
+  cyan: '#71CFDB',
 
-  foreground: '#959da5',
-  background: '#2E3440',
+  foreground: '#d1d5da',
+  foregroundBrighter: '#fafbfc',
+  foregroundDarker: "#959da5",
 
+  editorForeground: '#959da5',
+  background: '#24292e',
 
+  inactiveForeground: "#6a737d",
+
+  error: '#ea4a5a',
+
+  // Git decoration, gutter
+  modified: '#b392f0',
+  deleted: '#ea4a5a',
+  added: '#34d058',
+  conflict: "#ffab70",
+  ignored: "#6a737d",
+  untracked: "#34d058",
+
+  // Active section indicator bar (editors, search, debug etc.)
+  activeBorder: "#ffea7f",
+
+  // Terminal colors
   ansiBlack: "#21252B",
   ansiBlue: "#61AFEF",
   ansiCyan: "#56B6C2",
@@ -43,7 +58,6 @@ module.exports = {
 };
 
 // module.exports = {
-//   defaultAccent: "#80CBC4",
 //   background: "#212121",
 //   backgroundAlt: "#212121",
 //   contrastBorder: "#212121",
