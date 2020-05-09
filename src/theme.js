@@ -299,6 +299,69 @@ module.exports = function getColor({ name, colors }) {
           foreground: colors.orange,
         },
       },
+      {
+        name: "Markdown paragraph text",
+        scope: "meta.paragraph.markdown",
+        settings: {
+          foreground: colors.white,
+        },
+      },
+      {
+        name: "Markdown heading",
+        scope: "markup.heading",
+        settings: {
+          foreground: colors.red,
+        },
+      },
+      {
+        name: "Markdown link title",
+        scope: "string.other.link.title.markdown, punctuation.definition.string.begin.markdown, punctuation.definition.string.end.markdown",
+        settings: {
+          foreground: colors.blue2,
+        },
+      },
+      {
+        name: "Markdown links",
+        scope: "markup.underline.link.markdown",
+        settings: {
+          foreground: colors.green,
+        },
+      },
+      {
+        name: "Markdown bold",
+        scope: "markup.bold.markdown",
+        settings: {
+          foreground: colors.orange,
+        },
+      },
+      {
+        name: "Markdown italic",
+        scope: "markup.italic.markdown",
+        settings: {
+          foreground: colors.yellow,
+        },
+      },
+      {
+        name: "Markdown inline code",
+        scope: "markup.inline.raw.string.markdown",
+        settings: {
+          foreground: colors.pink,
+        },
+      },
+      {
+        name: "Markdown code block fence",
+        scope: "punctuation.definition.markdown",
+        settings: {
+          foreground: colors.pink,
+        },
+      },
+      {
+        name: "Markdown quote",
+        scope: "markup.quote.markdown",
+        settings: {
+          foreground: colors.orange2,
+        },
+      },
     ],
   };
 };
