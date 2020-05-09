@@ -287,8 +287,8 @@ module.exports = function getColor({ name, colors }) {
         }
       },
       {
-        name: "Built-in classes",
-        scope: "support.class",
+        name: "Built-in classes and constants",
+        scope: "support.class, support.variable.object.process",
         settings: {
           foreground: colors.cyan
         }
