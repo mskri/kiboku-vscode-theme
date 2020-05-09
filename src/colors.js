@@ -1,7 +1,4 @@
-const chroma = require('chroma-js');
-
 module.exports = {
-
   blue: "#6495EE",
   blue2: "#79B8FF",
   purple: "#BEA1F7",
