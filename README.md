@@ -22,3 +22,11 @@
 
 - [VS Code theme color API reference](https://code.visualstudio.com/api/references/theme-color)
 - Examine syntax scopes by invoking the [`Developer: Inspect Editor Tokens and Scopes`](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide#scope-inspector) command from the Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`) in the Extension Development Host window.
+
+## TODO
+
+- Finish up Typescript and JavaScript syntax
+- Markdown syntax
+- CSS
+- YAML/TOML
+- Bash
