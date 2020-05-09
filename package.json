@@ -51,7 +51,7 @@
   },
   "nodemonConfig": {
     "ignore": [
-      "dist/*"
+      "themes/*"
     ]
   }
 }
