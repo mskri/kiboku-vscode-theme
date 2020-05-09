@@ -39,7 +39,6 @@ module.exports = function getColor({ name, colors }) {
       "titleBar.inactiveBackground": "#1f2428",
       "titleBar.border": "#1b1f23",
 
-
       "activityBar.foreground": colors.foregroundBrighter,
       "activityBar.inactiveForeground": colors.inactiveForeground,
       "activityBar.background": colors.background,
@@ -48,7 +47,6 @@ module.exports = function getColor({ name, colors }) {
       "activityBarBadge.background": colors.blue,
       "activityBar.activeBorder": colors.activeBorder,
       "activityBar.border": "#1b1f23",
-
 
       "sideBar.foreground": "#e1e4e8",
       "sideBar.background": "#1f2428",
@@ -139,8 +137,6 @@ module.exports = function getColor({ name, colors }) {
       // Color of the overview ruler border.
       "editorOverviewRuler.border": "#1b1f23",
 
-
-
       "panel.background": "#1f2428",
       "panel.border": "#1b1f23",
       "panelTitle.activeBorder": colors.activeBorder,
@@ -190,17 +186,18 @@ module.exports = function getColor({ name, colors }) {
       // Object properties
       // fallback: variable.other.property
       "property": colors.white,
-      "property.readonly": '#1085FF',
+      // "property.readonly": '#1085FF',
 
       // fallback: support.constant
-      "variable.readonly.defaultLibrary": "#ff0000",
+      // "variable.readonly.defaultLibrary": "#ff0000",
 
       // RegExp
       // fallback: entity.name.type.class
-      "class": "#ff0000",
+      // "class": "#ff0000",
 
+      // defining function, e.g. const MakeRainbow = () => {}
       // "function": "#ffff00"
-      "function.declaration.readonly": colors.blue, // defining function, e.g. const MakeRainbow = () => {}
+      "function.declaration.readonly": colors.blue,
     },
     tokenColors: [
       {
@@ -238,27 +235,6 @@ module.exports = function getColor({ name, colors }) {
           foreground: colors.pink,
         },
       },
-      // {
-      //   name: "Keywords, storage",
-      //   scope: "keyword.control, storage.type",
-      //   settings: {
-      //     foreground: colors.purple,
-      //   }
-      // },
-      // {
-      //   name: "Operators",
-      //   scope: "keyword.operator",
-      //   settings: {
-      //     foreground: colors.white,
-      //   }
-      // },
-      // {
-      //   name: "Punctuations",
-      //   scope: "punctuation",
-      //   settings: {
-      //     foreground: colors.white
-      //   }
-      // },
       {
         name: "Punctuations - , ;",
         scope: "punctuation.separator.comma, punctuation.terminator.rule, punctuation.terminator.statement",
@@ -266,13 +242,6 @@ module.exports = function getColor({ name, colors }) {
           foreground: colors.red
         }
       },
-      // {
-      //   name: "Entity",
-      //   scope: "entity.other",
-      //   settings: {
-      //     foreground: colors.purple2
-      //   }
-      // },
       {
         name: "Function calls",
         scope: "entity.name.function",
@@ -307,7 +276,6 @@ module.exports = function getColor({ name, colors }) {
         scope: "entity.other.attribute-name, entity.name.tag.css",
         settings: {
           foreground: colors.white,
-          // fontStyle: "italic",
         },
       },
       {
@@ -331,7 +299,6 @@ module.exports = function getColor({ name, colors }) {
           foreground: colors.orange,
         },
       },
-
     ],
   };
 };

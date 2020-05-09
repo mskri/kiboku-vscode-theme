@@ -6,8 +6,9 @@
   "license": "MIT",
   "publisher": "mskri",
   "scripts": {
-    "dev": "nodemon build.js",
-    "build": "node build.js"
+    "start": "npm run dev",
+    "dev": "nodemon src/build.js",
+    "build": "node src/build.js"
   },
   "author": {
     "name": "Sakari Mursu",
