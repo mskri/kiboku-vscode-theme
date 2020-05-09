@@ -7,8 +7,8 @@
   "publisher": "mskri",
   "scripts": {
     "start": "npm run dev",
-    "dev": "nodemon src/build.js",
-    "build": "node src/build.js"
+    "dev": "nodemon src/buildTheme.js",
+    "build": "node src/buildTheme.js"
   },
   "author": {
     "name": "Sakari Mursu",
