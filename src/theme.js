@@ -172,7 +172,6 @@ module.exports = function getColor({ name, colors }) {
       // fallback: variable.other.readwrite , entity.name.variable
       "variable": colors.yellow2,
 
-
       // fallback: entity.name.type
       "type": colors.pink,
 
@@ -264,6 +263,20 @@ module.exports = function getColor({ name, colors }) {
         scope: "constant.numeric.decimal",
         settings: {
           foreground: colors.orange
+        }
+      },
+      {
+        name: "Variable - constant",
+        scope: "variable.other.constant",
+        settings: {
+          foreground: colors.yellow
+        }
+      },
+      {
+        name: "Variables",
+        scope: "variable.other.readwrite , entity.name.variable",
+        settings: {
+          foreground: colors.yellow
         }
       },
       {
