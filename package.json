@@ -34,7 +34,7 @@
       {
         "label": "Kiboku",
         "uiTheme": "vs-dark",
-        "path": "./dist/kiboku-color-theme.json"
+        "path": "./themes/kiboku-color-theme.json"
       }
     ]
   },

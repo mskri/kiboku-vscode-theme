@@ -20,7 +20,7 @@ const buildTheme = async () => {
     });
 
     await promisifiedWriteFile(
-      `./dist/${themeName}-color-theme.json`,
+      `./themes/${themeName}-color-theme.json`,
       JSON.stringify(themeWithColors)
     )
 
