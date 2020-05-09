@@ -1,22 +1,23 @@
 {
   "name": "kiboku-vscode-theme",
+  "version": "0.1.0",
   "displayName": "Kiboku",
   "description": "Kiboku color theme for vscode",
-  "version": "0.1.0",
+  "license": "MIT",
+  "publisher": "mskri",
   "scripts": {
     "dev": "nodemon build.js",
     "build": "node build.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mskri/kiboku-vscode-theme"
   },
   "author": {
     "name": "Sakari Mursu",
     "email": "sakari@mursu.dev",
     "url": "https://mursu.dev/"
   },
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mskri/kiboku-vscode-theme"
+  },
   "bugs": {
     "url": "https://github.com/mskri/kiboku-vscode-theme/issues"
   },
