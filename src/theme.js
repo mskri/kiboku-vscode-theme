@@ -164,11 +164,14 @@ module.exports = function getColor({ name, colors }) {
 
       // const variable names
       // fallback: variable.other.constant
-      "variable.readonly": colors.yellow,
+      "variable.readonly": colors.readonlyVariables,
 
       // let or var variable names
       // fallback: variable.other.readwrite , entity.name.variable
-      "variable": colors.yellow2,
+      variable: colors.variables,
+
+      // fallback: variable.parameter
+      parameter: colors.parameters,
 
       // fallback: entity.name.type
       type: colors.pink,
@@ -199,7 +202,8 @@ module.exports = function getColor({ name, colors }) {
     },
     tokenColors: [
       {
-        name: "Imported alias name, variables defined outside of scope where they are used in, i.e. imports or top leve",
+        name:
+          "Imported alias name, variables defined outside of scope where they are used in, i.e. imports or top leve",
         scope: "variable.other",
         settings: {
           foreground: colors.white,
@@ -209,14 +213,14 @@ module.exports = function getColor({ name, colors }) {
         name: "Function parameters",
         scope: "variable.parameter",
         settings: {
-          foreground: colors.white
+          foreground: colors.parameters,
         },
       },
       {
         name: "Components",
         scope: "support.class.component",
         settings: {
-          foreground: colors.red,
+          foreground: colors.variables,
         },
       },
       {
@@ -235,10 +239,11 @@ module.exports = function getColor({ name, colors }) {
       },
       {
         name: "Punctuations - , ;",
-        scope: "punctuation.separator.comma, punctuation.terminator.rule, punctuation.terminator.statement",
+        scope:
+          "punctuation.separator.comma, punctuation.terminator.rule, punctuation.terminator.statement",
         settings: {
-          foreground: colors.red
-        }
+          foreground: colors.punctuation,
+        },
       },
       {
         name: "Function calls",
@@ -265,15 +270,23 @@ module.exports = function getColor({ name, colors }) {
         name: "Variable - constant",
         scope: "variable.other.constant",
         settings: {
-          foreground: colors.yellow
-        }
+          foreground: colors.readonlyVariables,
+        },
       },
       {
         name: "Variables",
-        scope: "variable.other.readwrite , entity.name.variable",
+        scope:
+          "variable.other.readwrite , entity.name.variable, variable.other.object",
         settings: {
-          foreground: colors.yellow
-        }
+          foreground: colors.variables,
+        },
+      },
+      {
+        name: "Object property",
+        scope: "variable.other.property, variable.other.object.property",
+        settings: {
+          foreground: colors.property,
+        },
       },
       {
         name: "Custom classes",
@@ -378,7 +391,7 @@ module.exports = function getColor({ name, colors }) {
         name: "Markdown code block fence",
         scope: "punctuation.definition.markdown",
         settings: {
-          foreground: colors.pink,
+          foreground: colors.punctuation,
         },
       },
       {
