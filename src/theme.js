@@ -180,7 +180,7 @@ module.exports = function getColor({ name, colors }) {
       // fallback: support.constant
       // 'variable.readonly.defaultLibrary': colors.cyan,
       "variable.defaultLibrary": {
-        foreground: colors.cyan,
+        foreground: colors.white2,
         fontStyle: "",
       },
 
@@ -202,17 +202,24 @@ module.exports = function getColor({ name, colors }) {
 
       // User defined classes
       // fallback: entity.name.type.class
-      class: colors.orange,
+      class: colors.variables,
 
       // Math, RegExp
       // fallback: support.class
-      // 'class.defaultLibrary': colors.cyan,
+      "class.defaultLibrary": colors.white2,
 
       // defining function, e.g. const MakeRainbow = () => {}
       // "function": "#ffff00"
-      "function.declaration.readonly": colors.blue,
+      "function.declaration.readonly": colors.functions,
     },
     tokenColors: [
+      {
+        name: "Imported alias name",
+        scope: "variable.other.readwrite.alias",
+        settings: {
+          foreground: colors.variables,
+        },
+      },
       {
         name:
           "Imported alias name, variables defined outside of scope where they are used in, i.e. imports or top leve",
@@ -232,7 +239,7 @@ module.exports = function getColor({ name, colors }) {
         name: "Components",
         scope: "support.class.component",
         settings: {
-          foreground: colors.variables,
+          foreground: colors.components,
         },
       },
       {
@@ -240,6 +247,14 @@ module.exports = function getColor({ name, colors }) {
         scope: "string",
         settings: {
           foreground: colors.green,
+        },
+      },
+      {
+        name: "Template literal {}",
+        scope:
+          "punctuation.definition.template-expression.begin, punctuation.definition.template-expression.end",
+        settings: {
+          foreground: colors.white2,
         },
       },
       {
@@ -261,21 +276,28 @@ module.exports = function getColor({ name, colors }) {
         name: "Function calls",
         scope: "entity.name.function",
         settings: {
-          foreground: colors.blue,
+          foreground: colors.functions,
+        },
+      },
+      {
+        name: "Built-lib functions",
+        scope: "entity.name.function.member",
+        settings: {
+          foreground: colors.white2,
         },
       },
       {
         name: "Booleans",
         scope: "constant.language.boolean",
         settings: {
-          foreground: colors.orange,
+          foreground: colors.booleansAndNumbers,
         },
       },
       {
         name: "Numbers",
         scope: "constant.numeric.decimal",
         settings: {
-          foreground: colors.orange,
+          foreground: colors.booleansAndNumbers,
         },
       },
       {
@@ -297,7 +319,7 @@ module.exports = function getColor({ name, colors }) {
         name: "console",
         scope: "support.class.console",
         settings: {
-          foreground: colors.cyan,
+          foreground: colors.blue,
         },
       },
       {
@@ -311,21 +333,21 @@ module.exports = function getColor({ name, colors }) {
         name: "Custom classes",
         scope: "entity.name.type.class",
         settings: {
-          foreground: colors.orange,
+          foreground: colors.variables,
         },
       },
       {
         name: "Built-in classes and constants",
         scope: "support.class, support.variable.object.process",
         settings: {
-          foreground: colors.cyan,
+          foreground: colors.blue,
         },
       },
       {
         name: "Comments",
         scope: "comment, punctuation.definition.comment",
         settings: {
-          foreground: colors.purple3,
+          foreground: colors.comments,
           fontStyle: "italic",
         },
       },
