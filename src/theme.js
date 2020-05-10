@@ -417,7 +417,9 @@ module.exports = function getColor({ name, colors }) {
         name: "Markdown quote",
         scope: "markup.quote.markdown",
         settings: {
-          foreground: colors.orange2,
+          foreground: colors.orange,
+        },
+      },
         },
       },
     ],
