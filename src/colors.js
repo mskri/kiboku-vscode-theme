@@ -22,7 +22,7 @@ const palette = {
 module.exports = {
   ...palette,
 
-  comments: palette.purple2,
+  comments: palette.purple3,
 
   // readonlyVariables: "#BEA1F7",
   readonlyVariables: palette.yellow2,
