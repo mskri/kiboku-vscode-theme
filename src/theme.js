@@ -155,7 +155,7 @@ module.exports = function getColor({ name, colors }) {
       "settings.headerForeground": colors.foregroundBrighter,
       "settings.modifiedItemIndicator": "#0366d6",
       "welcomePage.buttonBackground": "#2f363d",
-      "welcomePage.buttonHoverBackground": "#444d56"
+      "welcomePage.buttonHoverBackground": "#444d56",
     },
     semanticTokenColors: {
       // "variable": "#ffff00",
@@ -246,22 +246,22 @@ module.exports = function getColor({ name, colors }) {
         name: "Function calls",
         scope: "entity.name.function",
         settings: {
-          foreground: colors.blue
-        }
+          foreground: colors.blue,
+        },
       },
       {
         name: "Booleans",
         scope: "constant.language.boolean",
         settings: {
-          foreground: colors.orange
-        }
+          foreground: colors.orange,
+        },
       },
       {
         name: "Numbers",
         scope: "constant.numeric.decimal",
         settings: {
-          foreground: colors.orange
-        }
+          foreground: colors.orange,
+        },
       },
       {
         name: "Variable - constant",
@@ -281,15 +281,15 @@ module.exports = function getColor({ name, colors }) {
         name: "Custom classes",
         scope: "entity.name.type.class",
         settings: {
-          foreground: colors.orange
-        }
+          foreground: colors.orange,
+        },
       },
       {
         name: "Built-in classes and constants",
         scope: "support.class, support.variable.object.process",
         settings: {
-          foreground: colors.cyan
-        }
+          foreground: colors.cyan,
+        },
       },
       {
         name: "Comments",
@@ -345,7 +345,7 @@ module.exports = function getColor({ name, colors }) {
         name: "Markdown link title",
         scope: "string.other.link.title.markdown, punctuation.definition.string.begin.markdown, punctuation.definition.string.end.markdown",
         settings: {
-          foreground: colors.blue2,
+          foreground: colors.blue,
         },
       },
       {
