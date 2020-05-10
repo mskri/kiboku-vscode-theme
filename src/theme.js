@@ -176,17 +176,29 @@ module.exports = function getColor({ name, colors }) {
       // fallback: entity.name.type
       type: colors.pink,
 
-      // "variable.readonly.local": "#1085FF",
-      "variable.defaultLibrary": colors.cyan, // e.g. 'console' in console.log or 'Math' in Math.floor()
+      // e.g. 'console' in console.log or 'Math' in Math.floor()
+      // fallback: support.constant
+      // 'variable.readonly.defaultLibrary': colors.cyan,
+      "variable.defaultLibrary": {
+        foreground: colors.cyan,
+        fontStyle: "",
+      },
 
       // 'log' in console.log
       // fallback: entity.name.function.member
       member: colors.blue,
+      "member.defaultLibrary": {
+        foreground: colors.blue,
+        fontStyle: "",
+      },
 
       // Object properties
       // fallback: variable.other.property
-
-      // fallback: support.constant
+      property: colors.property,
+      "property.defaultLibrary": {
+        foreground: colors.property,
+        fontStyle: "",
+      },
 
       // User defined classes
       // fallback: entity.name.type.class
@@ -194,7 +206,7 @@ module.exports = function getColor({ name, colors }) {
 
       // Math, RegExp
       // fallback: support.class
-      "class.defaultLibrary": colors.cyan,
+      // 'class.defaultLibrary': colors.cyan,
 
       // defining function, e.g. const MakeRainbow = () => {}
       // "function": "#ffff00"
