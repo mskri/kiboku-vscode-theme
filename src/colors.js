@@ -1,49 +1,67 @@
-module.exports = {
+const palette = {
+  // "#80B2FF", "#82AAFF",
   blue: "#6495EE",
-  blue2: "#79B8FF",
-  purple: "#BEA1F7",
-  purple2: "#8A97C3",
+  // purple: '#c6a2f8',
+  purple: "#DDA3E8",
+  // purple2: '#9D7CD8',
+  purple3: "#9CB5FF",
   pink: "#ff9ce6",
-  green: '#B1DC91', // '#98C379'
-  white: '#e1e4e8',
-  red: "#F97583", // "#E06C75",
-  orange: "#FF9070",
-  orange2: "#FFAB70",
-  yellow: "#ffea7f",
-  yellow2: '#C9CC3F',
-  cyan: '#71CFDB',
+  green: "#AEE8A3", // '#B1DC91',
+  red: "#F97583",
+  orange: "#ff9a7b",
+  // yellow: '#FFEA7F',
+  yellow: "#FFE69C",
+  yellow2: "#FFD969",
+  cyan: "#8CF6FF",
+  white: "#e5e9f0",
+};
 
-  foreground: '#d1d5da',
-  foregroundBrighter: '#fafbfc',
-  foregroundDarker: "#959da5",
+module.exports = {
+  ...palette,
 
-  editorForeground: '#959da5',
-  background: '#24292e',
+  // readonlyVariables: "#BEA1F7",
+  // readonlyVariables: '#7ABBDE',
+  readonlyVariables: palette.orange,
+  // readonlyVariables: palette.red,
+
+  // variables: '#A3D0E8',
+  // variables: palette.red,
+  variables: "#BEA1F7",
+
+  parameters: palette.yellow,
+  property: palette.white,
+  punctuation: palette.pink,
+
+  foreground: "#959da5",
+  foregroundBrighter: palette.white,
+
+  editorForeground: "#959da5",
+  background: "#22272F",
 
   inactiveForeground: "#6a737d",
 
-  error: '#ea4a5a',
+  error: "#ea4a5a",
 
   // Git decoration, gutter
-  modified: '#b392f0',
-  deleted: '#ea4a5a',
-  added: '#34d058',
-  conflict: "#ffab70",
+  modified: palette.purple, // '#b392f0',
+  deleted: palette.red, // '#ea4a5a',
+  added: palette.green, // '#34d058',
+  conflict: palette.yellow, // "#ffab70",
   ignored: "#6a737d",
-  untracked: "#34d058",
+  untracked: palette.purple3, // "#34d058",
 
   // Active section indicator bar (editors, search, debug etc.)
   activeBorder: "#ffea7f",
 
   // Terminal colors
   ansiBlack: "#21252B",
-  ansiBlue: "#61AFEF",
-  ansiCyan: "#56B6C2",
-  ansiGreen: "#98C379",
-  ansiMagenta: "#B57EDC",
-  ansiRed: "#E06C75",
-  ansiWhite: "#A9B2C3",
-  ansiYellow: "#D19A66",
+  ansiBlue: palette.blue,
+  ansiCyan: palette.cyan,
+  ansiGreen: palette.green,
+  ansiMagenta: palette.purple,
+  ansiRed: palette.red,
+  ansiWhite: palette.white,
+  ansiYellow: palette.yellow,
   ansiBrightBlack: "#5F6672",
   ansiBrightBlue: "#1085FF",
   ansiBrightCyan: "#08E8DE",
