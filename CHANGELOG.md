@@ -1,3 +1,7 @@
+## 0.1.4
+
+- Change comment color to be darker
+
 ## 0.1.3
 
 - Update colors to test out different combos
