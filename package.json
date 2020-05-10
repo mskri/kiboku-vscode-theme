@@ -8,7 +8,8 @@
   "scripts": {
     "start": "npm run dev",
     "dev": "nodemon src/buildTheme.js",
-    "build": "node src/buildTheme.js"
+    "build": "node src/buildTheme.js",
+    "prettier": "prettier --ignore-path .gitignore --write './**/*.{js,json,css}'"
   },
   "author": {
     "name": "Sakari Mursu",

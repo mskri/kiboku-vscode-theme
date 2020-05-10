@@ -1,7 +1,7 @@
-const { writeFile } = require("fs");
-const { promisify } = require("util");
-const getTheme = require("./theme.js");
-const colors = require("./colors.js");
+const { writeFile } = require('fs');
+const { promisify } = require('util');
+const getTheme = require('./theme.js');
+const colors = require('./colors.js');
 
 const themeName = 'kiboku';
 const promisifiedWriteFile = promisify(writeFile);
@@ -22,9 +22,8 @@ const buildTheme = async () => {
     await promisifiedWriteFile(
       `./themes/${themeName}-color-theme.json`,
       JSON.stringify(themeWithColors)
-    )
-
-    console.log("Theme built")
+    );
+    console.log('Theme built');
   } catch (error) {
     console.error('Error building theme:', error);
   }
