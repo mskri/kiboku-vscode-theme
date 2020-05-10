@@ -421,6 +421,27 @@ module.exports = function getColor({ name, colors }) {
           foreground: colors.orange,
         },
       },
+      {
+        name: "HTML tags",
+        scope:
+          "entity.name.tag.structure.any.html, entity.name.tag.block.any.html, entity.name.tag.inline.any.html",
+        settings: {
+          foreground: colors.white,
+        },
+      },
+      {
+        name: "HTML text",
+        scope: "text.html",
+        settings: {
+          foreground: colors.editorForeground,
+        },
+      },
+      {
+        name: "HTML punctuation",
+        scope:
+          "punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html",
+        settings: {
+          foreground: colors.white, // editorForeground
         },
       },
     ],
