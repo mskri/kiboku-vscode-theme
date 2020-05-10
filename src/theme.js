@@ -171,25 +171,23 @@ module.exports = function getColor({ name, colors }) {
       "variable": colors.yellow2,
 
       // fallback: entity.name.type
-      "type": colors.pink,
+      type: colors.pink,
 
       // "variable.readonly.local": "#1085FF",
       "variable.defaultLibrary": colors.cyan, // e.g. 'console' in console.log or 'Math' in Math.floor()
 
       // 'log' in console.log
       // fallback: entity.name.function.member
-      "member": colors.blue,
+      member: colors.blue,
 
       // Object properties
       // fallback: variable.other.property
-      "property": colors.white,
 
       // fallback: support.constant
-      "variable.readonly.defaultLibrary": colors.cyan,
 
       // User defined classes
       // fallback: entity.name.type.class
-      "class": colors.orange,
+      class: colors.orange,
 
       // Math, RegExp
       // fallback: support.class
