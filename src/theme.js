@@ -4,10 +4,10 @@ module.exports = function getColor({ name, colors }) {
     name: name,
     type: "dark",
     colors: {
-      "focusBorder": "#005cc5",
-      "foreground": colors.foreground,
-      "errorForeground": colors.error,
+      focusBorder: "#005cc5",
+      foreground: colors.foreground,
       descriptionForeground: colors.foreground,
+      errorForeground: colors.error,
       "textLink.foreground": "#79b8ff",
       "textLink.activeForeground": "#c8e1ff",
       "textBlockQuote.background": colors.background,
@@ -325,7 +325,7 @@ module.exports = function getColor({ name, colors }) {
         name: "Comments",
         scope: "comment, punctuation.definition.comment",
         settings: {
-          foreground: colors.purple2,
+          foreground: colors.purple3,
           fontStyle: "italic",
         },
       },
@@ -373,7 +373,8 @@ module.exports = function getColor({ name, colors }) {
       },
       {
         name: "Markdown link title",
-        scope: "string.other.link.title.markdown, punctuation.definition.string.begin.markdown, punctuation.definition.string.end.markdown",
+        scope:
+          "string.other.link.title.markdown, punctuation.definition.string.begin.markdown, punctuation.definition.string.end.markdown",
         settings: {
           foreground: colors.blue,
         },
