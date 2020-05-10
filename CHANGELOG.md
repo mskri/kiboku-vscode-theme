@@ -1,3 +1,7 @@
+## 0.1.3
+
+- Update colors to test out different combos
+
 ## 0.1.2
 
 - Change default libraries, e.g. Math, color to cyan
