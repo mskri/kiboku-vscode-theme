@@ -294,6 +294,13 @@ module.exports = function getColor({ name, colors }) {
         },
       },
       {
+        name: "console",
+        scope: "support.class.console",
+        settings: {
+          foreground: colors.cyan,
+        },
+      },
+      {
         name: "Object property",
         scope: "variable.other.property, variable.other.object.property",
         settings: {
