@@ -14,6 +14,7 @@ const palette = {
   yellow2: "#FFD969",
   cyan: "#8CF6FF",
   white: "#e5e9f0",
+  white2: '#7C8DAB', // editor foreground
 };
 
 module.exports = {
@@ -35,7 +36,6 @@ module.exports = {
   foreground: "#959da5",
   foregroundBrighter: palette.white,
 
-  editorForeground: "#959da5",
   background: "#22272F",
 
   inactiveForeground: "#6a737d",

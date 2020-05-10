@@ -91,7 +91,7 @@ module.exports = function getColor({ name, colors }) {
       "breadcrumb.focusForeground": colors.foregroundBrighter,
       "breadcrumb.activeSelectionForeground": colors.foreground,
       "breadcrumbPicker.background": "#2b3036",
-      "editor.foreground": colors.editorForeground,
+      "editor.foreground": colors.white2,
       "editor.background": colors.background,
       "editor.foldBackground": "#282e33",
       "editor.lineHighlightBackground": "#2b3036",
@@ -433,7 +433,7 @@ module.exports = function getColor({ name, colors }) {
         name: "HTML text",
         scope: "text.html",
         settings: {
-          foreground: colors.editorForeground,
+          foreground: colors.white2,
         },
       },
       {
@@ -441,7 +441,7 @@ module.exports = function getColor({ name, colors }) {
         scope:
           "punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html",
         settings: {
-          foreground: colors.white, // editorForeground
+          foreground: colors.white, // white2
         },
       },
     ],
