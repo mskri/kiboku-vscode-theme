@@ -1,5 +1,3 @@
-
-
 module.exports = function getColor({ name, colors }) {
   return {
     semanticHighlighting: true,
@@ -8,8 +6,8 @@ module.exports = function getColor({ name, colors }) {
     colors: {
       "focusBorder": "#005cc5",
       "foreground": colors.foreground,
-      "descriptionForeground": colors.foregroundDarker,
       "errorForeground": colors.error,
+      descriptionForeground: colors.foreground,
       "textLink.foreground": "#79b8ff",
       "textLink.activeForeground": "#c8e1ff",
       "textBlockQuote.background": colors.background,
@@ -29,13 +27,13 @@ module.exports = function getColor({ name, colors }) {
       "input.background": "#2f363d",
       "input.border": "#1b1f23",
       "input.foreground": colors.foregroundBrighter,
-      "input.placeholderForeground": colors.foregroundDarker,
+      "input.placeholderForeground": colors.foreground,
       "badge.foreground": "#c8e1ff",
       "badge.background": "#044289",
       "progressBar.background": "#0366d6",
       "titleBar.activeForeground": colors.foregroundBrighter,
       "titleBar.activeBackground": colors.background,
-      "titleBar.inactiveForeground": colors.foregroundDarker,
+      "titleBar.inactiveForeground": colors.foreground,
       "titleBar.inactiveBackground": "#1f2428",
       "titleBar.border": "#1b1f23",
 
@@ -79,7 +77,7 @@ module.exports = function getColor({ name, colors }) {
       "editorGroupHeader.tabsBorder": "#1b1f23",
       "editorGroup.border": "#1b1f23",
       "tab.activeForeground": colors.foregroundBrighter,
-      "tab.inactiveForeground": colors.foregroundDarker,
+      "tab.inactiveForeground": colors.foreground,
       "tab.inactiveBackground": "#1f2428",
       "tab.activeBackground": colors.background,
       "tab.hoverBackground": colors.background,
@@ -89,7 +87,7 @@ module.exports = function getColor({ name, colors }) {
       "tab.activeBorder": colors.background,
       "tab.unfocusedActiveBorder": colors.background,
       "tab.activeBorderTop": colors.activeBorder,
-      "breadcrumb.foreground": colors.foregroundDarker,
+      "breadcrumb.foreground": colors.foreground,
       "breadcrumb.focusForeground": colors.foregroundBrighter,
       "breadcrumb.activeSelectionForeground": colors.foreground,
       "breadcrumbPicker.background": "#2b3036",
@@ -141,7 +139,7 @@ module.exports = function getColor({ name, colors }) {
       "panel.border": "#1b1f23",
       "panelTitle.activeBorder": colors.activeBorder,
       "panelTitle.activeForeground": colors.foregroundBrighter,
-      "panelTitle.inactiveForeground": colors.foregroundDarker,
+      "panelTitle.inactiveForeground": colors.foreground,
       "panelInput.border": "#2f363d",
       "terminal.foreground": colors.foreground,
       "gitDecoration.addedResourceForeground": colors.added,
