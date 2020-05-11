@@ -290,6 +290,18 @@ module.exports = function getColor({ name, colors }) {
           foreground: colors.namespace,
         },
       },
+      {
+        name: 'Graphql types',
+        scope: 'keyword.operator.nulltype.graphql, support.type.graphql',
+        settings: {
+          foreground: colors.types,
+        },
+      },
+      {
+        name: 'Graphql variables',
+        scope: 'variable.graphql, variable.fragment.graphql',
+        settings: {
+          foreground: colors.white,
         },
       },
       {
