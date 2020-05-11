@@ -40,7 +40,11 @@ module.exports = {
   foreground: '#959da5',
   foregroundBrighter: palette.white,
 
+  border: chroma('#2D323A').darken(0.5).hex(),
   background: '#2D323A',
+  background2: '#2D323A',
+
+  base: palette.yellow,
 
   inactiveForeground: '#6a737d',
 
