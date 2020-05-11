@@ -4,40 +4,50 @@ const palette = {
   blue: '#69A4FC',
   blue2: '#80B2FF',
   blue3: '#A3D0E8',
-  purple: '#C792EA', // '#BEA1F7',
+  purple: '#BEA1F7',
   purple2: '#DDA3E8',
   purple3: '#9CB5FF', //'#9CB5FF',
+  purple4: '#676E95',
   pink: '#ff9ce6',
   green: '#AEE8A3',
-  red: '#F97583',
+  // red: '#F97583',
+  red: '#FF8E9A',
   orange: '#ff9a7b',
   // yellow: '#FFEA7F',
   yellow: '#FFE69C',
-  yellow2: '#FFD969',
+  yellow2: '#E5CD84',
   cyan: '#8CF6FF',
-  white: '#e5e9f0',
+  white: '#D8DEE9',
   white2: '#7C8DAB', // editor foreground
+  // white2: chroma('#80B2FF').desaturate(1).darken(0.2).hex(),
+  // white2: '#81a1c1',
 };
 
 module.exports = {
   ...palette,
 
-  comments: palette.purple3,
+  // needs to be made more easily differentiable from white2
+  comments: palette.purple4,
+  namespace: palette.purple,
+  interface: '#ff0000', // palette.pink,
+  types: palette.pink,
 
-  // readonlyVariables: "#BEA1F7",
-  readonlyVariables: palette.yellow2,
-  // readonlyVariables: palette.red,
+  // readonlyVariables: '#BEA1F7',
+  // readonlyVariables: palette.yellow2,
+  readonlyVariables: palette.white,
 
-  variables: palette.red,
+  variables: palette.yellow,
 
-  parameters: palette.red,
-  property: palette.white,
+  parameters: palette.yellow,
+  property: palette.white2,
   punctuation: palette.white2,
   functions: palette.blue,
-  components: palette.purple,
+  components: palette.white,
   booleansAndNumbers: palette.orange,
   keys: palette.white,
 
+  functionMembers: palette.blue,
+  defaultFunctionMembers: palette.cyan,
 
   foreground: '#959da5',
   foregroundBrighter: palette.white,

@@ -162,19 +162,19 @@ module.exports = function getColor({ name, colors }) {
       // "variable.declaration.readonly": "#69c52e",
       // "variable.declaration.readonly.local": "#69c52e",
 
-      // const variable names
+      // using const variables
       // fallback: variable.other.constant
       'variable.readonly': colors.readonlyVariables,
 
-      // let or var variable names
+      // using non-const variable names - e.g. console
       // fallback: variable.other.readwrite , entity.name.variable
-      variable: colors.variables,
+      variable: colors.cyan, //colors.white,
 
-      // fallback: variable.parameter
-      parameter: colors.parameters,
+      // let and var variable declaration
+      'variable.declaration': colors.variables,
 
-      // fallback: entity.name.type
-      type: colors.pink,
+      // const variable declaration
+      'variable.declaration.readonly': colors.readonlyVariables,
 
       // e.g. 'console' in console.log or 'Math' in Math.floor()
       // fallback: support.constant
@@ -184,11 +184,17 @@ module.exports = function getColor({ name, colors }) {
         fontStyle: '',
       },
 
+      // fallback: variable.parameter
+      parameter: colors.parameters,
+
+      // fallback: entity.name.type
+      type: colors.types,
+
       // 'log' in console.log
       // fallback: entity.name.function.member
-      member: colors.blue,
+      member: colors.functionMembers,
       'member.defaultLibrary': {
-        foreground: colors.blue,
+        foreground: colors.defaultFunctionMembers,
         fontStyle: '',
       },
 
@@ -206,11 +212,22 @@ module.exports = function getColor({ name, colors }) {
 
       // Math, RegExp
       // fallback: support.class
-      'class.defaultLibrary': colors.white2,
+      'class.defaultLibrary': colors.cyan,
 
       // defining function, e.g. const MakeRainbow = () => {}
       // "function": "#ffff00"
       'function.declaration.readonly': colors.functions,
+
+      // e.g. jest
+      // fallback: entity.name.namespace
+      namespace: colors.namespace,
+
+      // e.g. `Promise` in `Promise<void>`
+      interface: colors.types,
+      'interface.defaultLibrary': {
+        foreground: colors.types,
+        fontStyle: '',
+      },
     },
     tokenColors: [
       {
@@ -218,6 +235,7 @@ module.exports = function getColor({ name, colors }) {
         scope: 'variable.other.readwrite.alias',
         settings: {
           foreground: colors.variables,
+          // foreground: colors.white,
         },
       },
       {
@@ -259,9 +277,19 @@ module.exports = function getColor({ name, colors }) {
       },
       {
         name: 'Types',
-        scope: 'entity.name.type, support.type.primitive',
+        scope:
+          'entity.name.type, support.type.primitive, support.type.builtin, 	punctuation.definition.typeparameters.begin, 	punctuation.definition.typeparameters.end, keyword.operator.nulltype.graphql, support.type.graphql, variable.fragment.graphql',
         settings: {
-          foreground: colors.pink,
+          foreground: colors.types,
+        },
+      },
+      {
+        name: 'Namespace',
+        scope: 'entity.name.namespace',
+        settings: {
+          foreground: colors.namespace,
+        },
+      },
         },
       },
       {
@@ -283,7 +311,7 @@ module.exports = function getColor({ name, colors }) {
         name: 'Built-lib functions',
         scope: 'entity.name.function.member',
         settings: {
-          foreground: colors.white2,
+          foreground: colors.functionMembers,
         },
       },
       {
@@ -323,6 +351,20 @@ module.exports = function getColor({ name, colors }) {
         },
       },
       {
+        name: 'Support classes - Promise, Math',
+        scope: 'support.class',
+        settings: {
+          foreground: colors.white2,
+        },
+      },
+      {
+        name: 'new',
+        scope: 'keyword.operator.new',
+        settings: {
+          foreground: colors.cyan, // TODO: better color
+        },
+      },
+      {
         name: 'Object property',
         scope: 'variable.other.property, variable.other.object.property',
         settings: {
@@ -338,7 +380,7 @@ module.exports = function getColor({ name, colors }) {
       },
       {
         name: 'Built-in classes and constants',
-        scope: 'support.class, support.variable.object.process',
+        scope: 'support.variable.object.process',
         settings: {
           foreground: colors.blue,
         },
