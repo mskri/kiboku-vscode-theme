@@ -1,3 +1,11 @@
+## 0.1.5
+
+- Change colors around
+- Color nulls the same colors as numbers and booleans
+- Work on editor colors
+- Add first graphql rules
+- Add first JSON rules
+
 ## 0.1.4
 
 - Change comment color to be darker
