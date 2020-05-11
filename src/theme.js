@@ -4,7 +4,7 @@ module.exports = function getColor({ name, colors }) {
     name: name,
     type: 'dark',
     colors: {
-      focusBorder: '#005cc5',
+      focusBorder: colors.focus,
       foreground: colors.foreground,
       descriptionForeground: colors.foreground,
       errorForeground: colors.error,
@@ -15,9 +15,9 @@ module.exports = function getColor({ name, colors }) {
       'textCodeBlock.background': '#2f363d',
       'textPreformat.foreground': colors.foreground,
       'textSeparator.foreground': '#586069',
-      'button.background': '#176f2c',
-      'button.foreground': '#dcffe4',
-      'button.hoverBackground': '#22863a',
+      'button.background': colors.base2,
+      'button.foreground': colors.onBase2,
+      'button.hoverBackground': colors.base2Darker,
       'checkbox.background': '#444d56',
       'checkbox.border': colors.border,
       'dropdown.background': '#2f363d',
@@ -28,8 +28,8 @@ module.exports = function getColor({ name, colors }) {
       'input.border': colors.border,
       'input.foreground': colors.foregroundBrighter,
       'input.placeholderForeground': colors.foreground,
-      'badge.foreground': '#c8e1ff',
-      'badge.background': '#044289',
+      'badge.foreground': colors.onBase,
+      'badge.background': colors.base,
       'progressBar.background': '#0366d6',
       'titleBar.activeForeground': colors.foregroundBrighter,
       'titleBar.activeBackground': colors.background,
@@ -37,22 +37,30 @@ module.exports = function getColor({ name, colors }) {
       'titleBar.inactiveBackground': colors.background2,
       'titleBar.border': colors.border,
 
+      // Bar where you have files, search, debug, extensions etc.
       'activityBar.foreground': colors.foregroundBrighter,
       'activityBar.inactiveForeground': colors.inactiveForeground,
-      'activityBar.background': colors.background,
-      'activityBarBadge.foreground': '#fff',
-      // Activity notification badge background color.
-      'activityBarBadge.background': colors.blue,
-      'activityBar.activeBorder': colors.activeBorder,
-      'activityBar.border': colors.border,
+      'activityBar.background': colors.background2,
+      'activityBar.activeBorder': colors.base,
+      'activityBar.border': colors.borderBg,
 
+      // Activity Bar is displayed either on the far left or right of the workbench and allows fast switching between views of the Side Bar.
+      // https://code.visualstudio.com/api/references/theme-color#activity-bar
+      'activityBarBadge.foreground': colors.onBase,
+      'activityBarBadge.background': colors.base,
+
+      // Side Bar contains views like the Explorer and Search.
+      // https://code.visualstudio.com/api/references/theme-color#side-bar
       'sideBar.foreground': '#e1e4e8',
       'sideBar.background': colors.background2,
+
       'sideBar.border': colors.border,
       'sideBarTitle.foreground': colors.foregroundBrighter,
       'sideBarSectionHeader.foreground': colors.foregroundBrighter,
       'sideBarSectionHeader.background': colors.background2,
-      // 'sideBarSectionHeader.border': colors.background2,
+
+      // Colors for list and trees like the File Explorer
+      // https://code.visualstudio.com/api/references/theme-color#lists-and-trees
       'list.hoverForeground': colors.foregroundBrighter,
       'list.inactiveSelectionForeground': colors.foregroundBrighter,
       'list.activeSelectionForeground': colors.foregroundBrighter,
@@ -60,55 +68,64 @@ module.exports = function getColor({ name, colors }) {
       'list.inactiveSelectionBackground': '#282e34',
       'list.activeSelectionBackground': '#39414a',
       'list.inactiveFocusBackground': '#1d2d3e',
-      'list.focusBackground': '#044289',
+      'list.focusBackground': colors.focus,
+
       'tree.indentGuidesStroke': '#2f363d',
+
       'notificationCenterHeader.background': colors.background,
+
       'pickerGroup.border': '#444d56',
       'pickerGroup.foreground': colors.foregroundBrighter,
+
       'quickInput.background': colors.background,
       'quickInput.foreground': colors.foregroundBrighter,
+
       'statusBar.foreground': colors.foreground,
       'statusBar.background': colors.background,
-      'statusBar.border': colors.border,
+      'statusBar.border': colors.borderBg,
       'statusBar.noFolderBackground': colors.background,
       'statusBar.debuggingBackground': colors.yellowDark,
-      'statusBar.debuggingForeground': colors.border,
+      'statusBar.debuggingForeground': colors.green,
+
       'editorGroupHeader.tabsBackground': colors.background2,
-      'editorGroupHeader.tabsBorder': colors.border,
-      // 'editorGroup.border': colors.border,
+
       'tab.activeForeground': colors.foregroundBrighter,
       'tab.inactiveForeground': colors.foreground,
       'tab.inactiveBackground': colors.background2,
       'tab.activeBackground': colors.background,
       'tab.hoverBackground': colors.background,
       'tab.unfocusedHoverBackground': colors.background,
-      'tab.border': colors.border,
-      'tab.unfocusedActiveBorderTop': colors.border,
+      'tab.border': colors.borderBg,
       'tab.activeBorder': colors.base,
       'tab.unfocusedActiveBorder': colors.background,
+
       'breadcrumb.foreground': colors.foreground,
       'breadcrumb.focusForeground': colors.foregroundBrighter,
+      'breadcrumb.background': colors.background,
       'breadcrumb.activeSelectionForeground': colors.foreground,
-      'breadcrumbPicker.background': '#2b3036',
+      'breadcrumbPicker.background': colors.background2,
+
       'editor.foreground': colors.white2,
       'editor.background': colors.background,
       'editor.foldBackground': '#282e33',
       'editor.lineHighlightBackground': '#2b3036',
+      'editor.inactiveSelectionBackground': '#79b8ff11',
+      'editor.selectionBackground': colors.selectionBackground,
+      'editor.wordHighlightBackground': colors,
+      'editor.findMatchBackground': `${colors.yellow}26`, // 15% opacity
+      'editor.findMatchHighlightBackground': `${colors.yellow}26`, // 15% opacity
       'editorLineNumber.foreground': '#444d56',
       'editorLineNumber.activeForeground': colors.foregroundBrighter,
       'editorIndentGuide.background': '#2f363d',
       'editorIndentGuide.activeBackground': '#444d56',
       'editorWhitespace.foreground': colors.inactiveForeground,
       'editorCursor.foreground': '#c8e1ff',
-      'editor.inactiveSelectionBackground': '#79b8ff11',
-      'editor.selectionBackground': '#2188ff33',
-      'editor.wordHighlightBackground': '#2188ff22',
-      'editor.findMatchBackground': '#ffd33d44',
-      'editor.findMatchHighlightBackground': '#ffd33d22',
+
       'editorBracketMatch.background': '#005cc5',
       'editorBracketMatch.border': '#005cc5',
+
       'editorGutter.modifiedBackground': colors.modified,
-      'editorGutter.addedBackground': '#28a745',
+      'editorGutter.addedBackground': colors.added,
       'editorGutter.deletedBackground': colors.deleted,
 
       // Foreground color of error squiggles in the editor
@@ -116,11 +133,11 @@ module.exports = function getColor({ name, colors }) {
       // Foreground color of warning squiggles in the editor.
       'editorWarning.foreground': colors.orange,
 
-      'diffEditor.insertedTextBackground': '#28a74511',
-      'diffEditor.removedTextBackground': '#d73a4918',
+      'diffEditor.insertedTextBackground': `${colors.added}26`, // 15% opacity
+      'diffEditor.removedTextBackground': `${colors.removed}26`, // 15% opacity
 
       // Scrollbar slider shadow to indicate that the view is scrolled
-      'scrollbar.shadow': '#0000004D',
+      'scrollbar.shadow': '#00000066',
       'scrollbarSlider.background': '#6a737d33',
       'scrollbarSlider.hoverBackground': '#6a737d44',
       'scrollbarSlider.activeBackground': '#6a737d88',
@@ -131,15 +148,16 @@ module.exports = function getColor({ name, colors }) {
 
       // Color of the overview ruler border.
       'editorOverviewRuler.border': colors.border,
-      // TODO: add background color (some opacity color)
 
       'panel.background': colors.background2,
       'panel.border': colors.border,
-      'panelTitle.activeBorder': colors.activeBorder,
+      'panelTitle.activeBorder': colors.base,
       'panelTitle.activeForeground': colors.foregroundBrighter,
       'panelTitle.inactiveForeground': colors.foreground,
+
       'panelInput.border': '#2f363d',
       'terminal.foreground': colors.foreground,
+
       'gitDecoration.addedResourceForeground': colors.added,
       'gitDecoration.modifiedResourceForeground': colors.modified,
       'gitDecoration.deletedResourceForeground': colors.deleted,
@@ -147,11 +165,12 @@ module.exports = function getColor({ name, colors }) {
       'gitDecoration.ignoredResourceForeground': colors.ignored,
       'gitDecoration.conflictingResourceForeground': colors.conflict,
       'gitDecoration.submoduleResourceForeground': colors.ignored,
+
       'debugToolBar.background': '#2b3036',
-      'editor.stackFrameHighlightBackground': '#b08800',
-      'editor.focusedStackFrameHighlightBackground': '#dbab09',
+
       'settings.headerForeground': colors.foregroundBrighter,
       'settings.modifiedItemIndicator': '#0366d6',
+
       'welcomePage.buttonBackground': '#2f363d',
       'welcomePage.buttonHoverBackground': '#444d56',
     },
