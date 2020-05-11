@@ -1,3 +1,7 @@
+## 0.1.6
+
+- Modify editor colors
+
 ## 0.1.5
 
 - Change colors around
