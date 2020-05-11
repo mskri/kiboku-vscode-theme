@@ -71,7 +71,7 @@ module.exports = function getColor({ name, colors }) {
       'statusBar.background': colors.background,
       'statusBar.border': colors.border,
       'statusBar.noFolderBackground': colors.background,
-      'statusBar.debuggingBackground': '#931c06',
+      'statusBar.debuggingBackground': colors.yellowDark,
       'statusBar.debuggingForeground': colors.border,
       'editorGroupHeader.tabsBackground': colors.background2,
       'editorGroupHeader.tabsBorder': colors.border,

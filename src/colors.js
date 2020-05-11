@@ -16,6 +16,8 @@ const palette = {
   // yellow: '#FFEA7F',
   yellow: '#FFE69C',
   yellow2: '#E5CD84',
+  // yellowDark: chroma('#FFE69C').saturate(2).darken(0.75).hex(), // '#D6C020',
+  yellowDark: '#D6C020',
   cyan: '#8CF6FF',
   white: '#D8DEE9',
   white2: '#7C8DAB', // editor foreground
