@@ -32,10 +32,12 @@ module.exports = {
 
   parameters: palette.red,
   property: palette.white,
-  punctuation: palette.pink,
+  punctuation: palette.white2,
   functions: palette.blue,
   components: palette.purple,
   booleansAndNumbers: palette.orange,
+  keys: palette.white,
+
 
   foreground: '#959da5',
   foregroundBrighter: palette.white,

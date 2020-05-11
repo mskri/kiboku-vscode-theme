@@ -466,6 +466,35 @@ module.exports = function getColor({ name, colors }) {
           foreground: colors.white, // white2
         },
       },
+      {
+        name: 'JSON: keys',
+        scope: 'support.type.property-name.json',
+        settings: {
+          foreground: colors.keys,
+        },
+      },
+      {
+        name: 'JSON: punctuation (: ,)',
+        scope:
+          'punctuation.separator.dictionary.pair.json, punctuation.separator.dictionary.key-value.json',
+        settings: {
+          foreground: colors.punctuation,
+        },
+      },
+      {
+        name: 'YAML: tags/keys',
+        scope: 'entity.name.tag.yaml',
+        settings: {
+          foreground: colors.keys,
+        },
+      },
+      {
+        name: 'YAML: punctuation (:), sequence items (-)',
+        scope: 'punctuation.separator.key-value.mapping.yaml',
+        settings: {
+          foreground: colors.punctuation,
+        },
+      },
     ],
   };
 };
