@@ -42,6 +42,7 @@ module.exports = {
 
   parameters: palette.yellow,
   property: palette.white2,
+  propertyDeclaration: palette.white,
   punctuation: palette.white2,
   functions: palette.blue,
   components: palette.white,

@@ -201,6 +201,7 @@ module.exports = function getColor({ name, colors }) {
       // Object properties
       // fallback: variable.other.property
       property: colors.property,
+      'property.declaration': colors.propertyDeclaration,
       'property.defaultLibrary': {
         foreground: colors.property,
         fontStyle: '',
@@ -381,6 +382,13 @@ module.exports = function getColor({ name, colors }) {
         scope: 'variable.other.property, variable.other.object.property',
         settings: {
           foreground: colors.property,
+        },
+      },
+      {
+        name: 'Object literal key',
+        scope: 'meta.object-literal.key',
+        settings: {
+          foreground: colors.propertyDeclaration,
         },
       },
       {
