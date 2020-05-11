@@ -57,7 +57,7 @@ module.exports = {
   foreground: '#959da5',
   foregroundBrighter: palette.white,
 
-  border: chroma('#2D323A').darken(0.5).hex(),
+  border: '#1a1f27',
   background: '#2D323A',
   background2: '#2D323A',
 
