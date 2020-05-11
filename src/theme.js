@@ -331,14 +331,21 @@ module.exports = function getColor({ name, colors }) {
         name: 'Booleans',
         scope: 'constant.language.boolean',
         settings: {
-          foreground: colors.booleansAndNumbers,
+          foreground: colors.constantKeywords,
         },
       },
       {
         name: 'Numbers',
         scope: 'constant.numeric.decimal',
         settings: {
-          foreground: colors.booleansAndNumbers,
+          foreground: colors.constantKeywords,
+        },
+      },
+      {
+        name: 'Nulls',
+        scope: 'constant.language.null',
+        settings: {
+          foreground: colors.constantKeywords,
         },
       },
       {

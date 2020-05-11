@@ -46,7 +46,9 @@ module.exports = {
   punctuation: palette.white2,
   functions: palette.blue,
   components: palette.white,
-  booleansAndNumbers: palette.orange,
+
+  // e.g. true, numberics or null
+  constantKeywords: palette.orange,
   keys: palette.white,
 
   functionMembers: palette.blue,
