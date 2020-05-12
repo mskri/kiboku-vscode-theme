@@ -115,8 +115,6 @@ module.exports = function getColor({ name, colors }) {
       'editorError.foreground': colors.error,
       // Foreground color of warning squiggles in the editor.
       'editorWarning.foreground': colors.orange,
-      // Border color of info boxes in the editor.
-      'editorInfo.border': colors.base,
 
       'diffEditor.insertedTextBackground': '#28a74511',
       'diffEditor.removedTextBackground': '#d73a4918',
