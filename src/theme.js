@@ -198,7 +198,8 @@ module.exports = function getColor({ name, colors }) {
       'gitDecoration.conflictingResourceForeground': colors.conflict,
       'gitDecoration.submoduleResourceForeground': colors.light3,
 
-      'debugToolBar.background': '#ffff00',
+      'debugToolBar.background': colors.dark1,
+      'debugToolBar.border': colors.dark1,
 
       'settings.headerForeground': colors.light1,
       'settings.modifiedItemIndicator': colors.modified,
