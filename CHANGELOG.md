@@ -1,3 +1,8 @@
+## 0.1.7
+
+- Improve editor colors
+- Refactor color palette namings
+
 ## 0.1.6
 
 - Modify editor colors
