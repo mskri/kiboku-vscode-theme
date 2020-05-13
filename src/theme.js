@@ -4,172 +4,204 @@ module.exports = function getColor({ name, colors }) {
     name: name,
     type: 'dark',
     colors: {
-      focusBorder: colors.focus,
-      foreground: colors.foreground,
-      descriptionForeground: colors.foreground,
+      focusBorder: `${colors.base2}A6`, // 65% opacity,
+      foreground: colors.light2,
+      descriptionForeground: colors.light2,
       errorForeground: colors.error,
+
+      'icon.foreground': colors.light1,
+      'widget.shadow': '#00000066', // 40% opacity
+
       'textLink.foreground': '#79b8ff',
       'textLink.activeForeground': '#c8e1ff',
-      'textBlockQuote.background': colors.background,
+
+      'textBlockQuote.background': '#ff0000',
       'textBlockQuote.border': '#444d56',
+
       'textCodeBlock.background': '#2f363d',
-      'textPreformat.foreground': colors.foreground,
+      'textPreformat.foreground': '#ff0000',
       'textSeparator.foreground': '#586069',
-      'button.background': colors.base2,
-      'button.foreground': colors.onBase2,
-      'button.hoverBackground': colors.base2Darker,
-      'checkbox.background': '#444d56',
-      'checkbox.border': colors.border,
-      'dropdown.background': '#2f363d',
-      'dropdown.border': colors.border,
-      'dropdown.foreground': colors.foregroundBrighter,
-      'dropdown.listBackground': colors.background,
-      'input.background': '#2f363d',
-      'input.border': colors.border,
-      'input.foreground': colors.foregroundBrighter,
-      'input.placeholderForeground': colors.foreground,
-      'badge.foreground': colors.onBase,
+
+      'button.background': colors.dark3,
+      'button.foreground': colors.light1,
+      'button.hoverBackground': colors.dark4,
+
+      'checkbox.background': colors.dark1,
+      'checkbox.foreground': colors.light1,
+      'checkbox.border': colors.dark1,
+
+      'dropdown.background': colors.dark1,
+      'dropdown.border': colors.dark1,
+      'dropdown.foreground': colors.light1,
+      'dropdown.listBackground': colors.dark2,
+
+      'input.background': colors.dark1,
+      'input.border': colors.dark1,
+      'input.foreground': colors.light1,
+      'input.placeholderForeground': colors.light2,
+
+      'badge.foreground': colors.dark1,
       'badge.background': colors.base,
-      'progressBar.background': '#0366d6',
-      'titleBar.activeForeground': colors.foregroundBrighter,
-      'titleBar.activeBackground': colors.background,
-      'titleBar.inactiveForeground': colors.foreground,
-      'titleBar.inactiveBackground': colors.background2,
-      'titleBar.border': colors.border,
+
+      'progressBar.background': '#ff0000',
+
+      'titleBar.activeForeground': colors.light1,
+      'titleBar.activeBackground': colors.dark2,
+      'titleBar.inactiveForeground': colors.light2,
+      'titleBar.inactiveBackground': colors.dark2,
+      'titleBar.border': colors.red,
 
       // Bar where you have files, search, debug, extensions etc.
-      'activityBar.foreground': colors.foregroundBrighter,
-      'activityBar.inactiveForeground': colors.inactiveForeground,
-      'activityBar.background': colors.background2,
+      'activityBar.foreground': colors.light1,
+      'activityBar.inactiveForeground': colors.dark4,
+      'activityBar.background': colors.dark2,
       'activityBar.activeBorder': colors.base,
-      'activityBar.border': colors.borderBg,
+      'activityBar.border': colors.dark1,
 
       // Activity Bar is displayed either on the far left or right of the workbench and allows fast switching between views of the Side Bar.
       // https://code.visualstudio.com/api/references/theme-color#activity-bar
-      'activityBarBadge.foreground': colors.onBase,
+      'activityBarBadge.foreground': colors.dark1,
       'activityBarBadge.background': colors.base,
 
       // Side Bar contains views like the Explorer and Search.
       // https://code.visualstudio.com/api/references/theme-color#side-bar
-      'sideBar.foreground': '#e1e4e8',
-      'sideBar.background': colors.background2,
-
-      'sideBar.border': colors.border,
-      'sideBarTitle.foreground': colors.foregroundBrighter,
-      'sideBarSectionHeader.foreground': colors.foregroundBrighter,
-      'sideBarSectionHeader.background': colors.background2,
+      'sideBar.foreground': colors.light2,
+      'sideBar.background': colors.dark2,
+      'sideBar.border': colors.dark1,
+      'sideBarTitle.foreground': colors.light2,
+      'sideBarSectionHeader.foreground': colors.light2,
+      'sideBarSectionHeader.background': colors.dark2,
 
       // Colors for list and trees like the File Explorer
       // https://code.visualstudio.com/api/references/theme-color#lists-and-trees
-      'list.hoverForeground': colors.foregroundBrighter,
-      'list.inactiveSelectionForeground': colors.foregroundBrighter,
-      'list.activeSelectionForeground': colors.foregroundBrighter,
-      'list.hoverBackground': colors.background,
-      'list.inactiveSelectionBackground': '#282e34',
-      'list.activeSelectionBackground': '#39414a',
+      'list.hoverForeground': colors.light1,
+      'list.inactiveSelectionForeground': colors.light2,
+      'list.activeSelectionForeground': colors.light1,
+      'list.hoverBackground': colors.blue15,
+      'list.inactiveSelectionBackground': colors.blue15,
+      'list.activeSelectionBackground': colors.blue15,
       'list.inactiveFocusBackground': '#1d2d3e',
-      'list.focusBackground': colors.focus,
 
-      'tree.indentGuidesStroke': '#2f363d',
+      'tree.indentGuidesStroke': colors.dark4,
 
-      'notificationCenterHeader.background': colors.background,
+      'notificationCenterHeader.background': colors.dark2,
+      'notifications.background': colors.red,
 
       'pickerGroup.border': '#444d56',
-      'pickerGroup.foreground': colors.foregroundBrighter,
+      'pickerGroup.foreground': colors.light1,
 
-      'quickInput.background': colors.background,
-      'quickInput.foreground': colors.foregroundBrighter,
+      // cmd + shift + p
+      'quickInput.background': colors.dark2,
+      'quickInput.foreground': colors.light1,
 
-      'statusBar.foreground': colors.foreground,
-      'statusBar.background': colors.background,
-      'statusBar.border': colors.borderBg,
-      'statusBar.noFolderBackground': colors.background,
-      'statusBar.debuggingBackground': colors.yellowDark,
-      'statusBar.debuggingForeground': colors.green,
+      'statusBar.foreground': colors.light2,
+      'statusBar.background': colors.dark2,
+      'statusBar.border': colors.dark1,
+      'statusBar.noFolderBackground': colors.dark2,
+      'statusBar.debuggingBackground': colors.base,
+      'statusBar.debuggingForeground': colors.dark1,
 
-      'editorGroupHeader.tabsBackground': colors.background2,
+      'searchEditor.textInputBorder': '#ff0000',
 
-      'tab.activeForeground': colors.foregroundBrighter,
-      'tab.inactiveForeground': colors.foreground,
-      'tab.inactiveBackground': colors.background2,
-      'tab.activeBackground': colors.background,
-      'tab.hoverBackground': colors.background,
-      'tab.unfocusedHoverBackground': colors.background,
-      'tab.border': colors.borderBg,
-      'tab.activeBorder': colors.base,
-      'tab.unfocusedActiveBorder': colors.background,
+      'editorGroupHeader.tabsBackground': colors.dark2,
 
-      'breadcrumb.foreground': colors.foreground,
-      'breadcrumb.focusForeground': colors.foregroundBrighter,
-      'breadcrumb.background': colors.background,
-      'breadcrumb.activeSelectionForeground': colors.foreground,
-      'breadcrumbPicker.background': colors.background2,
+      // Editor tabs
+      'tab.activeForeground': colors.light1,
+      'tab.inactiveForeground': colors.light2,
+      'tab.inactiveBackground': colors.dark2,
+      'tab.activeBackground': colors.blue15,
+      'tab.hoverBackground': colors.blue30,
+      'tab.border': colors.dark2,
+
+      // Breadcrumbs
+      'breadcrumb.foreground': colors.light2,
+      'breadcrumb.focusForeground': colors.light1,
+      'breadcrumb.background': colors.dark2,
+      'breadcrumb.activeSelectionForeground': colors.light1,
+      'breadcrumbPicker.background': colors.dark2,
 
       'editor.foreground': colors.white2,
-      'editor.background': colors.background,
-      'editor.foldBackground': '#282e33',
-      'editor.lineHighlightBackground': '#2b3036',
-      'editor.inactiveSelectionBackground': '#79b8ff11',
-      'editor.selectionBackground': colors.selectionBackground,
-      'editor.wordHighlightBackground': colors,
-      'editor.findMatchBackground': `${colors.yellow}26`, // 15% opacity
-      'editor.findMatchHighlightBackground': `${colors.yellow}26`, // 15% opacity
-      'editorLineNumber.foreground': '#444d56',
-      'editorLineNumber.activeForeground': colors.foregroundBrighter,
-      'editorIndentGuide.background': '#2f363d',
-      'editorIndentGuide.activeBackground': '#444d56',
-      'editorWhitespace.foreground': colors.inactiveForeground,
-      'editorCursor.foreground': '#c8e1ff',
+      'editor.background': colors.dark2,
+      'editor.foldBackground': colors.yellow10,
+      'editor.lineHighlightBackground': colors.blue8,
+      'editor.inactiveSelectionBackground': colors.blue15,
+      'editor.blue15': colors.blue15,
+      'editor.wordHighlightBackground': `${colors.base2}33`,
 
-      'editorBracketMatch.background': '#005cc5',
-      'editorBracketMatch.border': '#005cc5',
+      'editor.findMatchBackground': `${colors.yellow}33`, // 15% opacity
+      'editor.findMatchHighlightBackground': `${colors.yellow}40`, // 25% opacity
+
+      'editorLineNumber.foreground': colors.dark3,
+      'editorLineNumber.activeForeground': colors.light1,
+      'editorIndentGuide.background': colors.dark3,
+      'editorIndentGuide.activeBackground': colors.dark4,
+      'editorWhitespace.foreground': colors.dark4,
+      'editorCursor.foreground': colors.dark5,
+
+      'editorBracketMatch.border': colors.dark5,
 
       'editorGutter.modifiedBackground': colors.modified,
       'editorGutter.addedBackground': colors.added,
       'editorGutter.deletedBackground': colors.deleted,
 
-      // Foreground color of error squiggles in the editor
       'editorError.foreground': colors.error,
-      // Foreground color of warning squiggles in the editor.
       'editorWarning.foreground': colors.orange,
 
-      'diffEditor.insertedTextBackground': `${colors.added}26`, // 15% opacity
-      'diffEditor.removedTextBackground': `${colors.removed}26`, // 15% opacity
+      'editorWidget.background': colors.dark2,
+      'editorWidget.foreground': colors.light1,
+      'editorWidget.border': colors.dark3,
+      'editorWidget.resizeBorder': colors.dark3,
 
-      // Scrollbar slider shadow to indicate that the view is scrolled
-      'scrollbar.shadow': '#00000066',
-      'scrollbarSlider.background': '#6a737d33',
-      'scrollbarSlider.hoverBackground': '#6a737d44',
-      'scrollbarSlider.activeBackground': '#6a737d88',
+      'diffEditor.insertedTextBackground': `${colors.added}2E`, // 18% opacity
+      'diffEditor.removedTextBackground': `${colors.removed}2E`, // 18% opacity
 
-      // -------------------------
-      // Overview ruler
-      // -------------------------
+      'scrollbar.shadow': '#00000066', // 40% opacity
+      'scrollbarSlider.background': `${colors.dark4}40`, // 25% opacity
+      'scrollbarSlider.hoverBackground': `${colors.dark4}66`, // 40% opacity
+      'scrollbarSlider.activeBackground': `${colors.dark4}8C`, // 55% opacity
 
-      // Color of the overview ruler border.
-      'editorOverviewRuler.border': colors.border,
+      'editorOverviewRuler.border': colors.dark1,
 
-      'panel.background': colors.background2,
-      'panel.border': colors.border,
+      'panel.background': colors.dark2,
+      'panel.border': colors.dark1,
       'panelTitle.activeBorder': colors.base,
-      'panelTitle.activeForeground': colors.foregroundBrighter,
-      'panelTitle.inactiveForeground': colors.foreground,
+      'panelTitle.activeForeground': colors.light1,
+      'panelTitle.inactiveForeground': colors.light2,
 
       'panelInput.border': '#2f363d',
-      'terminal.foreground': colors.foreground,
+      'terminal.foreground': colors.light2,
+      'terminal.ansiBlack': colors.ansiBlack,
+      'terminal.ansiBlue': colors.ansiBlue,
+      'terminal.ansiBrightBlack': colors.ansiBrightBlack,
+      'terminal.ansiBrightBlue': colors.ansiBrightBlue,
+      'terminal.ansiBrightCyan': colors.ansiBrightCyan,
+      'terminal.ansiBrightGreen': colors.ansiBrightGreen,
+      'terminal.ansiBrightMagenta': colors.ansiBrightMagenta,
+      'terminal.ansiBrightRed': colors.ansiBrightRed,
+      'terminal.ansiBrightWhite': colors.ansiBrightWhite,
+      'terminal.ansiBrightYellow': colors.ansiBrightYellow,
+      'terminal.ansiCyan': colors.ansiCyan,
+      'terminal.ansiGreen': colors.ansiGreen,
+      'terminal.ansiMagenta': colors.ansiMagenta,
+      'terminal.ansiRed': colors.ansiRed,
+      'terminal.ansiWhite': colors.ansiWhite,
+      'terminal.ansiYellow': colors.ansiYellow,
+      'terminal.selectionBackground': colors.blue15,
+      'terminalCursor.background': colors.dark2,
+      'terminalCursor.foreground': colors.dark5,
 
       'gitDecoration.addedResourceForeground': colors.added,
       'gitDecoration.modifiedResourceForeground': colors.modified,
       'gitDecoration.deletedResourceForeground': colors.deleted,
       'gitDecoration.untrackedResourceForeground': colors.untracked,
-      'gitDecoration.ignoredResourceForeground': colors.ignored,
+      'gitDecoration.ignoredResourceForeground': colors.light3,
       'gitDecoration.conflictingResourceForeground': colors.conflict,
-      'gitDecoration.submoduleResourceForeground': colors.ignored,
+      'gitDecoration.submoduleResourceForeground': colors.light3,
 
-      'debugToolBar.background': '#2b3036',
+      'debugToolBar.background': '#ffff00',
 
-      'settings.headerForeground': colors.foregroundBrighter,
-      'settings.modifiedItemIndicator': '#0366d6',
+      'settings.headerForeground': colors.light1,
+      'settings.modifiedItemIndicator': colors.modified,
 
       'welcomePage.buttonBackground': '#2f363d',
       'welcomePage.buttonHoverBackground': '#444d56',

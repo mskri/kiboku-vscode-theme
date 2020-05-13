@@ -19,6 +19,16 @@ const palette = {
   white: '#D8DEE9',
   white2: '#7C8DAB',
   black: '#21252B',
+
+  light1: '#D8DEE9',
+  light2: '#959BA5',
+  light3: '#6a737d', // TODO: should be more easily differentiated?
+
+  dark1: '#1F242D',
+  dark2: '#262C36',
+  dark3: '#3F495A',
+  dark4: '#58667E',
+  dark5: '#C8DCFF',
 };
 
 module.exports = {
@@ -27,35 +37,26 @@ module.exports = {
   comments: palette.purple4, // needs to be made more easily differentiable from white2
   namespace: palette.purple,
   types: palette.pink,
-  readonlyVariables: palette.white,
+  readonlyVariables: palette.light1,
   variables: palette.yellow,
   parameters: palette.yellow,
   property: palette.white2,
-  propertyDeclaration: palette.white,
+  propertyDeclaration: palette.light1,
   punctuation: palette.white2,
   functions: palette.blue,
-  components: palette.white,
+  components: palette.light1,
   constantKeywords: palette.orange, // e.g. true, numberics or null
-  keys: palette.white,
+  keys: palette.light1,
   functionMembers: palette.blue,
   defaultFunctionMembers: palette.cyan,
 
-  // Editor colors
-  foreground: '#959da5',
-  foregroundBrighter: palette.white,
-  border: chroma('#2D323A').darken(0.5).hex(),
-  borderBg: '#d8dee926', // 15% opacity
-  background: '#2D323A',
-  background2: chroma('#2D323A').darken(0.12).hex(),
+  blue8: `${palette.blue}14`, // 8% opacity
+  blue15: `${palette.blue}25`, // 15% opacity
+  blue30: `${palette.blue}40`, // 25% opacity
+  yellow10: `${palette.yellow}1A`, // 10% opacity
+
   base: palette.yellow,
-  baseDarker: chroma(palette.yellow).darken(0.5).hex(),
-  onBase: '#2D323A',
-  onBase2: '#fff',
   base2: palette.blue,
-  base2Darker: chroma(palette.blue).darken(0.5).hex(),
-  focus: `${palette.blue}B3`, // 70% opacity
-  selectionBackground: '#2188ff2E', // 18% opacity
-  inactiveForeground: '#6a737d',
 
   error: '#ea4a5a',
 
@@ -64,7 +65,6 @@ module.exports = {
   deleted: palette.red,
   added: palette.green,
   conflict: palette.yellow,
-  ignored: '#6a737d',
   untracked: palette.purple3,
 
   // Terminal colors
@@ -76,7 +76,7 @@ module.exports = {
   ansiRed: palette.red,
   ansiWhite: palette.white,
   ansiYellow: palette.yellow,
-  ansiBrightBlack: '#5F6672',
+  ansiBrightBlack: '#ff0000',
   ansiBrightBlue: '#1085FF',
   ansiBrightCyan: '#08E8DE',
   ansiBrightGreen: '#69c52e',
