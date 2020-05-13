@@ -1,3 +1,7 @@
+## 0.1.8
+
+- Fix debug toolbar background color
+
 ## 0.1.7
 
 - Improve editor colors
