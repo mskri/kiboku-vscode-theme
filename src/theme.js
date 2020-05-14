@@ -77,10 +77,12 @@ module.exports = function getColor({ name, colors }) {
       'list.hoverForeground': colors.light1,
       'list.inactiveSelectionForeground': colors.light2,
       'list.activeSelectionForeground': colors.light1,
-      'list.hoverBackground': colors.blue15,
+      'list.hoverBackground': colors.blue30,
       'list.inactiveSelectionBackground': colors.blue15,
       'list.activeSelectionBackground': colors.blue15,
       'list.inactiveFocusBackground': '#1d2d3e',
+      'list.focusBackground': colors.blue30,
+      'list.focusForeground': colors.light1,
 
       'tree.indentGuidesStroke': colors.dark4,
 
