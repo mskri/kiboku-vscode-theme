@@ -49,7 +49,7 @@ module.exports = function getColor({ name, colors }) {
       'titleBar.activeBackground': colors.dark2,
       'titleBar.inactiveForeground': colors.light2,
       'titleBar.inactiveBackground': colors.dark2,
-      'titleBar.border': colors.red,
+      'titleBar.border': colors.dark1,
 
       // Bar where you have files, search, debug, extensions etc.
       'activityBar.foreground': colors.light1,
