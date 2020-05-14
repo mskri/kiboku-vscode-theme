@@ -1,3 +1,7 @@
+## 0.1.10
+
+- Fix extension store page colors
+
 ## 0.1.9
 
 - Improve list focus and hover visibility
