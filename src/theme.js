@@ -12,16 +12,6 @@ module.exports = function getColor({ name, colors }) {
       'icon.foreground': colors.light1,
       'widget.shadow': '#00000066', // 40% opacity
 
-      'textLink.foreground': '#79b8ff',
-      'textLink.activeForeground': '#c8e1ff',
-
-      'textBlockQuote.background': '#ff0000',
-      'textBlockQuote.border': '#444d56',
-
-      'textCodeBlock.background': '#2f363d',
-      'textPreformat.foreground': '#ff0000',
-      'textSeparator.foreground': '#586069',
-
       'button.background': colors.dark3,
       'button.foreground': colors.light1,
       'button.hoverBackground': colors.dark4,
