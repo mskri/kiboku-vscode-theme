@@ -85,7 +85,14 @@ module.exports = function getColor({ name, colors }) {
       'tree.indentGuidesStroke': colors.dark4,
 
       'notificationCenterHeader.background': colors.dark2,
-      'notifications.background': colors.red,
+      'notificationCenterHeader.foreground': colors.light1,
+      'notifications.background': colors.dark3,
+      'notifications.border': colors.dark3,
+      'notificationToast.border': colors.dark3,
+      'notificationLink.foreground': colors.base2,
+      'notificationsErrorIcon.foreground': colors.error,
+      'notificationsWarningIcon.foreground': colors.warning,
+      'notificationsInfoIcon.foreground': colors.light1,
 
       'pickerGroup.border': '#444d56',
       'pickerGroup.foreground': colors.light1,
