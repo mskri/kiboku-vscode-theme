@@ -1,3 +1,12 @@
+## 0.1.9
+
+- Improve list focus and hover visibility
+- Color json booleans and numerics
+- Fix terminal bright black
+- Fix search editor border
+- Fix notifications colors
+- Fix title border color
+
 ## 0.1.8
 
 - Fix debug toolbar background color
