@@ -602,6 +602,13 @@ module.exports = function getColor({ name, colors }) {
         },
       },
       {
+        name: 'JSON: constants (e.g. booleans, numeric)',
+        scope: 'constant.language.json, constant.numeric.json',
+        settings: {
+          foreground: colors.constantKeywords,
+        },
+      },
+      {
         name: 'JSON: punctuation (: ,)',
         scope:
           'punctuation.separator.dictionary.pair.json, punctuation.separator.dictionary.key-value.json',
