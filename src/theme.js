@@ -110,7 +110,7 @@ module.exports = function getColor({ name, colors }) {
       'statusBar.debuggingBackground': colors.base,
       'statusBar.debuggingForeground': colors.dark1,
 
-      'searchEditor.textInputBorder': '#ff0000',
+      'searchEditor.textInputBorder': colors.dark1,
 
       'editorGroupHeader.tabsBackground': colors.dark2,
 
