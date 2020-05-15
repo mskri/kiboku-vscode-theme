@@ -55,7 +55,7 @@ module.exports = function getColor({ name, colors }) {
 
       // Side Bar contains views like the Explorer and Search.
       // https://code.visualstudio.com/api/references/theme-color#side-bar
-      'sideBar.foreground': colors.light2,
+      'sideBar.foreground': colors.light1,
       'sideBar.background': colors.dark2,
       'sideBar.border': colors.dark1,
       'sideBarTitle.foreground': colors.light2,
@@ -151,8 +151,8 @@ module.exports = function getColor({ name, colors }) {
       'editorWidget.border': colors.dark3,
       'editorWidget.resizeBorder': colors.dark3,
 
-      'diffEditor.insertedTextBackground': `${colors.added}2E`, // 18% opacity
-      'diffEditor.removedTextBackground': `${colors.removed}2E`, // 18% opacity
+      'diffEditor.insertedTextBorder': colors.added,
+      'diffEditor.removedTextBorder': colors.deleted,
 
       'scrollbar.shadow': '#00000066', // 40% opacity
       'scrollbarSlider.background': `${colors.dark4}40`, // 25% opacity
