@@ -1,3 +1,8 @@
+## 0.1.11
+
+- Fix search and replace highlight background
+- Fix selection background
+
 ## 0.1.10
 
 - Fix extension store page colors
