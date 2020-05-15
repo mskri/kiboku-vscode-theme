@@ -103,6 +103,7 @@ module.exports = function getColor({ name, colors }) {
       'searchEditor.textInputBorder': colors.dark1,
 
       'editorGroupHeader.tabsBackground': colors.dark2,
+      'editorGroup.dropBackground': colors.dark3,
 
       // Editor tabs
       'tab.activeForeground': colors.light1,
