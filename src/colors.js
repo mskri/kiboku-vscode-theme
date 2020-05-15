@@ -1,5 +1,3 @@
-const chroma = require('chroma-js');
-
 // #A3D0E8
 // #80B2FF
 // #E5CD84
