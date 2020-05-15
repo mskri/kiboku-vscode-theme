@@ -229,10 +229,7 @@ module.exports = function getColor({ name, colors }) {
       // e.g. 'console' in console.log or 'Math' in Math.floor()
       // fallback: support.constant
       // 'variable.readonly.defaultLibrary': colors.cyan,
-      'variable.defaultLibrary': {
-        foreground: colors.white2,
-        fontStyle: '',
-      },
+      'variable.defaultLibrary': colors.white2,
 
       // fallback: variable.parameter
       parameter: colors.parameters,
@@ -243,19 +240,13 @@ module.exports = function getColor({ name, colors }) {
       // 'log' in console.log
       // fallback: entity.name.function.member
       member: colors.functionMembers,
-      'member.defaultLibrary': {
-        foreground: colors.defaultFunctionMembers,
-        fontStyle: '',
-      },
+      'member.defaultLibrary': colors.defaultFunctionMembers,
 
       // Object properties
       // fallback: variable.other.property
       property: colors.property,
       'property.declaration': colors.propertyDeclaration,
-      'property.defaultLibrary': {
-        foreground: colors.property,
-        fontStyle: '',
-      },
+      'property.defaultLibrary': colors.property,
 
       // User defined classes
       // fallback: entity.name.type.class
@@ -275,10 +266,7 @@ module.exports = function getColor({ name, colors }) {
 
       // e.g. `Promise` in `Promise<void>`
       interface: colors.types,
-      'interface.defaultLibrary': {
-        foreground: colors.types,
-        fontStyle: '',
-      },
+      'interface.defaultLibrary': colors.types,
     },
     tokenColors: [
       {
@@ -286,7 +274,6 @@ module.exports = function getColor({ name, colors }) {
         scope: 'variable.other.readwrite.alias',
         settings: {
           foreground: colors.variables,
-          // foreground: colors.white,
         },
       },
       {
