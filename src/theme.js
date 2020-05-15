@@ -124,7 +124,7 @@ module.exports = function getColor({ name, colors }) {
       'editor.foldBackground': colors.yellow10,
       'editor.lineHighlightBackground': colors.blue8,
       'editor.inactiveSelectionBackground': colors.blue15,
-      'editor.blue15': colors.blue15,
+      'editor.selectionBackground': colors.blue15,
       'editor.wordHighlightBackground': `${colors.base2}33`,
 
       'editor.findMatchBackground': `${colors.yellow}33`, // 15% opacity
