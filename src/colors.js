@@ -75,7 +75,7 @@ module.exports = {
   ansiRed: palette.red,
   ansiWhite: palette.white,
   ansiYellow: palette.yellow,
-  ansiBrightBlack: '#000000',
+  ansiBrightBlack: '#3d475c',
   ansiBrightBlue: '#1085FF',
   ansiBrightCyan: '#08E8DE',
   ansiBrightGreen: '#69c52e',
