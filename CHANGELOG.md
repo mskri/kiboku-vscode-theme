@@ -1,3 +1,12 @@
+## 0.2.0
+
+- Color tags, e.g. html div, same as components
+- Color CSS attribute class same as ids and classes
+- Improve find match hilight
+- Change terminal bright black to more muted black
+- Remove unnecessary fontStyle configs
+- Remove unnecessary fontStyle configs
+
 ## 0.1.11
 
 - Fix search and replace highlight background

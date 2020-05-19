@@ -94,8 +94,8 @@
     "editor.inactiveSelectionBackground": "#69A4FC25",
     "editor.selectionBackground": "#69A4FC25",
     "editor.wordHighlightBackground": "#69A4FC33",
-    "editor.findMatchBackground": "#FFE69C33",
-    "editor.findMatchHighlightBackground": "#FFE69C40",
+    "editor.findMatchBackground": "#58667E",
+    "editor.findMatchHighlightBackground": "#3F495AD9",
     "editorLineNumber.foreground": "#3F495A",
     "editorLineNumber.activeForeground": "#D8DEE9",
     "editorIndentGuide.background": "#3F495A",
@@ -128,7 +128,7 @@
     "terminal.foreground": "#959BA5",
     "terminal.ansiBlack": "#21252B",
     "terminal.ansiBlue": "#69A4FC",
-    "terminal.ansiBrightBlack": "#000000",
+    "terminal.ansiBrightBlack": "#3d475c",
     "terminal.ansiBrightBlue": "#1085FF",
     "terminal.ansiBrightCyan": "#08E8DE",
     "terminal.ansiBrightGreen": "#69c52e",
@@ -164,20 +164,20 @@
     "variable": "#8CF6FF",
     "variable.declaration": "#FFE69C",
     "variable.declaration.readonly": "#D8DEE9",
-    "variable.defaultLibrary": { "foreground": "#7C8DAB", "fontStyle": "" },
+    "variable.defaultLibrary": "#7C8DAB",
     "parameter": "#FFE69C",
     "type": "#ff9ce6",
     "member": "#69A4FC",
-    "member.defaultLibrary": { "foreground": "#8CF6FF", "fontStyle": "" },
+    "member.defaultLibrary": "#8CF6FF",
     "property": "#7C8DAB",
     "property.declaration": "#D8DEE9",
-    "property.defaultLibrary": { "foreground": "#7C8DAB", "fontStyle": "" },
+    "property.defaultLibrary": "#7C8DAB",
     "class": "#FFE69C",
     "class.defaultLibrary": "#8CF6FF",
     "function.declaration.readonly": "#69A4FC",
     "namespace": "#BEA1F7",
     "interface": "#ff9ce6",
-    "interface.defaultLibrary": { "foreground": "#ff9ce6", "fontStyle": "" }
+    "interface.defaultLibrary": "#ff9ce6"
   },
   "tokenColors": [
     {
@@ -196,8 +196,8 @@
       "settings": { "foreground": "#FFE69C" }
     },
     {
-      "name": "Components",
-      "scope": "support.class.component",
+      "name": "Components, tags",
+      "scope": "support.class.component, entity.name.tag",
       "settings": { "foreground": "#D8DEE9" }
     },
     {
@@ -312,7 +312,7 @@
     },
     {
       "name": "CSS class, id, tag",
-      "scope": "entity.other.attribute-name.css, entity.name.tag.css",
+      "scope": "entity.other.attribute-name.css, entity.name.tag.css, entity.other.attribute-name.class.css",
       "settings": { "foreground": "#D8DEE9" }
     },
     {
