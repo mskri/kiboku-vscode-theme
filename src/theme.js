@@ -459,7 +459,8 @@ module.exports = function getColor({ name, colors }) {
       },
       {
         name: 'CSS class, id, tag',
-        scope: 'entity.other.attribute-name.css, entity.name.tag.css',
+        scope:
+          'entity.other.attribute-name.css, entity.name.tag.css, entity.other.attribute-name.class.css',
         settings: {
           foreground: colors.white,
         },
