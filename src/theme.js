@@ -292,8 +292,8 @@ module.exports = function getColor({ name, colors }) {
         },
       },
       {
-        name: 'Components',
-        scope: 'support.class.component',
+        name: 'Components, tags',
+        scope: 'support.class.component, entity.name.tag',
         settings: {
           foreground: colors.components,
         },
