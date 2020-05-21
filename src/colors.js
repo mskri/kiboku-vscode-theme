@@ -1,7 +1,3 @@
-// #A3D0E8
-// #80B2FF
-// #E5CD84
-
 const palette = {
   blue: '#69A4FC', // hsl(216, 96%, 70%)
   purple: '#BEA1F7', // hsl(260, 84%, 80%)
