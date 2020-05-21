@@ -458,9 +458,16 @@ module.exports = function getColor({ name, colors }) {
         },
       },
       {
-        name: 'CSS class, id, tag',
+        name: 'PostCSS: *',
+        scope: 'keyword.operator.postcss',
+        settings: {
+          foreground: colors.light1,
+        },
+      },
+      {
+        name: 'CSS class, id, tag, attribute selector, @rule, @font-face',
         scope:
-          'entity.other.attribute-name.css, entity.name.tag.css, entity.other.attribute-name.class.css, entity.other.attribute-name.id.css',
+          'entity.other.attribute-name.css, entity.name.tag.css, entity.other.attribute-name.class.css, entity.other.attribute-name.id.css, entity.other.attribute-selector, keyword.control.at-rule.css, keyword.control.at-rule.font-face.css',
         settings: {
           foreground: colors.light1,
         },
