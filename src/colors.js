@@ -12,13 +12,13 @@ const palette = {
   foreground: '#8193B1', // hsl(218, 24%, 60%)
 
   // "Bright" versions, used for e.g. in terminal
-  blueBright: '#1085FF', // hsl(211, 100%, 53%)
-  magentaBright: '#8B00FF', // hsl(273, 100%, 50%)
-  greenBright: '#69c52e', // hsl(97, 62%, 48%)
-  cyanBright: '#08E8DE', // hsl(177, 93%, 47%)
-  redBright: '#ea4a5a', // hsl(354, 79%, 60%)
-  whiteBright: '#C6CCD7', // hsl(219, 18%, 81%)
-  yellowBright: '#E9D16C', // hsl(48, 74%, 67%)
+  blueBright: '#3785FB', // hsl(216, 96%, 60%)
+  magentaBright: '#9d72f3', // hsl(260, 84%, 70%)
+  greenBright: '#89DD78', // hsl(110, 60%, 67%)
+  cyanBright: '#5CF1FF', // hsl(185, 100%, 68%)
+  redBright: '#FF5C6C', // hsl(354, 100%, 68%)
+  whiteBright: '#F8FAFB', // hsl(218, 28%, 98%)
+  yellowBright: '#FFDA6B', // hsl(45, 100%, 71%)
 
   light1: '#D8DEE9', // hsl(218, 28%, 88%)
   light2: '#959BA5', // hsl(218, 8%, 62%)
