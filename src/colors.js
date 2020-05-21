@@ -1,15 +1,17 @@
 const palette = {
   blue: '#69A4FC', // hsl(216, 96%, 70%)
   purple: '#BEA1F7', // hsl(260, 84%, 80%)
-  purple3: '#9CB5FF', // hsl(225, 100%, 81%)
+  violet: '#9CB5FF', // hsl(225, 100%, 81%)
   pink: '#ff9ce6', // hsl(315, 100%, 81%)
   green: '#AEE8A3', // hsl(110, 60%, 77%)
   red: '#FF8E9A', // hsl(354, 100%, 78%)
-  orange: '#ff9a7b', // hsl(14, 100%, 74%)
+  orange: '#FF9A7B', // hsl(14, 100%, 74%)
   yellow: '#FFE69C', // hsl(45, 100%, 81%)
   cyan: '#8CF6FF', // hsl(185, 100%, 78%)
-  black: '#21252B', // hsl(216, 13%, 15%)
-  foreground: '#8193B1', // hsl(218, 24%, 60%)
+
+  white: '#D8DEE9', // hsl(218, 28%, 88%)
+  gray: '#959BA5', // hsl(218, 8%, 62%)
+  gray2: '#8193B1', // hsl(218, 24%, 60%)
 
   // "Bright" versions, used for e.g. in terminal
   blueBright: '#3785FB', // hsl(216, 96%, 60%)
@@ -19,9 +21,6 @@ const palette = {
   redBright: '#FF5C6C', // hsl(354, 100%, 68%)
   whiteBright: '#F8FAFB', // hsl(218, 28%, 98%)
   yellowBright: '#FFDA6B', // hsl(45, 100%, 71%)
-
-  light1: '#D8DEE9', // hsl(218, 28%, 88%)
-  light2: '#959BA5', // hsl(218, 8%, 62%)
 
   dark1: '#1D222A', // hsl(218, 18%, 14%)
   dark2: '#262C36', // hsl(218, 18%, 18%)
@@ -33,19 +32,20 @@ const palette = {
 module.exports = {
   ...palette,
 
+  foreground: palette.gray2,
   comments: palette.dark4,
   namespace: palette.purple,
   types: palette.pink,
-  readonlyVariables: palette.light1,
+  readonlyVariables: palette.white,
   variables: palette.yellow,
   parameters: palette.yellow,
   property: palette.foreground,
-  propertyDeclaration: palette.light1,
+  propertyDeclaration: palette.white,
   punctuation: palette.foreground,
   functions: palette.blue,
-  components: palette.light1,
+  components: palette.white,
   constantKeywords: palette.orange, // e.g. true, numberics or null
-  keys: palette.light1,
+  keys: palette.white,
   functionMembers: palette.blue,
   defaultFunctionMembers: palette.cyan,
 
@@ -65,7 +65,7 @@ module.exports = {
   deleted: palette.red,
   added: palette.green,
   conflict: palette.yellow,
-  untracked: palette.purple3,
+  untracked: palette.violet,
 
   // Terminal colors
   ansiBlack: palette.dark1,
@@ -74,7 +74,7 @@ module.exports = {
   ansiGreen: palette.green,
   ansiMagenta: palette.purple,
   ansiRed: palette.red,
-  ansiWhite: palette.light1,
+  ansiWhite: palette.white,
   ansiYellow: palette.yellow,
   ansiBrightBlack: palette.dark4,
   ansiBrightBlue: palette.blueBright,

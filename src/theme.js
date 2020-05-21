@@ -5,44 +5,44 @@ module.exports = function getColor({ name, colors }) {
     type: 'dark',
     colors: {
       focusBorder: `${colors.base2}A6`, // 65% opacity,
-      foreground: colors.light2,
-      descriptionForeground: colors.light2,
+      foreground: colors.gray,
+      descriptionForeground: colors.gray,
       errorForeground: colors.error,
 
-      'icon.foreground': colors.light1,
+      'icon.foreground': colors.white,
       'widget.shadow': '#00000066', // 40% opacity
 
       'button.background': colors.dark3,
-      'button.foreground': colors.light1,
+      'button.foreground': colors.white,
       'button.hoverBackground': colors.dark4,
 
       'checkbox.background': colors.dark1,
-      'checkbox.foreground': colors.light1,
+      'checkbox.foreground': colors.white,
       'checkbox.border': colors.dark1,
 
       'dropdown.background': colors.dark1,
       'dropdown.border': colors.dark1,
-      'dropdown.foreground': colors.light1,
+      'dropdown.foreground': colors.white,
       'dropdown.listBackground': colors.dark2,
 
       'input.background': colors.dark1,
       'input.border': colors.dark1,
-      'input.foreground': colors.light1,
-      'input.placeholderForeground': colors.light2,
+      'input.foreground': colors.white,
+      'input.placeholderForeground': colors.gray,
 
       'badge.foreground': colors.dark1,
       'badge.background': colors.base,
 
       'progressBar.background': '#ff0000',
 
-      'titleBar.activeForeground': colors.light1,
+      'titleBar.activeForeground': colors.white,
       'titleBar.activeBackground': colors.dark2,
-      'titleBar.inactiveForeground': colors.light2,
+      'titleBar.inactiveForeground': colors.gray,
       'titleBar.inactiveBackground': colors.dark2,
       'titleBar.border': colors.dark1,
 
       // Bar where you have files, search, debug, extensions etc.
-      'activityBar.foreground': colors.light1,
+      'activityBar.foreground': colors.white,
       'activityBar.inactiveForeground': colors.dark4,
       'activityBar.background': colors.dark2,
       'activityBar.activeBorder': colors.base,
@@ -55,45 +55,45 @@ module.exports = function getColor({ name, colors }) {
 
       // Side Bar contains views like the Explorer and Search.
       // https://code.visualstudio.com/api/references/theme-color#side-bar
-      'sideBar.foreground': colors.light1,
+      'sideBar.foreground': colors.white,
       'sideBar.background': colors.dark2,
       'sideBar.border': colors.dark1,
-      'sideBarTitle.foreground': colors.light2,
-      'sideBarSectionHeader.foreground': colors.light2,
+      'sideBarTitle.foreground': colors.gray,
+      'sideBarSectionHeader.foreground': colors.gray,
       'sideBarSectionHeader.background': colors.dark2,
 
       // Colors for list and trees like the File Explorer
       // https://code.visualstudio.com/api/references/theme-color#lists-and-trees
-      'list.hoverForeground': colors.light1,
-      'list.inactiveSelectionForeground': colors.light2,
-      'list.activeSelectionForeground': colors.light1,
+      'list.hoverForeground': colors.white,
+      'list.inactiveSelectionForeground': colors.gray,
+      'list.activeSelectionForeground': colors.white,
       'list.hoverBackground': colors.blue30,
       'list.inactiveSelectionBackground': colors.blue15,
       'list.activeSelectionBackground': colors.blue15,
       'list.inactiveFocusBackground': '#1d2d3e',
       'list.focusBackground': colors.blue30,
-      'list.focusForeground': colors.light1,
+      'list.focusForeground': colors.white,
 
       'tree.indentGuidesStroke': colors.dark4,
 
       'notificationCenterHeader.background': colors.dark2,
-      'notificationCenterHeader.foreground': colors.light1,
+      'notificationCenterHeader.foreground': colors.white,
       'notifications.background': colors.dark3,
       'notifications.border': colors.dark3,
       'notificationToast.border': colors.dark3,
       'notificationLink.foreground': colors.base2,
       'notificationsErrorIcon.foreground': colors.error,
       'notificationsWarningIcon.foreground': colors.warning,
-      'notificationsInfoIcon.foreground': colors.light1,
+      'notificationsInfoIcon.foreground': colors.white,
 
       'pickerGroup.border': '#444d56',
-      'pickerGroup.foreground': colors.light1,
+      'pickerGroup.foreground': colors.white,
 
       // cmd + shift + p
       'quickInput.background': colors.dark2,
-      'quickInput.foreground': colors.light1,
+      'quickInput.foreground': colors.white,
 
-      'statusBar.foreground': colors.light2,
+      'statusBar.foreground': colors.gray,
       'statusBar.background': colors.dark2,
       'statusBar.border': colors.dark1,
       'statusBar.noFolderBackground': colors.dark2,
@@ -106,18 +106,18 @@ module.exports = function getColor({ name, colors }) {
       'editorGroup.dropBackground': colors.dark3,
 
       // Editor tabs
-      'tab.activeForeground': colors.light1,
-      'tab.inactiveForeground': colors.light2,
+      'tab.activeForeground': colors.white,
+      'tab.inactiveForeground': colors.gray,
       'tab.inactiveBackground': colors.dark2,
       'tab.activeBackground': colors.blue15,
       'tab.hoverBackground': colors.blue30,
       'tab.border': colors.dark2,
 
       // Breadcrumbs
-      'breadcrumb.foreground': colors.light2,
-      'breadcrumb.focusForeground': colors.light1,
+      'breadcrumb.foreground': colors.gray,
+      'breadcrumb.focusForeground': colors.white,
       'breadcrumb.background': colors.dark2,
-      'breadcrumb.activeSelectionForeground': colors.light1,
+      'breadcrumb.activeSelectionForeground': colors.white,
       'breadcrumbPicker.background': colors.dark2,
 
       'editor.foreground': colors.foreground,
@@ -132,7 +132,7 @@ module.exports = function getColor({ name, colors }) {
       'editor.findMatchHighlightBackground': `${colors.dark3}D9`, // 85% opacity
 
       'editorLineNumber.foreground': colors.dark3,
-      'editorLineNumber.activeForeground': colors.light1,
+      'editorLineNumber.activeForeground': colors.white,
       'editorIndentGuide.background': colors.dark3,
       'editorIndentGuide.activeBackground': colors.dark4,
       'editorWhitespace.foreground': colors.dark4,
@@ -148,7 +148,7 @@ module.exports = function getColor({ name, colors }) {
       'editorWarning.foreground': colors.orange,
 
       'editorWidget.background': colors.dark2,
-      'editorWidget.foreground': colors.light1,
+      'editorWidget.foreground': colors.white,
       'editorWidget.border': colors.dark3,
       'editorWidget.resizeBorder': colors.dark3,
 
@@ -168,11 +168,11 @@ module.exports = function getColor({ name, colors }) {
       'panel.background': colors.dark2,
       'panel.border': colors.dark1,
       'panelTitle.activeBorder': colors.base,
-      'panelTitle.activeForeground': colors.light1,
-      'panelTitle.inactiveForeground': colors.light2,
+      'panelTitle.activeForeground': colors.white,
+      'panelTitle.inactiveForeground': colors.gray,
 
       'panelInput.border': '#2f363d',
-      'terminal.foreground': colors.light2,
+      'terminal.foreground': colors.gray,
       'terminal.ansiBlack': colors.ansiBlack,
       'terminal.ansiBlue': colors.ansiBlue,
       'terminal.ansiBrightBlack': colors.ansiBrightBlack,
@@ -197,14 +197,14 @@ module.exports = function getColor({ name, colors }) {
       'gitDecoration.modifiedResourceForeground': colors.modified,
       'gitDecoration.deletedResourceForeground': colors.deleted,
       'gitDecoration.untrackedResourceForeground': colors.untracked,
-      'gitDecoration.ignoredResourceForeground': colors.light2,
+      'gitDecoration.ignoredResourceForeground': colors.gray,
       'gitDecoration.conflictingResourceForeground': colors.conflict,
-      'gitDecoration.submoduleResourceForeground': colors.light2,
+      'gitDecoration.submoduleResourceForeground': colors.gray,
 
       'debugToolBar.background': colors.dark1,
       'debugToolBar.border': colors.dark1,
 
-      'settings.headerForeground': colors.light1,
+      'settings.headerForeground': colors.white,
       'settings.modifiedItemIndicator': colors.modified,
 
       'welcomePage.buttonBackground': '#2f363d',
@@ -280,7 +280,7 @@ module.exports = function getColor({ name, colors }) {
           'Imported alias name, variables defined outside of scope where they are used in, i.e. imports or top leve',
         scope: 'variable.other',
         settings: {
-          foreground: colors.light1,
+          foreground: colors.white,
         },
       },
       {
@@ -338,7 +338,7 @@ module.exports = function getColor({ name, colors }) {
         name: 'Graphql variables',
         scope: 'variable.graphql, variable.fragment.graphql',
         settings: {
-          foreground: colors.light1,
+          foreground: colors.white,
         },
       },
       {
@@ -460,7 +460,7 @@ module.exports = function getColor({ name, colors }) {
         name: 'PostCSS: *',
         scope: 'keyword.operator.postcss',
         settings: {
-          foreground: colors.light1,
+          foreground: colors.white,
         },
       },
       {
@@ -468,7 +468,7 @@ module.exports = function getColor({ name, colors }) {
         scope:
           'entity.other.attribute-name.css, entity.name.tag.css, entity.other.attribute-name.class.css, entity.other.attribute-name.id.css, entity.other.attribute-selector, keyword.control.at-rule.css, keyword.control.at-rule.font-face.css',
         settings: {
-          foreground: colors.light1,
+          foreground: colors.white,
         },
       },
       {
@@ -496,7 +496,7 @@ module.exports = function getColor({ name, colors }) {
         name: 'Markdown paragraph text',
         scope: 'meta.paragraph.markdown',
         settings: {
-          foreground: colors.light1,
+          foreground: colors.white,
         },
       },
       {
@@ -561,7 +561,7 @@ module.exports = function getColor({ name, colors }) {
         scope:
           'entity.name.tag.structure.any.html, entity.name.tag.block.any.html, entity.name.tag.inline.any.html',
         settings: {
-          foreground: colors.light1,
+          foreground: colors.white,
         },
       },
       {
@@ -576,7 +576,7 @@ module.exports = function getColor({ name, colors }) {
         scope:
           'punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html',
         settings: {
-          foreground: colors.light1,
+          foreground: colors.white,
         },
       },
       {
@@ -620,14 +620,14 @@ module.exports = function getColor({ name, colors }) {
         scope:
           'entity.other.attribute-name.table.toml, entity.other.attribute-name.table.array.toml',
         settings: {
-          foreground: colors.light1,
+          foreground: colors.white,
         },
       },
       {
         name: 'INI: group title',
         scope: 'entity.name.section.group-title.ini',
         settings: {
-          foreground: colors.light1,
+          foreground: colors.white,
         },
       },
     ],
