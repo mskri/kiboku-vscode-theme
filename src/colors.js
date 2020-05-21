@@ -11,7 +11,6 @@ const palette = {
   red: '#FF8E9A',
   orange: '#ff9a7b',
   yellow: '#FFE69C',
-  yellowDark: '#D6C020',
   cyan: '#8CF6FF',
   black: '#21252B',
   foreground: '#8193B1',
