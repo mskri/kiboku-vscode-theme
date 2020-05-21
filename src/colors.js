@@ -59,7 +59,7 @@ module.exports = {
   untracked: palette.purple3,
 
   // Terminal colors
-  ansiBlack: palette.black,
+  ansiBlack: palette.dark1,
   ansiBlue: palette.blue,
   ansiCyan: palette.cyan,
   ansiGreen: palette.green,
@@ -67,7 +67,6 @@ module.exports = {
   ansiRed: palette.red,
   ansiWhite: palette.light1,
   ansiYellow: palette.yellow,
-  ansiBrightBlack: '#3d475c',
   ansiBrightBlue: '#1085FF',
   ansiBrightCyan: '#08E8DE',
   ansiBrightGreen: '#69c52e',
