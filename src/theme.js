@@ -623,6 +623,13 @@ module.exports = function getColor({ name, colors }) {
           foreground: colors.light1,
         },
       },
+      {
+        name: 'INI: group title',
+        scope: 'entity.name.section.group-title.ini',
+        settings: {
+          foreground: colors.light1,
+        },
+      },
     ],
   };
 };
