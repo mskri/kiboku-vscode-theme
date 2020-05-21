@@ -15,8 +15,8 @@ const palette = {
   yellowDark: '#D6C020',
   cyan: '#8CF6FF',
   white: '#D8DEE9',
-  white2: '#7C8DAB',
   black: '#21252B',
+  foreground: '#8193B1',
 
   light1: '#D8DEE9',
   light2: '#959BA5',
@@ -38,9 +38,9 @@ module.exports = {
   readonlyVariables: palette.light1,
   variables: palette.yellow,
   parameters: palette.yellow,
-  property: palette.white2,
+  property: palette.foreground,
   propertyDeclaration: palette.light1,
-  punctuation: palette.white2,
+  punctuation: palette.foreground,
   functions: palette.blue,
   components: palette.light1,
   constantKeywords: palette.orange, // e.g. true, numberics or null

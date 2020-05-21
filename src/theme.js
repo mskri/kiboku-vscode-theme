@@ -120,7 +120,7 @@ module.exports = function getColor({ name, colors }) {
       'breadcrumb.activeSelectionForeground': colors.light1,
       'breadcrumbPicker.background': colors.dark2,
 
-      'editor.foreground': colors.white2,
+      'editor.foreground': colors.foreground,
       'editor.background': colors.dark2,
       'editor.foldBackground': colors.yellow10,
       'editor.lineHighlightBackground': colors.blue8,
@@ -229,7 +229,7 @@ module.exports = function getColor({ name, colors }) {
       // e.g. 'console' in console.log or 'Math' in Math.floor()
       // fallback: support.constant
       // 'variable.readonly.defaultLibrary': colors.cyan,
-      'variable.defaultLibrary': colors.white2,
+      'variable.defaultLibrary': colors.foreground,
 
       // fallback: variable.parameter
       parameter: colors.parameters,
@@ -310,7 +310,7 @@ module.exports = function getColor({ name, colors }) {
         scope:
           'punctuation.definition.template-expression.begin, punctuation.definition.template-expression.end',
         settings: {
-          foreground: colors.white2,
+          foreground: colors.foreground,
         },
       },
       {
@@ -411,7 +411,7 @@ module.exports = function getColor({ name, colors }) {
         name: 'Support classes - Promise, Math',
         scope: 'support.class',
         settings: {
-          foreground: colors.white2,
+          foreground: colors.foreground,
         },
       },
       {
@@ -562,7 +562,7 @@ module.exports = function getColor({ name, colors }) {
         name: 'HTML text',
         scope: 'text.html',
         settings: {
-          foreground: colors.white2,
+          foreground: colors.foreground,
         },
       },
       {
@@ -570,7 +570,7 @@ module.exports = function getColor({ name, colors }) {
         scope:
           'punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html',
         settings: {
-          foreground: colors.white, // white2
+          foreground: colors.white,
         },
       },
       {
