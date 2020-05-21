@@ -19,7 +19,6 @@ const palette = {
 
   light1: '#D8DEE9',
   light2: '#959BA5',
-  light3: '#6a737d', // TODO: should be more easily differentiated?
 
   dark1: '#1F242D',
   dark2: '#262C36',

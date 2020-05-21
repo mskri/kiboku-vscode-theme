@@ -194,9 +194,9 @@ module.exports = function getColor({ name, colors }) {
       'gitDecoration.modifiedResourceForeground': colors.modified,
       'gitDecoration.deletedResourceForeground': colors.deleted,
       'gitDecoration.untrackedResourceForeground': colors.untracked,
-      'gitDecoration.ignoredResourceForeground': colors.light3,
+      'gitDecoration.ignoredResourceForeground': colors.light2,
       'gitDecoration.conflictingResourceForeground': colors.conflict,
-      'gitDecoration.submoduleResourceForeground': colors.light3,
+      'gitDecoration.submoduleResourceForeground': colors.light2,
 
       'debugToolBar.background': colors.dark1,
       'debugToolBar.border': colors.dark1,
