@@ -11,6 +11,15 @@ const palette = {
   black: '#21252B', // hsl(216, 13%, 15%)
   foreground: '#8193B1', // hsl(218, 24%, 60%)
 
+  // "Bright" versions, used for e.g. in terminal
+  blueBright: '#1085FF', // hsl(211, 100%, 53%)
+  magentaBright: '#8B00FF', // hsl(273, 100%, 50%)
+  greenBright: '#69c52e', // hsl(97, 62%, 48%)
+  cyanBright: '#08E8DE', // hsl(177, 93%, 47%)
+  redBright: '#ea4a5a', // hsl(354, 79%, 60%)
+  whiteBright: '#C6CCD7', // hsl(219, 18%, 81%)
+  yellowBright: '#E9D16C', // hsl(48, 74%, 67%)
+
   light1: '#D8DEE9', // hsl(218, 28%, 88%)
   light2: '#959BA5', // hsl(218, 8%, 62%)
 
@@ -67,11 +76,12 @@ module.exports = {
   ansiRed: palette.red,
   ansiWhite: palette.light1,
   ansiYellow: palette.yellow,
-  ansiBrightBlue: '#1085FF',
-  ansiBrightCyan: '#08E8DE',
-  ansiBrightGreen: '#69c52e',
-  ansiBrightMagenta: '#8B00FF',
-  ansiBrightRed: '#D74E42',
-  ansiBrightWhite: '#C6CCD7',
-  ansiBrightYellow: '#E9D16C',
+  ansiBrightBlack: palette.dark4,
+  ansiBrightBlue: palette.blueBright,
+  ansiBrightCyan: palette.cyanBright,
+  ansiBrightGreen: palette.greenBright,
+  ansiBrightMagenta: palette.magentaBright,
+  ansiBrightRed: palette.redBright,
+  ansiBrightWhite: palette.whiteBright,
+  ansiBrightYellow: palette.yellowBright,
 };
