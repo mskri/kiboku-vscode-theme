@@ -373,7 +373,7 @@ module.exports = function getColor({ name, colors }) {
       },
       {
         name: 'Numbers',
-        scope: 'constant.numeric.decimal',
+        scope: 'constant.numeric',
         settings: {
           foreground: colors.constantKeywords,
         },
