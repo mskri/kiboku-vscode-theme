@@ -6,7 +6,6 @@ const palette = {
   blue: '#69A4FC',
   purple: '#BEA1F7',
   purple3: '#9CB5FF',
-  purple4: '#676E95',
   pink: '#ff9ce6',
   green: '#AEE8A3',
   red: '#FF8E9A',
@@ -30,7 +29,7 @@ const palette = {
 module.exports = {
   ...palette,
 
-  comments: palette.purple4, // needs to be made more easily differentiable from white2
+  comments: palette.dark4,
   namespace: palette.purple,
   types: palette.pink,
   readonlyVariables: palette.light1,
