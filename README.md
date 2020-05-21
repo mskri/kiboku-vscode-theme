@@ -17,6 +17,23 @@ Enable semantic token colors by adding following to your `settings.json`
 },
 ```
 
+### Syntax colors
+
+|                                Hex                                 | HSL                   | Name   |
+| :----------------------------------------------------------------: | :-------------------- | ------ |
+| ![#69A4FC](https://via.placeholder.com/10/69A4FC?text=+) `#69A4FC` | `hsl(216, 96%, 70%)`  | Blue   |
+| ![#BEA1F7](https://via.placeholder.com/10/BEA1F7?text=+) `#BEA1F7` | `hsl(260, 84%, 80%)`  | Purple |
+| ![#9CB5FF](https://via.placeholder.com/10/9CB5FF?text=+) `#9CB5FF` | `hsl(225, 100%, 81%)` | Violet |
+| ![#ff9ce6](https://via.placeholder.com/10/FF9CE6?text=+) `#FF9CE6` | `hsl(315, 100%, 81%)` | Pink   |
+| ![#AEE8A3](https://via.placeholder.com/10/AEE8A3?text=+) `#AEE8A3` | `hsl(110, 60%, 77%)`  | Green  |
+| ![#FF8E9A](https://via.placeholder.com/10/FF8E9A?text=+) `#FF8E9A` | `hsl(354, 100%, 78%)` | Red    |
+| ![#FF9A7B](https://via.placeholder.com/10/FF9A7B?text=+) `#FF9A7B` | `hsl(14, 100%, 74%)`  | Orange |
+| ![#FFE69C](https://via.placeholder.com/10/FFE69C?text=+) `#FFE69C` | `hsl(45, 100%, 81%)`  | Yellow |
+| ![#8CF6FF](https://via.placeholder.com/10/8CF6FF?text=+) `#8CF6FF` | `hsl(185, 100%, 78%)` | Cyan   |
+| ![#D8DEE9](https://via.placeholder.com/10/D8DEE9?text=+) `#D8DEE9` | `hsl(218, 28%, 88%)`  | White  |
+| ![#959BA5](https://via.placeholder.com/10/959BA5?text=+) `#959BA5` | `hsl(218, 8%, 62%)`   | Gray   |
+| ![#8193B1](https://via.placeholder.com/10/8193B1?text=+) `#8193B1` | `hsl(218, 24%, 60%)`  | Gray2  |
+
 ## Contribute
 
 1. Clone repository
