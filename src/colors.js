@@ -3,26 +3,26 @@
 // #E5CD84
 
 const palette = {
-  blue: '#69A4FC',
-  purple: '#BEA1F7',
-  purple3: '#9CB5FF',
-  pink: '#ff9ce6',
-  green: '#AEE8A3',
-  red: '#FF8E9A',
-  orange: '#ff9a7b',
-  yellow: '#FFE69C',
-  cyan: '#8CF6FF',
-  black: '#21252B',
-  foreground: '#8193B1',
+  blue: '#69A4FC', // hsl(216, 96%, 70%)
+  purple: '#BEA1F7', // hsl(260, 84%, 80%)
+  purple3: '#9CB5FF', // hsl(225, 100%, 81%)
+  pink: '#ff9ce6', // hsl(315, 100%, 81%)
+  green: '#AEE8A3', // hsl(110, 60%, 77%)
+  red: '#FF8E9A', // hsl(354, 100%, 78%)
+  orange: '#ff9a7b', // hsl(14, 100%, 74%)
+  yellow: '#FFE69C', // hsl(45, 100%, 81%)
+  cyan: '#8CF6FF', // hsl(185, 100%, 78%)
+  black: '#21252B', // hsl(216, 13%, 15%)
+  foreground: '#8193B1', // hsl(218, 24%, 60%)
 
-  light1: '#D8DEE9',
-  light2: '#959BA5',
+  light1: '#D8DEE9', // hsl(218, 28%, 88%)
+  light2: '#959BA5', // hsl(218, 8%, 62%)
 
-  dark1: '#1F242D',
-  dark2: '#262C36',
-  dark3: '#3F495A',
-  dark4: '#58667E',
-  dark5: '#C8DCFF',
+  dark1: '#1F242D', // hsl(218, 18%, 15%)
+  dark2: '#262C36', // hsl(218, 18%, 18%)
+  dark3: '#3F495A', // hsl(218, 18%, 30%)
+  dark4: '#58667E', // hsl(218, 18%, 42%)
+  dark5: '#C8DCFF', // hsl(218, 100%, 88%)
 };
 
 module.exports = {
