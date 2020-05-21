@@ -57,8 +57,8 @@ module.exports = {
   base: palette.yellow,
   base2: palette.blue,
 
-  error: '#ea4a5a',
-  warning: palette.yellow,
+  error: palette.redBright,
+  warning: palette.yellowBright,
 
   // Git decoration, gutter
   modified: palette.purple,
