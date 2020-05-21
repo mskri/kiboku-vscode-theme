@@ -1,3 +1,13 @@
+## 0.3.0
+
+- Fix variable coloring
+- Change editor lightbulb color to yellow
+- Add first demos files
+- Fix CSS ids not being colored like classes were
+- Adjust error and warming colors
+- Adjust colors a bit, mostly the "bright" versions
+- Fix numeric rule to include non floating integers
+
 ## 0.2.0
 
 - Color tags, e.g. html div, same as components
