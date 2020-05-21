@@ -1,0 +1,14 @@
+query($articleId: String!) {
+	articles(id: { eq: $articleId }) {
+		name
+		author
+		content {
+			block
+			data
+		}
+		links {
+			href
+			alt
+		}
+	}
+}
