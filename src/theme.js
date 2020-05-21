@@ -211,17 +211,13 @@ module.exports = function getColor({ name, colors }) {
       'welcomePage.buttonHoverBackground': '#444d56',
     },
     semanticTokenColors: {
-      // "variable": "#ffff00",
-      // "variable.declaration.readonly": "#69c52e",
-      // "variable.declaration.readonly.local": "#69c52e",
-
       // using const variables
       // fallback: variable.other.constant
       'variable.readonly': colors.readonlyVariables,
 
       // using non-const variable names - e.g. console
       // fallback: variable.other.readwrite , entity.name.variable
-      variable: colors.cyan, //colors.light1,
+      variable: colors.variables,
 
       // let and var variable declaration
       'variable.declaration': colors.variables,
