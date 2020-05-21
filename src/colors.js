@@ -14,7 +14,6 @@ const palette = {
   yellow: '#FFE69C',
   yellowDark: '#D6C020',
   cyan: '#8CF6FF',
-  white: '#D8DEE9',
   black: '#21252B',
   foreground: '#8193B1',
 
@@ -73,7 +72,7 @@ module.exports = {
   ansiGreen: palette.green,
   ansiMagenta: palette.purple,
   ansiRed: palette.red,
-  ansiWhite: palette.white,
+  ansiWhite: palette.light1,
   ansiYellow: palette.yellow,
   ansiBrightBlack: '#3d475c',
   ansiBrightBlue: '#1085FF',
