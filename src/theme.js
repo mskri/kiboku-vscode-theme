@@ -619,6 +619,14 @@ module.exports = function getColor({ name, colors }) {
           foreground: colors.punctuation,
         },
       },
+      {
+        name: 'TOML: table, array',
+        scope:
+          'entity.other.attribute-name.table.toml, entity.other.attribute-name.table.array.toml',
+        settings: {
+          foreground: colors.light1,
+        },
+      },
     ],
   };
 };
