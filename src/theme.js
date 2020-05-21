@@ -152,6 +152,9 @@ module.exports = function getColor({ name, colors }) {
       'editorWidget.border': colors.dark3,
       'editorWidget.resizeBorder': colors.dark3,
 
+      'editorLightBulb.foreground': colors.base,
+      'editorLightBulbAutoFix.foreground': colors.base,
+
       'diffEditor.insertedTextBorder': colors.added,
       'diffEditor.removedTextBorder': colors.deleted,
 
