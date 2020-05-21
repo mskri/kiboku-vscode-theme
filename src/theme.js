@@ -218,7 +218,7 @@ module.exports = function getColor({ name, colors }) {
 
       // using non-const variable names - e.g. console
       // fallback: variable.other.readwrite , entity.name.variable
-      variable: colors.cyan, //colors.white,
+      variable: colors.cyan, //colors.light1,
 
       // let and var variable declaration
       'variable.declaration': colors.variables,
@@ -281,7 +281,7 @@ module.exports = function getColor({ name, colors }) {
           'Imported alias name, variables defined outside of scope where they are used in, i.e. imports or top leve',
         scope: 'variable.other',
         settings: {
-          foreground: colors.white,
+          foreground: colors.light1,
         },
       },
       {
@@ -339,7 +339,7 @@ module.exports = function getColor({ name, colors }) {
         name: 'Graphql variables',
         scope: 'variable.graphql, variable.fragment.graphql',
         settings: {
-          foreground: colors.white,
+          foreground: colors.light1,
         },
       },
       {
@@ -462,7 +462,7 @@ module.exports = function getColor({ name, colors }) {
         scope:
           'entity.other.attribute-name.css, entity.name.tag.css, entity.other.attribute-name.class.css',
         settings: {
-          foreground: colors.white,
+          foreground: colors.light1,
         },
       },
       {
@@ -490,7 +490,7 @@ module.exports = function getColor({ name, colors }) {
         name: 'Markdown paragraph text',
         scope: 'meta.paragraph.markdown',
         settings: {
-          foreground: colors.white,
+          foreground: colors.light1,
         },
       },
       {
@@ -555,7 +555,7 @@ module.exports = function getColor({ name, colors }) {
         scope:
           'entity.name.tag.structure.any.html, entity.name.tag.block.any.html, entity.name.tag.inline.any.html',
         settings: {
-          foreground: colors.white,
+          foreground: colors.light1,
         },
       },
       {
@@ -570,7 +570,7 @@ module.exports = function getColor({ name, colors }) {
         scope:
           'punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html',
         settings: {
-          foreground: colors.white,
+          foreground: colors.light1,
         },
       },
       {
