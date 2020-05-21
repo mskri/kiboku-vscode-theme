@@ -1,0 +1,50 @@
+/**
+ * CSS demo file
+ */
+
+:root {
+  --background: #ffffff;
+}
+
+@font-face {
+  font-family: 'Font Name';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Font Name Regular'), local('font-name'),
+    url('../path/to/font-name.woff2') format('woff2'),
+    url('../path/to/font-name.woff') format('woff');
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+.css-class {
+  display: grid;
+  width: 100%;
+  color: #bada55;
+}
+
+#css-id {
+  display: inline;
+  padding: 5rem;
+  background-color: var(--background);
+  background-image: url('/static/grid.svg');
+}
+
+button::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0px;
+}
