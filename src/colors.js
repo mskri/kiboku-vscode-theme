@@ -2,7 +2,7 @@ const palette = {
   blue: '#69A4FC', // hsl(216, 96%, 70%)
   purple: '#BEA1F7', // hsl(260, 84%, 80%)
   violet: '#9CB5FF', // hsl(225, 100%, 81%)
-  pink: '#ff9ce6', // hsl(315, 100%, 81%)
+  pink: '#FF9CE6', // hsl(315, 100%, 81%)
   green: '#AEE8A3', // hsl(110, 60%, 77%)
   red: '#FF8E9A', // hsl(354, 100%, 78%)
   orange: '#FF9A7B', // hsl(14, 100%, 74%)
