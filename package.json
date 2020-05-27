@@ -1,8 +1,8 @@
 {
   "name": "kiboku-vscode-theme",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "displayName": "Kiboku Theme",
-  "description": "Kiboku theme for vscode",
+  "description": "Kiboku theme for VS Code",
   "license": "MIT",
   "publisher": "mskri",
   "scripts": {

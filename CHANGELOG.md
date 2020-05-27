@@ -1,3 +1,7 @@
+## 0.4.0
+
+- Change default function members, e.g. forEach and map, from cyan to violet
+
 ## 0.3.0
 
 - Fix variable coloring
