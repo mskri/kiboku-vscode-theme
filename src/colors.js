@@ -47,7 +47,7 @@ module.exports = {
   constantKeywords: palette.orange, // e.g. true, numberics or null
   keys: palette.white,
   functionMembers: palette.blue,
-  defaultFunctionMembers: palette.cyan,
+  defaultFunctionMembers: palette.violet,
 
   blue8: `${palette.blue}14`, // 8% opacity
   blue15: `${palette.blue}25`, // 15% opacity
