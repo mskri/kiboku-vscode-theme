@@ -41,4 +41,4 @@ Enable semantic token colors by adding following to your `settings.json`
 
 ### Available also for these applications
 
-- iTerm 2: [kiboku-iterm](https://github.com/mskri/kiboku-iterm)
+- iTerm 2: [kiboku-iterm](https://github.com/mskri/kiboku-iterm-theme)
