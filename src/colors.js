@@ -15,7 +15,7 @@ const palette = {
 
   // "Bright" versions, used for e.g. in terminal
   blueBright: '#3785FB', // hsl(216, 96%, 60%)
-  magentaBright: '#9d72f3', // hsl(260, 84%, 70%)
+  magentaBright: '#9D72F3', // hsl(260, 84%, 70%)
   greenBright: '#89DD78', // hsl(110, 60%, 67%)
   cyanBright: '#5CF1FF', // hsl(185, 100%, 68%)
   redBright: '#FF5C6C', // hsl(354, 100%, 68%)
