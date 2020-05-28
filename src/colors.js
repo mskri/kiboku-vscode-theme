@@ -9,7 +9,7 @@ const palette = {
   yellow: '#FFE69C', // hsl(45, 100%, 81%)
   cyan: '#8CF6FF', // hsl(185, 100%, 78%)
 
-  white: '#D8DEE9', // hsl(218, 28%, 88%)
+  white: '#F2F4F8', // hsl(218, 28%, 96%)
   gray: '#959BA5', // hsl(218, 8%, 62%)
   gray2: '#8193B1', // hsl(218, 24%, 60%)
 
