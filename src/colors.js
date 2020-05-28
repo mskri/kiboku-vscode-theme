@@ -49,11 +49,14 @@ module.exports = {
   functionMembers: palette.blue,
   defaultFunctionMembers: palette.violet,
 
-  blue8: `${palette.blue}14`, // 8% opacity
+  // TODO: switch to using base color? (make base = blue?)
+  blue10: `${palette.blue}1A`, // 10% opacity
   blue15: `${palette.blue}25`, // 15% opacity
-  blue30: `${palette.blue}40`, // 25% opacity
+  blue25: `${palette.blue}40`, // 25% opacity
+  blue35: `${palette.blue}59`, // 35% opacity
   yellow10: `${palette.yellow}1A`, // 10% opacity
 
+  // TODO: think which one should be the base and other one variant?
   base: palette.yellow,
   base2: palette.blue,
 

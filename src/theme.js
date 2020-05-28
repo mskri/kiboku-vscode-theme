@@ -67,11 +67,11 @@ module.exports = function getColor({ name, colors }) {
       'list.hoverForeground': colors.white,
       'list.inactiveSelectionForeground': colors.gray,
       'list.activeSelectionForeground': colors.white,
-      'list.hoverBackground': colors.blue30,
+      'list.hoverBackground': colors.blue25,
       'list.inactiveSelectionBackground': colors.blue15,
       'list.activeSelectionBackground': colors.blue15,
       'list.inactiveFocusBackground': '#1d2d3e',
-      'list.focusBackground': colors.blue30,
+      'list.focusBackground': colors.blue25,
       'list.focusForeground': colors.white,
 
       'tree.indentGuidesStroke': colors.dark4,
@@ -110,7 +110,7 @@ module.exports = function getColor({ name, colors }) {
       'tab.inactiveForeground': colors.gray,
       'tab.inactiveBackground': colors.dark2,
       'tab.activeBackground': colors.blue15,
-      'tab.hoverBackground': colors.blue30,
+      'tab.hoverBackground': colors.blue25,
       'tab.border': colors.dark2,
 
       // Breadcrumbs
@@ -123,10 +123,10 @@ module.exports = function getColor({ name, colors }) {
       'editor.foreground': colors.foreground,
       'editor.background': colors.dark2,
       'editor.foldBackground': colors.yellow10,
-      'editor.lineHighlightBackground': colors.blue8,
+      'editor.lineHighlightBackground': colors.blue10,
       'editor.inactiveSelectionBackground': colors.blue15,
       'editor.selectionBackground': colors.blue15,
-      'editor.wordHighlightBackground': `${colors.base2}33`,
+      'editor.wordHighlightBackground': colors.blue35,
 
       'editor.findMatchBackground': colors.dark4,
       'editor.findMatchHighlightBackground': `${colors.dark3}D9`, // 85% opacity
