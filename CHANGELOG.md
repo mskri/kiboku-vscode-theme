@@ -1,3 +1,9 @@
+## 0.5.0
+
+- Make word match highlight more prominent by changing it to yellow
+- Make the white color more brighter
+- Slightly change the transparent blue colors
+
 ## 0.4.0
 
 - Change default function members, e.g. forEach and map, from cyan to violet
