@@ -4,13 +4,13 @@ module.exports = function getColor({ name, colors }) {
     name: name,
     type: 'dark',
     colors: {
-      focusBorder: `${colors.base2}A6`, // 65% opacity,
+      focusBorder: colors.base2_65,
       foreground: colors.gray,
       descriptionForeground: colors.gray,
       errorForeground: colors.error,
 
       'icon.foreground': colors.white,
-      'widget.shadow': '#00000066', // 40% opacity
+      'widget.shadow': colors.black40,
 
       'button.background': colors.dark3,
       'button.foreground': colors.white,
@@ -158,10 +158,10 @@ module.exports = function getColor({ name, colors }) {
       'diffEditor.insertedTextBorder': colors.added,
       'diffEditor.removedTextBorder': colors.deleted,
 
-      'scrollbar.shadow': '#00000066', // 40% opacity
-      'scrollbarSlider.background': `${colors.dark4}40`, // 25% opacity
-      'scrollbarSlider.hoverBackground': `${colors.dark4}66`, // 40% opacity
-      'scrollbarSlider.activeBackground': `${colors.dark4}8C`, // 55% opacity
+      'scrollbar.shadow': colors.black40,
+      'scrollbarSlider.background': colors.dark4_25,
+      'scrollbarSlider.hoverBackground': colors.dark4_40,
+      'scrollbarSlider.activeBackground': colors.dark4_55,
 
       'editorOverviewRuler.border': colors.dark1,
 
