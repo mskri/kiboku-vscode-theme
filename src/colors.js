@@ -55,8 +55,11 @@ module.exports = {
   blue25: `${palette.blue}40`, // 25% opacity
   blue35: `${palette.blue}59`, // 35% opacity
   yellow10: `${palette.yellow}1A`, // 10% opacity
+  yellow40: `${palette.yellow}66`, // 40% opacity
+  yellow50: `${palette.yellow}80`, // 50% opacity
+  yellow70: `${palette.yellow}B3`, // 70% opacity
+
   dark4_25: `${palette.dark4}40`, // 25% opacity
-  dark4_40: `${palette.dark4}66`, // 40% opacity
   dark4_55: `${palette.dark4}8C`, // 55% opacity
 
   // TODO: think which one should be the base and other one variant?
