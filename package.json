@@ -9,7 +9,8 @@
     "start": "npm run dev",
     "dev": "nodemon src/buildTheme.js",
     "build": "node src/buildTheme.js",
-    "prettier": "prettier --ignore-path .gitignore --write './**/*.{js,json,css}'"
+    "prettier": "prettier --ignore-path .gitignore --write './**/*.{js,json,css}'",
+    "publish": "vsce publish -p"
   },
   "author": {
     "name": "Sakari Mursu",
@@ -48,7 +49,8 @@
     "husky": "^4.2.5",
     "nodemon": "^2.0.3",
     "prettier": "^2.0.5",
-    "pretty-quick": "^2.0.1"
+    "pretty-quick": "^2.0.1",
+    "vsce": "^1.77.0"
   },
   "nodemonConfig": {
     "ignore": [
