@@ -1,3 +1,8 @@
+## 0.6.0
+
+- Add type coloring to misiing graphql types (scalar and enum)
+- Make custom grapqhl types use different color from regular types to distinguis them more easily from the built-in types
+
 ## 0.5.0
 
 - Make word match highlight more prominent by changing it to yellow

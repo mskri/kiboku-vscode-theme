@@ -211,7 +211,7 @@
     },
     {
       "name": "Types",
-      "scope": "entity.name.type, support.type.primitive, support.type.builtin, \tpunctuation.definition.typeparameters.begin, \tpunctuation.definition.typeparameters.end, keyword.operator.nulltype.graphql, support.type.graphql, variable.fragment.graphql",
+      "scope": "entity.name.type, support.type.primitive, support.type.builtin, \tpunctuation.definition.typeparameters.begin, \tpunctuation.definition.typeparameters.end",
       "settings": { "foreground": "#FF9CE6" }
     },
     {
@@ -221,8 +221,13 @@
     },
     {
       "name": "Graphql types",
-      "scope": "keyword.operator.nulltype.graphql, support.type.graphql",
+      "scope": "variable.fragment.graphql, keyword.operator.nulltype.graphql, support.type.enum.graphql, entity.scalar.graphql",
       "settings": { "foreground": "#FF9CE6" }
+    },
+    {
+      "name": "Graphql custom types and function",
+      "scope": "support.type.graphql, entity.name.function.graphql",
+      "settings": { "foreground": "#9CB5FF" }
     },
     {
       "name": "Graphql variables",
