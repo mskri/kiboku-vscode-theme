@@ -1,4 +1,4 @@
-query($articleId: String!) {
+query GetArticles($articleId: String!) {
 	articles(id: { eq: $articleId }) {
 		name
 		author

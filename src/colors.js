@@ -36,6 +36,7 @@ module.exports = {
   comments: palette.dark4,
   namespace: palette.purple,
   types: palette.pink,
+  customTypes: palette.violet,
   readonlyVariables: palette.white,
   variables: palette.yellow,
   parameters: palette.yellow,

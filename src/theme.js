@@ -330,9 +330,16 @@ module.exports = function getColor({ name, colors }) {
       {
         name: 'Graphql types',
         scope:
-          'variable.fragment.graphql, keyword.operator.nulltype.graphql, support.type.graphql, support.type.enum.graphql, entity.scalar.graphql',
+          'variable.fragment.graphql, keyword.operator.nulltype.graphql, support.type.enum.graphql, entity.scalar.graphql',
         settings: {
           foreground: colors.types,
+        },
+      },
+      {
+        name: 'Graphql custom types and function',
+        scope: 'support.type.graphql, entity.name.function.graphql',
+        settings: {
+          foreground: colors.customTypes,
         },
       },
       {
