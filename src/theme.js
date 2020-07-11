@@ -315,7 +315,7 @@ module.exports = function getColor({ name, colors }) {
       {
         name: 'Types',
         scope:
-          'entity.name.type, support.type.primitive, support.type.builtin, 	punctuation.definition.typeparameters.begin, 	punctuation.definition.typeparameters.end, keyword.operator.nulltype.graphql, support.type.graphql, variable.fragment.graphql',
+          'entity.name.type, support.type.primitive, support.type.builtin, 	punctuation.definition.typeparameters.begin, 	punctuation.definition.typeparameters.end',
         settings: {
           foreground: colors.types,
         },
@@ -329,7 +329,8 @@ module.exports = function getColor({ name, colors }) {
       },
       {
         name: 'Graphql types',
-        scope: 'keyword.operator.nulltype.graphql, support.type.graphql',
+        scope:
+          'variable.fragment.graphql, keyword.operator.nulltype.graphql, support.type.graphql, support.type.enum.graphql, entity.scalar.graphql',
         settings: {
           foreground: colors.types,
         },
