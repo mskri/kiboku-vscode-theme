@@ -1,4 +1,4 @@
-module.exports = function getColor({ name, colors }) {
+module.exports = function createTheme({ name, colors }) {
   return {
     semanticHighlighting: true,
     name: name,

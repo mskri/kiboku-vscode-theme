@@ -1,6 +1,6 @@
 const { writeFile } = require('fs');
 const { promisify } = require('util');
-const getTheme = require('./theme.js');
+const createTheme = require('./theme.js');
 const colors = require('./colors.js');
 
 const themeName = 'kiboku';
@@ -8,7 +8,7 @@ const promisifiedWriteFile = promisify(writeFile);
 
 const buildTheme = async () => {
   try {
-    const themeWithColors = getTheme({
+    const themeWithColors = createTheme({
       name: themeName,
       colors: Object.entries(colors).reduce(
         (colorScheme, [colorName, colorValue]) => ({
