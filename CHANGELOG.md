@@ -1,3 +1,7 @@
+## 0.7.0
+
+- Begin updating theme for v2
+
 ## 0.6.0
 
 - Add type coloring to misiing graphql types (scalar and enum)
