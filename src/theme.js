@@ -120,7 +120,7 @@ module.exports = function createTheme({ name, colors }) {
       'breadcrumb.activeSelectionForeground': colors.white,
       'breadcrumbPicker.background': colors.dark2,
 
-      'editor.foreground': colors.foreground,
+      'editor.foreground': colors.syntax.fg,
       'editor.background': colors.dark2,
       'editor.foldBackground': colors.yellow10,
       'editor.lineHighlightBackground': colors.blue10,
@@ -213,120 +213,190 @@ module.exports = function createTheme({ name, colors }) {
     semanticTokenColors: {
       // using const variables
       // fallback: variable.other.constant
-      'variable.readonly': colors.readonlyVariables,
+      // 'variable.readonly': colors.variables,
 
       // using non-const variable names - e.g. console
       // fallback: variable.other.readwrite , entity.name.variable
-      variable: colors.variables,
+      variable: colors.syntax.variable,
 
-      // let and var variable declaration
-      'variable.declaration': colors.variables,
+      parameter: colors.syntax.parameter,
+      property: colors.syntax.property,
+      class: colors.syntax.class,
+      namespace: colors.syntax.namespace,
 
-      // const variable declaration
-      'variable.declaration.readonly': colors.readonlyVariables,
-
-      // e.g. 'console' in console.log or 'Math' in Math.floor()
+      // e.g. 'console' in console.log or 'Math' in `Math.floor()`
       // fallback: support.constant
-      // 'variable.readonly.defaultLibrary': colors.cyan,
-      'variable.defaultLibrary': colors.foreground,
+      'variable.defaultLibrary': colors.syntax.keyword2,
 
-      // fallback: variable.parameter
-      parameter: colors.parameters,
+      // Default library functions, e.g. `setTimeout`
+      'function.defaultLibrary': colors.syntax.keyword,
 
-      // fallback: entity.name.type
-      type: colors.types,
+      // E.g. `log()` in `console.log` or `floor()` in `Math.floor()`
+      'method.defaultLibrary': colors.syntax.function,
 
-      // 'log' in console.log
-      // fallback: entity.name.function.member
-      member: colors.functionMembers,
-      'member.defaultLibrary': colors.defaultFunctionMembers,
+      method: colors.syntax.function,
+      'method.declaration': colors.syntax.function,
+      function: colors.syntax.function,
+      // 'function.declaration': colors.syntax.function,
 
-      // Object properties
-      // fallback: variable.other.property
-      property: colors.property,
-      'property.declaration': colors.propertyDeclaration,
-      'property.defaultLibrary': colors.property,
+      // // fallback: variable.parameter
+      // parameter: colors.parameters,
 
-      // User defined classes
-      // fallback: entity.name.type.class
-      class: colors.variables,
+      // // fallback: entity.name.type
+      type: colors.syntax.type,
 
-      // Math, RegExp
-      // fallback: support.class
-      'class.defaultLibrary': colors.cyan,
+      // // fallback: entity.name.function.member
+      // member: colors.functionMembers,
+      // 'member.defaultLibrary': colors.defaultFunctionMembers,
 
-      // defining function, e.g. const MakeRainbow = () => {}
-      // "function": "#ffff00"
-      'function.declaration.readonly': colors.functions,
+      // // Object properties
+      // // fallback: variable.other.property
+      // property: colors.property,
+      // 'property.declaration': colors.propertyDeclaration,
+      // 'property.defaultLibrary': colors.property,
 
-      // e.g. jest
-      // fallback: entity.name.namespace
-      namespace: colors.namespace,
+      // // User defined classes
+      // // fallback: entity.name.type.class
+      // class: colors.variables,
 
-      // e.g. `Promise` in `Promise<void>`
-      interface: colors.types,
-      'interface.defaultLibrary': colors.types,
+      // // Math, RegExp
+      // // fallback: support.class
+      // 'class.defaultLibrary': colors.cyan,
+
+      // // defining function, e.g. const MakeRainbow = () => {}
+      // // "function": "#ffff00"
+      // 'function.declaration.readonly': colors.functions,
+
+      // // e.g. jest
+      // // fallback: entity.name.namespace
+      // namespace: colors.namespace,
+
+      // // e.g. `Promise` in `Promise<void>`
+      // interface: colors.types,
+      // 'interface.defaultLibrary': colors.types,
     },
     tokenColors: [
       {
         name: 'Imported alias name',
-        scope: 'variable.other.readwrite.alias',
+        scope: 'variable.other.readwrite',
         settings: {
-          foreground: colors.variables,
+          foreground: colors.syntax.import,
         },
       },
       {
-        name:
-          'Imported alias name, variables defined outside of scope where they are used in, i.e. imports or top leve',
-        scope: 'variable.other',
+        name: 'Strings',
+        scope: 'string, string.quoted.double',
         settings: {
-          foreground: colors.white,
+          foreground: colors.syntax.string,
         },
       },
       {
-        name: 'Function parameters',
-        scope: 'variable.parameter',
+        name: 'Booleans',
+        scope: 'constant.language.boolean',
         settings: {
-          foreground: colors.parameters,
+          foreground: colors.syntax.boolean,
+        },
+      },
+      {
+        name: 'Constants (nil in go)',
+        scope: 'constant.language',
+        settings: {
+          foreground: colors.syntax.boolean,
+        },
+      },
+      {
+        name: 'Numbers',
+        scope: 'constant.numeric',
+        settings: {
+          foreground: colors.syntax.number,
+        },
+      },
+      {
+        name: 'Nulls',
+        scope: 'constant.language.null',
+        settings: {
+          foreground: colors.syntax.null,
+        },
+      },
+      {
+        name: 'Operators (=, !=, ==)',
+        scope: 'keyword.operator',
+        settings: {
+          foreground: colors.syntax.other,
+        },
+      },
+      {
+        name: 'Keywords (export, default, return, function, struct, type, import, package)',
+        scope: 'keyword, storage.type.function',
+        settings: {
+          foreground: colors.syntax.keyword,
+        },
+      },
+      {
+        name: 'Go: Keywords ',
+        scope: 'keyword.operator.address',
+        settings: {
+          foreground: colors.syntax.keyword2,
+        },
+      },
+      {
+        name: 'Variables',
+        scope: 'variable.other.assignment',
+        settings: {
+          foreground: colors.syntax.variable,
+        },
+      },
+      {
+        name: 'Variable storage type (let, const, var)',
+        scope: 'storage.type',
+        settings: {
+          foreground: colors.syntax.keyword,
+        },
+      },
+      {
+        name: 'Variable: this',
+        scope: 'variable.language.this',
+        settings: {
+          foreground: colors.syntax.keyword2,
+        },
+      },
+      {
+        name: 'Functions (calling a function)',
+        scope: 'entity.name.function, support.function',
+        settings: {
+          foreground: colors.syntax.function,
         },
       },
       {
         name: 'Components, tags',
         scope: 'support.class.component, entity.name.tag',
         settings: {
-          foreground: colors.components,
+          foreground: colors.syntax.components,
         },
       },
-      {
-        name: 'Strings',
-        scope: 'string',
-        settings: {
-          foreground: colors.green,
-        },
-      },
-      {
-        name: 'Template literal {}',
-        scope:
-          'punctuation.definition.template-expression.begin, punctuation.definition.template-expression.end',
-        settings: {
-          foreground: colors.foreground,
-        },
-      },
+      // {
+      //   name: 'Template literal {}',
+      //   scope:
+      //     'punctuation.definition.template-expression.begin, punctuation.definition.template-expression.end',
+      //   settings: {
+      //     foreground: colors.foreground,
+      //   },
+      // },
       {
         name: 'Types',
         scope:
-          'entity.name.type, support.type.primitive, support.type.builtin, 	punctuation.definition.typeparameters.begin, 	punctuation.definition.typeparameters.end',
+          'entity.name.type, support.type.primitive, support.type.builtin, 	punctuation.definition.typeparameters.begin, 	punctuation.definition.typeparameters.end, storage.type.error',
         settings: {
-          foreground: colors.types,
+          foreground: colors.syntax.type,
         },
       },
-      {
-        name: 'Namespace',
-        scope: 'entity.name.namespace',
-        settings: {
-          foreground: colors.namespace,
-        },
-      },
+      // {
+      //   name: 'Namespace',
+      //   scope: 'entity.name.namespace',
+      //   settings: {
+      //     foreground: colors.namespace,
+      //   },
+      // },
       {
         name: 'Graphql types',
         scope:
@@ -349,118 +419,90 @@ module.exports = function createTheme({ name, colors }) {
           foreground: colors.white,
         },
       },
-      {
-        name: 'Punctuations - , ;',
-        scope:
-          'punctuation.separator.comma, punctuation.terminator.rule, punctuation.terminator.statement',
-        settings: {
-          foreground: colors.punctuation,
-        },
-      },
-      {
-        name: 'Function calls',
-        scope: 'entity.name.function',
-        settings: {
-          foreground: colors.functions,
-        },
-      },
-      {
-        name: 'Built-lib functions',
-        scope: 'entity.name.function.member',
-        settings: {
-          foreground: colors.functionMembers,
-        },
-      },
-      {
-        name: 'Booleans',
-        scope: 'constant.language.boolean',
-        settings: {
-          foreground: colors.constantKeywords,
-        },
-      },
-      {
-        name: 'Numbers',
-        scope: 'constant.numeric',
-        settings: {
-          foreground: colors.constantKeywords,
-        },
-      },
-      {
-        name: 'Nulls',
-        scope: 'constant.language.null',
-        settings: {
-          foreground: colors.constantKeywords,
-        },
-      },
-      {
-        name: 'Variable - constant',
-        scope: 'variable.other.constant',
-        settings: {
-          foreground: colors.readonlyVariables,
-        },
-      },
-      {
-        name: 'Variables',
-        scope:
-          'variable.other.readwrite , entity.name.variable, variable.other.object',
-        settings: {
-          foreground: colors.variables,
-        },
-      },
-      {
-        name: 'console',
-        scope: 'support.class.console',
-        settings: {
-          foreground: colors.blue,
-        },
-      },
-      {
-        name: 'Support classes - Promise, Math',
-        scope: 'support.class',
-        settings: {
-          foreground: colors.foreground,
-        },
-      },
-      {
-        name: 'new',
-        scope: 'keyword.operator.new',
-        settings: {
-          foreground: colors.cyan, // TODO: better color
-        },
-      },
+      // {
+      //   name: 'Punctuations - , ;',
+      //   scope:
+      //     'punctuation.separator.comma, punctuation.terminator.rule, punctuation.terminator.statement',
+      //   settings: {
+      //     foreground: colors.punctuation,
+      //   },
+      // },
+      // {
+      //   name: 'Built-lib functions',
+      //   scope: 'entity.name.function.member',
+      //   settings: {
+      //     foreground: colors.functionMembers,
+      //   },
+      // },
+      // {
+      //   name: 'Variable - constant',
+      //   scope: 'variable.other.constant',
+      //   settings: {
+      //     foreground: colors.readonlyVariables,
+      //   },
+      // },
+      // {
+      //   name: 'Variables',
+      //   scope:
+      //     'variable.other.readwrite , entity.name.variable, variable.other.object',
+      //   settings: {
+      //     foreground: colors.variables,
+      //   },
+      // },
+      // {
+      //   name: 'console',
+      //   scope: 'support.class.console',
+      //   settings: {
+      //     foreground: colors.blue,
+      //   },
+      // },
+      // {
+      //   name: 'Support classes - Promise, Math',
+      //   scope: 'support.class',
+      //   settings: {
+      //     foreground: colors.foreground,
+      //   },
+      // },
+      // {
+      //   name: 'new',
+      //   scope: 'keyword.operator.new',
+      //   settings: {
+      //     foreground: colors.cyan, // TODO: better color
+      //   },
+      // },
       {
         name: 'Object property',
         scope: 'variable.other.property, variable.other.object.property',
         settings: {
-          foreground: colors.property,
+          foreground: colors.syntax.property,
         },
       },
-      {
-        name: 'Object literal key',
-        scope: 'meta.object-literal.key',
-        settings: {
-          foreground: colors.propertyDeclaration,
-        },
-      },
-      {
-        name: 'Custom classes',
-        scope: 'entity.name.type.class',
-        settings: {
-          foreground: colors.variables,
-        },
-      },
-      {
-        name: 'Built-in classes and constants',
-        scope: 'support.variable.object.process',
-        settings: {
-          foreground: colors.blue,
-        },
-      },
+      // {
+      //   name: 'Object literal key',
+      //   scope: 'meta.object-literal.key',
+      //   settings: {
+      //     foreground: colors.propertyDeclaration,
+      //   },
+      // },
+      // {
+      //   name: 'Custom classes',
+      //   scope: 'entity.name.type.class',
+      //   settings: {
+      //     foreground: colors.variables,
+      //   },
+      // },
+      // {
+      //   name: 'Built-in classes and constants',
+      //   scope: 'support.variable.object.process',
+      //   settings: {
+      //     foreground: colors.blue,
+      //   },
+      // },
       {
         name: 'Comments',
         scope: 'comment, punctuation.definition.comment',
         settings: {
-          foreground: colors.comments,
+          foreground: colors.syntax.comment,
           fontStyle: 'italic',
         },
       },
