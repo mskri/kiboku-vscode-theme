@@ -46,11 +46,12 @@
     }
   },
   "devDependencies": {
-    "husky": "^4.2.5",
-    "nodemon": "^2.0.3",
-    "prettier": "^2.0.5",
-    "pretty-quick": "^2.0.1",
-    "vsce": "^1.77.0"
+    "chroma-js": "^2.4.2",
+    "husky": "^4.3.8",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1",
+    "pretty-quick": "^2.0.2",
+    "vsce": "^1.103.1"
   },
   "nodemonConfig": {
     "ignore": [
