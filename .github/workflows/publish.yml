@@ -13,16 +13,22 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2.1.0
+        with:
+          version: 6.32.3
+
       - name: Setup node
-        uses: actions/setup-node@v2-beta
+        uses: actions/setup-node@v2
         with:
           node-version: '13.x'
+          cache: 'pnpm'
 
-      - name: Install node dependencies
-        run: npm ci
+      - name: Install dependencies
+        run: pnpm install
 
       - name: Publish extension
-        run: npm run publish $VSCE_TOKEN
+        run: pnpm run publish $VSCE_TOKEN
         env:
           VSCE_TOKEN: ${{ secrets.VSCE_TOKEN }}
 
