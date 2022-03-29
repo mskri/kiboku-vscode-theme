@@ -1,3 +1,7 @@
+## 0.7.1
+
+- Color `class` differently to make them more noticeable
+
 ## 0.7.0
 
 - Begin updating theme for v2
