@@ -47,7 +47,7 @@ module.exports = {
     variable: palette.white,
     parameter: palette.white,
     operator: palette.cyan,
-    class: palette.white,
+    class: palette.purple,
     property: palette.white,
     function: palette.blue,
     boolean: palette.orange,
