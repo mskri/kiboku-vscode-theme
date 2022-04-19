@@ -1,12 +1,21 @@
 import 'package:flutter/material.dart';
 
+class EntryItem {
+	final int id;
+	final String title;
+
+	const EntryItem({required this.id, required this.title});
+}
+
 class HomePage extends StatelessWidget {
   const HomePage({Key? key, required this.title}) : super(key: key);
 
 	final String title;
 
+
   @override
   Widget build(BuildContext context) {
+			final item =  EntryItem(id: 1, title: title);
       return Scaffold(
         appBar: const NavBar(),
         body: SingleChildScrollView(
