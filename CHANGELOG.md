@@ -1,3 +1,7 @@
+## 0.7.2
+
+- Use foreground color for parameter labels
+
 ## 0.7.1
 
 - Color `class` differently to make them more noticeable
