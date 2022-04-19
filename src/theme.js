@@ -220,6 +220,7 @@ module.exports = function createTheme({ name, colors }) {
       variable: colors.syntax.variable,
 
       parameter: colors.syntax.parameter,
+      'parameter.label': colors.syntax.fg,
       property: colors.syntax.property,
       class: colors.syntax.class,
       namespace: colors.syntax.namespace,
