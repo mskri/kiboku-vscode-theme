@@ -1,8 +1,8 @@
-const { writeFile } = require("fs/promises");
-const createTheme = require("./theme.js");
-const colors = require("./colors.js");
+const { writeFile } = require('fs/promises');
+const createTheme = require('./theme.js');
+const colors = require('./colors.js');
 
-const themeName = "skyhigh";
+const themeName = 'kiboku';
 
 const buildTheme = async () => {
   try {
@@ -21,9 +21,9 @@ const buildTheme = async () => {
       `./themes/${themeName}-color-theme.json`,
       JSON.stringify(themeWithColors)
     );
-    console.log("Theme built");
+    console.log('Theme built');
   } catch (error) {
-    console.error("Error building theme:", error);
+    console.error('Error building theme:', error);
   }
 };
 

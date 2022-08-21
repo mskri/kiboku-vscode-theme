@@ -1,39 +1,49 @@
-const chroma = require('chroma-js');
+const chroma = require("chroma-js");
 
 const palette = {
-  blue: '#69A4FC', // hsl(216, 96%, 70%)
-  purple: '#BEA1F7', // hsl(260, 84%, 80%)
-  violet: '#9CB5FF', // hsl(225, 100%, 81%)
-  purple2: '#83a7e0',
-  pink: '#FF9CE6', // hsl(315, 100%, 81%)
-  green: '#AEE8A3', // hsl(110, 60%, 77%)
-  green2: '#9cdbc1', // hsl(110, 60%, 77%)
-  red: '#FF8E9A', // hsl(354, 100%, 78%)
-  orange: '#FF9A7B', // hsl(14, 100%, 74%)
-  yellow: '#FFE69C', // hsl(45, 100%, 81%)
-  cyan: '#8CF6FF', // hsl(185, 100%, 78%)
+  blue: "#69a4fc", // #69a4fc
+  purple: "#bea1f7", // #bea1f7
+  // violet: "#83a7e0", // #9196ba
+  // purple2: "#83a7e0", // #83a7e0
+  pink: "#ff9ce6", // #ff9ce6
+  green: "#aee8a3", // #aee8a3
+  green2: "#9cdbc1", // #9cdbc1
+  reda: "#ff8e9a", // #ff8e9a
+  orange: "#ff9a7b", // #ff9a7b
+  yellow: "#ffe69c", // #ffe69c
+  cyan: "#8cf6ff", // #8cf6ff
 
-  white: '#F2F4F8', // hsl(218, 28%, 96%)
-  gray: '#959BA5', // hsl(218, 8%, 62%)
-  gray2: '#8193B1', // hsl(218, 24%, 60%)
-  gray3: '#8193B1', // hsl(218, 24%, 60%)
-  // #C0CAF5
+  white: "#f2f4f8",
+  white60: "#f2f4f8a3",
 
-  // "Bright" versions, used for e.g. in terminal
-  blueBright: '#3785FB', // hsl(216, 96%, 60%)
-  magentaBright: '#9D72F3', // hsl(260, 84%, 70%)
-  greenBright: '#73d783', // hsl(110, 60%, 67%)
-  cyanBright: '#5CF1FF', // hsl(185, 100%, 68%)
-  redBright: '#FF5C6C', // hsl(354, 100%, 68%)
-  whiteBright: '#F8FAFB', // hsl(218, 28%, 98%)
-  yellowBright: '#FFDA6B', // hsl(45, 100%, 71%)
+  gray: "#959BA5",
+  gray2: "#8193B1",
+  gray3: "#8193B1",
 
-  dark1: '#1D222A', // hsl(218, 18%, 14%)
-  dark2: '#1d1f26',
-  // dark2: '#262C36', // hsl(218, 18%, 18%)
-  dark3: '#3F495A', // hsl(218, 18%, 30%)
-  dark4: '#58667E', // hsl(218, 18%, 42%)
-  dark5: '#C8DCFF', // hsl(218, 100%, 88%)
+  // #f2564f
+  red: "red",
+
+  //Bright versions, used for e.g, in terminal
+  blueBright: "#2f71e8",
+  magentaBright: "#9D72F3",
+  greenBright: "#73d783",
+  cyanBright: "#5CF1FF",
+  redBright: "#FF5C6C",
+  whiteBright: "#F8FAFB",
+  yellowBright: "#FFDA6B",
+
+  // #080a0c
+  // #242734
+  // #1d1d2a vs #282a37 vs #242734
+  // #353648
+
+  black3: "#1d1f26",
+
+  dark1: "#1D222A",
+  dark2: "#1d1f26",
+  dark3: "#3F495A",
+  dark4: "#58667E",
+  dark5: "#C8DCFF",
 };
 
 module.exports = {
@@ -66,13 +76,27 @@ module.exports = {
     import: palette.yellow,
   },
 
-  // END NEW
+  accent: palette.blue, // "#5c61ec",
+  accent50: chroma("#5c61ec").alpha(0.8).hex(),
+  accentDark: "#3f3f5d",
+  borderDark: "#3f3f5d",
+  borderBright: "#7578bd",
 
-  foreground: palette.gray2,
+  accentForeground: palette.black3,
+  foreground: palette.white,
+  foreground40: chroma(palette.white).alpha(0.4).hex(),
+  foreground60: palette.white60,
+
+  background1: "#242734",
+  background2: chroma("hsl(226, 15%, 18.6%)").hex(), // "#282a37", // "#1d252b", // "#171d22", // #121316
+  background250: chroma("#282a37").alpha(0.5).hex(),
+  background3: "#1d1f26",
+  // chrome("hsl(226, 15.8%, 18.6%)").hex()"
+  // hsl(226.7, 13.4%, 13.1%)
   comments: palette.dark4,
   namespace: palette.purple,
   types: palette.pink,
-  customTypes: palette.violet,
+  customTypes: palette.purple,
   readonlyVariables: palette.white,
   variables: palette.white,
   parameters: palette.white,
@@ -84,17 +108,18 @@ module.exports = {
   constantKeywords: palette.orange, // e.g. true, numberics or null
   keys: palette.white,
   functionMembers: palette.blue,
-  defaultFunctionMembers: palette.violet,
+  defaultFunctionMembers: palette.purple,
 
   // TODO: switch to using base color? (make base = blue?)
-  blue10: `${palette.blue}1A`, // 10% opacity
-  blue15: `${palette.blue}25`, // 15% opacity
-  blue25: `${palette.blue}40`, // 25% opacity
-  blue35: `${palette.blue}59`, // 35% opacity
-  yellow10: `${palette.yellow}1A`, // 10% opacity
-  yellow40: `${palette.yellow}66`, // 40% opacity
-  yellow50: `${palette.yellow}80`, // 50% opacity
-  yellow70: `${palette.yellow}B3`, // 70% opacity
+  blue5: chroma(palette.blue).alpha(0.05).hex(),
+  blue10: chroma(palette.blue).alpha(0.1).hex(),
+  blue15: chroma(palette.blue).alpha(0.15).hex(),
+  blue25: chroma(palette.blue).alpha(0.25).hex(),
+  blue35: chroma(palette.blue).alpha(0.35).hex(),
+  yellow10: chroma(palette.yellow).alpha(0.1).hex(),
+  yellow40: chroma(palette.yellow).alpha(0.4).hex(),
+  yellow50: chroma(palette.yellow).alpha(0.5).hex(),
+  yellow70: chroma(palette.yellow).alpha(0.7).hex(),
 
   dark4_25: `${palette.dark4}40`, // 25% opacity
   dark4_55: `${palette.dark4}8C`, // 55% opacity
@@ -104,7 +129,7 @@ module.exports = {
   base2: palette.blue,
   base2_65: `${palette.blue}A6`, // 65% opacity,
 
-  black40: '#00000066', // 40% opacity
+  black40: "#00000066", // 40% opacity
 
   error: palette.redBright,
   warning: palette.yellowBright,
@@ -114,7 +139,7 @@ module.exports = {
   deleted: palette.red,
   added: palette.green,
   conflict: palette.yellow,
-  untracked: palette.violet,
+  untracked: palette.purple,
 
   // Terminal colors
   ansiBlack: palette.dark1,
