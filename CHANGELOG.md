@@ -1,3 +1,7 @@
+## 0.7.3
+
+- Update colors to bring the theme into 2.0
+
 ## 0.7.2
 
 - Use foreground color for parameter labels
