@@ -51,7 +51,7 @@
     "nodemon": "^2.0.15",
     "prettier": "^2.5.1",
     "pretty-quick": "^2.0.2",
-    "vsce": "^1.103.1"
+    "vsce": "^2.10.2"
   },
   "nodemonConfig": {
     "ignore": [
