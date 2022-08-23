@@ -1,3 +1,7 @@
+## 0.7.4
+
+- More cleaning up colors
+
 ## 0.7.3
 
 - Update colors to bring the theme into 2.0
