@@ -1,3 +1,7 @@
+## 0.7.5
+
+- Trying out more darker colors
+
 ## 0.7.4
 
 - More cleaning up colors
