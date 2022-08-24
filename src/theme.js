@@ -13,9 +13,9 @@ module.exports = function createTheme({ name, colors }) {
       'widget.shadow': colors.black40,
 
       // TODO: update
-      'button.background': colors.accentDark,
+      'button.background': colors.accent,
       'button.foreground': colors.white,
-      'button.hoverBackground': colors.accent50,
+      'button.hoverBackground': colors.accentHover,
 
       'checkbox.background': colors.black1,
       'checkbox.foreground': colors.white,
@@ -26,10 +26,10 @@ module.exports = function createTheme({ name, colors }) {
       'dropdown.foreground': colors.white,
       'dropdown.listBackground': colors.black2,
 
-      'input.background': colors.black1,
-      'input.border': colors.black1,
-      'input.foreground': colors.white,
-      'input.placeholderForeground': colors.foreground,
+      'input.background': colors.input,
+      'input.border': colors.inputBorder,
+      'input.foreground': colors.inputForeground,
+      'input.placeholderForeground': colors.foregroundInactive,
 
       'badge.foreground': colors.black1,
       'badge.background': colors.yellow,
@@ -44,26 +44,26 @@ module.exports = function createTheme({ name, colors }) {
 
       // The Activity Bar is displayed either on the far left or right of the workbench and allows fast switching between views of the Side Bar.
       // https://code.visualstudio.com/api/references/theme-color#activity-bar
-      'activityBar.dropBorder': colors.accent,
+      'activityBar.dropBorder': colors.white, // TODO: or accent?
       'activityBar.foreground': colors.foreground,
-      'activityBar.inactiveForeground': colors.foreground40,
-      'activityBar.border': colors.borderDark,
+      'activityBar.inactiveForeground': colors.foregroundInactive,
+      'activityBar.border': colors.border,
       'activityBar.background': colors.background1,
-      'activityBarBadge.foreground': colors.black2,
-      'activityBarBadge.background': colors.accent,
-      'activityBar.activeBorder': colors.accentDark,
-      'activityBar.activeBackground': colors.accentDark,
-      'activityBar.activeFocusBorder': colors.borderDark,
+      'activityBarBadge.foreground': colors.background1,
+      'activityBarBadge.background': colors.white,
+      'activityBar.activeBorder': colors.accent,
+      'activityBar.activeBackground': colors.accent,
+      'activityBar.activeFocusBorder': colors.border,
 
       // The Side Bar contains views like the Explorer and Search.
       // https://code.visualstudio.com/api/references/theme-color#side-bar
       'sideBar.background': colors.background3,
       'sideBar.foreground': colors.foreground,
-      'sideBar.border': colors.background3,
-      'sideBar.dropBackground': colors.accent50,
-      'sideBarTitle.foreground': colors.foreground60,
+      'sideBar.border': colors.border,
+      'sideBar.dropBackground': colors.accentHover,
+      'sideBarTitle.foreground': colors.foreground2,
       'sideBarSectionHeader.background': colors.background1,
-      'sideBarSectionHeader.foreground': colors.foreground60,
+      'sideBarSectionHeader.foreground': colors.foreground2,
       'sideBarSectionHeader.border': colors.background1,
 
       // The Minimap shows a minified version of the current file.
@@ -73,32 +73,31 @@ module.exports = function createTheme({ name, colors }) {
 
       // Editor Groups are the containers of editors. There can be many editor groups. A Tab is the container of an editor. Multiple Tabs can be opened in one editor group.
       // https://code.visualstudio.com/api/references/theme-color#editor-groups-tabs
-      'editorGroup.border': colors.borderBright, // TODO this doesn't look good
+      'editorGroup.border': colors.border, // TODO this doesn't look good
       'editorGroup.dropBackground': colors.background1,
-      'editorGroupHeader.noTabsBackground': colors.background3,
-      'editorGroupHeader.tabsBackground': colors.background3,
-      // "editorGroupHeader.tabsBorder": colors.background3,
-      // "editorGroupHeader.border": colors.background3,
-      'editorGroup.emptyBackground': colors.background3,
-      'editorGroup.focusedEmptyBorder': colors.borderDark,
+      'editorGroupHeader.noTabsBackground': colors.background1,
+      'editorGroupHeader.tabsBackground': colors.background1,
+      // "editorGroupHeader.tabsBorder": colors.background1,
+      // "editorGroupHeader.border": colors.background1,
+      'editorGroup.emptyBackground': colors.background1,
+      'editorGroup.focusedEmptyBorder': colors.border,
       'editorGroup.dropIntoPromptForeground': colors.foreground,
-      'editorGroup.dropIntoPromptBackground': colors.background2,
-      // "editorGroup.dropIntoPromptBorder": colors.background2
-      'tab.activeBackground': colors.blue15,
+      'editorGroup.dropIntoPromptBackground': colors.background1,
+      'editorGroup.dropIntoPromptBorder': colors.background1,
+      'tab.activeBackground': colors.backgroundHover,
       // "tab.unfocusedActiveBackground": colors.blue15, // TODO
       'tab.activeForeground': colors.foreground,
-      'tab.border': colors.background3,
+      'tab.border': colors.background1,
       'tab.activeBorder': colors.accent,
-      'tab.unfocusedActiveBorder': colors.background3,
-      'tab.lastPinnedBorder': colors.borderBright,
-      'tab.inactiveBackground': colors.background3,
-      'tab.unfocusedInactiveBackground': colors.background3,
-      'tab.inactiveForeground': colors.foreground60,
+      'tab.unfocusedActiveBorder': colors.background1,
+      'tab.lastPinnedBorder': colors.border,
+      'tab.inactiveBackground': colors.background1,
+      'tab.unfocusedInactiveBackground': colors.background1,
+      'tab.inactiveForeground': colors.foregroundInactive,
       // tab.unfocusedActiveForeground: Active tab foreground color in an inactive editor group.
       // tab.unfocusedInactiveForeground: Inactive tab foreground color in an inactive editor group.
-      // tab.hoverBackground: Tab background color when hovering
-      // tab.unfocusedHoverBackground: Tab background color in an unfocused group when hovering
-      'tab.hoverBackground': colors.accentDark,
+      // 'tab.unfocusedHoverBackground': colors.red1,
+      'tab.hoverBackground': colors.backgroundHover,
       // tab.unfocusedHoverForeground: Tab foreground color in an unfocused group when hovering
       // tab.hoverBorder: Border to highlight tabs when hovering
       // tab.unfocusedHoverBorder: Border to highlight tabs in an unfocused group when hovering
@@ -140,7 +139,7 @@ module.exports = function createTheme({ name, colors }) {
 
       // Editor colors
       // https://code.visualstudio.com/api/references/theme-color#editor-colors
-      'editor.background': colors.background2,
+      'editor.background': colors.background1,
       'editor.foreground': colors.syntax.fg,
       'editorLineNumber.foreground': colors.dark4,
       'editorLineNumber.activeForeground': colors.blue,
@@ -180,17 +179,17 @@ module.exports = function createTheme({ name, colors }) {
       'quickInput.background': colors.black2,
       'quickInput.foreground': colors.white,
 
-      'statusBar.foreground': colors.foreground,
-      'statusBar.background': colors.black2,
-      'statusBar.border': colors.black1,
-      'statusBar.noFolderBackground': colors.black2,
+      'statusBar.foreground': colors.foreground2,
+      'statusBar.background': colors.background1,
+      'statusBar.border': colors.background1,
+      'statusBar.noFolderBackground': colors.background1,
       'statusBar.debuggingBackground': colors.yellow,
-      'statusBar.debuggingForeground': colors.black1,
+      'statusBar.debuggingForeground': colors.background1,
 
       'searchEditor.textInputBorder': colors.black1,
 
       // Breadcrumbs
-      'breadcrumb.foreground': colors.foreground,
+      'breadcrumb.foreground': colors.foreground2,
       'breadcrumb.focusForeground': colors.white,
       'breadcrumb.background': colors.black2,
       'breadcrumb.activeSelectionForeground': colors.white,
@@ -206,9 +205,9 @@ module.exports = function createTheme({ name, colors }) {
 
       'editorOverviewRuler.border': colors.black1,
 
-      'panel.background': colors.black2,
-      'panel.border': colors.black1,
-      'panelTitle.activeBorder': colors.yellow,
+      'panel.background': colors.background1,
+      'panel.border': colors.border,
+      'panelTitle.activeBorder': colors.base,
       'panelTitle.activeForeground': colors.white,
       'panelTitle.inactiveForeground': colors.foreground,
 
@@ -507,7 +506,7 @@ module.exports = function createTheme({ name, colors }) {
         name: 'Markdown heading',
         scope: 'markup.heading',
         settings: {
-          foreground: colors.red,
+          foreground: colors.purple,
         },
       },
       {
@@ -520,9 +519,10 @@ module.exports = function createTheme({ name, colors }) {
       },
       {
         name: 'Markdown links',
-        scope: 'markup.underline.link.markdown',
+        scope:
+          'markup.underline.link.markdown, markup.underline.link.image.markdown',
         settings: {
-          foreground: colors.green,
+          foreground: colors.foreground2,
         },
       },
       {

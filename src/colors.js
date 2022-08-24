@@ -2,7 +2,7 @@ const chroma = require('chroma-js');
 
 const colors = {};
 const palette = {
-  blue: '#69a4fc', // #69a4fc
+  blue: chroma('#69a4fc').brighten(0.2).hex(), // #69a4fc
   purple: '#bea1f7', // #bea1f7
   magenta: '#FF00FF',
   pink: '#ff9ce6', // #ff9ce6
@@ -22,7 +22,7 @@ const palette = {
   red1: '#f2564f',
 
   //Bright versions, used for e.g, in terminal
-  blueBright: '#2f71e8',
+  blueBright: chroma('#69a4fc').darken(0.9).hex(), //'#2f71e8',
   magentaBright: '#9D72F3',
   greenBright: '#73d783',
   cyanBright: '#5CF1FF',
@@ -58,20 +58,26 @@ module.exports = {
     import: palette.yellow,
   },
 
-  accent: palette.blue,
-  accent50: chroma(palette.blue).alpha(0.8).hex(),
-  accentDark: chroma(palette.blue).darken(0.8).hex(),
-  accentDarker: chroma(palette.blue).darken(1).hex(),
-  borderDark: '#3f3f5d', // TODO: replace
-  borderBright: palette.dark5, // TODO: replace?
+  accent: '#5e6ad2', //chroma(palette.purple).darken(0.8).hex(),
+  accentHover: '#717ce1',
 
   foreground: palette.white,
-  foreground40: chroma(palette.white).alpha(0.4).hex(),
-  foreground60: chroma(palette.white).alpha(0.6).hex(),
+  foreground2: chroma('rgb(138, 143, 152)').hex(),
 
-  background1: '#242734',
-  background2: '#282c37',
-  background3: '#1d1f26',
+  // accent #5e6ad2
+  // accent hover #717ce1
+
+  border: chroma('#ffffff').alpha(0.1).hex(),
+  input: chroma('#27282b').hex(),
+  inputForeground: palette.white,
+  foregroundInactive: chroma('rgb(98, 102, 109)').hex(),
+  inputBorder: chroma('#27282b').hex(),
+
+  background1: '#1f2023', //'#242734',
+  background2: chroma('rgb(39, 40, 43)').hex(),
+  background3: '#1b1c1e',
+
+  backgroundHover: chroma('rgb(45, 47, 54)').hex(),
 
   blue10: chroma(palette.blue).alpha(0.1).hex(),
   blue15: chroma(palette.blue).alpha(0.15).hex(),
