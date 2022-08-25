@@ -4,43 +4,50 @@ module.exports = function createTheme({ name, colors }) {
     name: name,
     type: 'dark',
     colors: {
-      focusBorder: colors.dark4,
+      focusBorder: colors.border,
       foreground: colors.foreground,
       descriptionForeground: colors.foreground,
-      errorForeground: colors.redBright,
+      // disabledForeground: colors.redBright,
+      // selection.background
+      // descriptionForeground
+      errorForeground: colors.red,
+      'sash.hoverBorder': colors.yellow,
 
-      'icon.foreground': colors.white,
-      'widget.shadow': colors.black40,
+      'icon.foreground': colors.foreground2,
+      'widget.shadow': colors.background1,
 
       // TODO: update
       'button.background': colors.accent,
       'button.foreground': colors.white,
       'button.hoverBackground': colors.accentHover,
 
-      'checkbox.background': colors.black1,
-      'checkbox.foreground': colors.white,
-      'checkbox.border': colors.black1,
+      'checkbox.background': colors.backgroundPopup,
+      'checkbox.foreground': colors.foreground,
+      'checkbox.border': colors.border,
 
-      'dropdown.background': colors.black1,
-      'dropdown.border': colors.black1,
-      'dropdown.foreground': colors.white,
-      'dropdown.listBackground': colors.black2,
+      'dropdown.background': colors.backgroundPopup,
+      'dropdown.border': colors.border,
+      'dropdown.foreground': colors.foreground,
+      'dropdown.listBackground': colors.backgroundPopup,
 
-      'input.background': colors.input,
-      'input.border': colors.inputBorder,
-      'input.foreground': colors.inputForeground,
+      'input.background': colors.background2,
+      'input.border': colors.background2,
+      'input.foreground': colors.foreground,
       'input.placeholderForeground': colors.foregroundInactive,
 
-      'badge.foreground': colors.black1,
+      'badge.foreground': colors.background1,
       'badge.background': colors.yellow,
+
+      'toolbar.activeBackground': colors.red,
+      'toolbar.hoverBackground': colors.backgroundPopup,
 
       'progressBar.background': colors.accent,
 
-      'titleBar.activeForeground': colors.white,
-      'titleBar.activeBackground': colors.black2,
-      'titleBar.inactiveForeground': colors.foreground,
-      'titleBar.inactiveBackground': colors.black2,
-      'titleBar.border': colors.black1,
+      'titleBar.activeForeground': colors.foreground,
+      'titleBar.activeBackground': colors.background1,
+      'titleBar.inactiveForeground': colors.foreground2,
+      'titleBar.inactiveBackground': colors.background2,
+      'titleBar.border': colors.background1,
 
       // The Activity Bar is displayed either on the far left or right of the workbench and allows fast switching between views of the Side Bar.
       // https://code.visualstudio.com/api/references/theme-color#activity-bar
@@ -96,7 +103,6 @@ module.exports = function createTheme({ name, colors }) {
       'tab.inactiveForeground': colors.foregroundInactive,
       // tab.unfocusedActiveForeground: Active tab foreground color in an inactive editor group.
       // tab.unfocusedInactiveForeground: Inactive tab foreground color in an inactive editor group.
-      // 'tab.unfocusedHoverBackground': colors.red1,
       'tab.hoverBackground': colors.backgroundHover,
       // tab.unfocusedHoverForeground: Tab foreground color in an unfocused group when hovering
       // tab.hoverBorder: Border to highlight tabs when hovering
@@ -115,24 +121,25 @@ module.exports = function createTheme({ name, colors }) {
       // 'editor.selectionBackground': colors.red, // TODO: update
       'editor.wordHighlightBackground': colors.dark4, // TODO: update
 
-      'editor.findMatchBackground': colors.purple, // TODO: update
-      'editor.findMatchHighlightBackground': colors.purple50, // TODO: update
+      'editor.findMatchBackground': colors.dark4, // TODO: update
+      'editor.findMatchHighlightBackground': colors.yellow30, // TODO: update
 
-      'editorIndentGuide.background': colors.dark4_50,
+      'editorIndentGuide.background': colors.foregroundSubtle,
       'editorCursor.foreground': colors.dark5,
-
-      'editorBracketMatch.border': colors.dark5,
+      'editorBracketMatch.border': colors.yellow,
 
       'editorGutter.modifiedBackground': colors.modified,
       'editorGutter.addedBackground': colors.added,
       'editorGutter.deletedBackground': colors.deleted,
 
-      'editorError.foreground': colors.redBright,
+      'editorError.foreground': colors.red,
       'editorWarning.foreground': colors.orange,
 
-      'editorWidget.background': colors.black2,
-      'editorWidget.foreground': colors.white,
-      'editorWidget.resizeBorder': colors.dark4,
+      'editorWidget.background': colors.background2,
+      'editorWidget.foreground': colors.foreground,
+      'editorWidget.resizeBorder': colors.foreground2,
+      // 'editorSuggestWidget.selectedIconForeground': colors.green,
+      // 'editorSuggestWidget.selectedForeground': colors.green,
 
       'editorLightBulb.foreground': colors.yellow,
       'editorLightBulbAutoFix.foreground': colors.yellow,
@@ -141,10 +148,8 @@ module.exports = function createTheme({ name, colors }) {
       // https://code.visualstudio.com/api/references/theme-color#editor-colors
       'editor.background': colors.background1,
       'editor.foreground': colors.syntax.fg,
-      'editorLineNumber.foreground': colors.dark4,
-      'editorLineNumber.activeForeground': colors.blue,
-      // "editorCursor.background": colors.red,
-      // "editorCursor.foreground": colors.red,
+      'editorLineNumber.foreground': colors.foregroundInactive,
+      'editorLineNumber.activeForeground': colors.foreground,
       'editor.selectionBackground': colors.blue25,
       // editor.inactiveSelectionBackground: Color of the selection in an inactive editor. The color must not be opaque so as not to hide underlying decorations.
       // editor.selectionHighlightBackground: Color for regions with the same content as the selection. The color must not be opaque so as not to hide underlying decorations.
@@ -152,32 +157,40 @@ module.exports = function createTheme({ name, colors }) {
 
       // Colors for list and trees like the File Explorer
       // https://code.visualstudio.com/api/references/theme-color#lists-and-trees
-      'list.hoverForeground': colors.white,
-      'list.inactiveSelectionForeground': colors.foreground,
-      'list.activeSelectionForeground': colors.white,
-      'list.hoverBackground': colors.blue25,
-      'list.inactiveSelectionBackground': colors.blue15,
-      'list.activeSelectionBackground': colors.blue15,
-      'list.inactiveFocusBackground': '#1d2d3e',
-      'list.focusBackground': colors.blue25,
-      'list.focusForeground': colors.white,
+      // 'list.hoverForeground': colors.foreground,
+      // 'list.inactiveSelectionForeground': colors.foreground,
+      // 'list.activeSelectionForeground': colors.foreground,
+      // 'list.hoverBackground': colors.backgroundHover,
+      // 'list.inactiveSelectionBackground': colors.blue15,
+      // 'list.activeSelectionBackground': colors.blue15,
+      'list.focusBackground': colors.backgroundHover,
+      'list.focusForeground': colors.foreground,
 
-      'notificationCenterHeader.background': colors.black2,
+      'notificationCenterHeader.background': colors.background2,
       'notificationCenterHeader.foreground': colors.white,
-      'notifications.background': colors.dark4,
-      'notifications.border': colors.dark4,
-      'notificationToast.border': colors.dark4,
-      'notificationLink.foreground': colors.blue,
-      'notificationsErrorIcon.foreground': colors.redBright,
-      'notificationsWarningIcon.foreground': colors.yellowBright,
+      'notifications.background': colors.background2,
+      'notifications.border': colors.background2,
+      'notificationToast.border': colors.background2,
+      'notificationLink.foreground': colors.accent,
+      'notificationsErrorIcon.foreground': colors.red,
+      'notificationsWarningIcon.foreground': colors.yellow,
       'notificationsInfoIcon.foreground': colors.white,
 
       'pickerGroup.border': '#444d56',
       'pickerGroup.foreground': colors.white,
 
       // cmd + shift + p
-      'quickInput.background': colors.black2,
+      'pickerGroup.border': colors.background2,
+      'pickerGroup.foreground': colors.foreground,
+      'quickInput.background': colors.background2,
       'quickInput.foreground': colors.white,
+      'quickInputList.focusBackground': colors.backgroundPopup,
+      'quickInputList.focusForeground': colors.foreground,
+      'quickInputList.focusIconForeground': colors.foreground,
+      'quickInputTitle.background': colors.red,
+      'keybindingLabel.background': colors.background2,
+      'keybindingLabel.foreground': colors.foreground,
+      'keybindingLabel.border': colors.background2,
 
       'statusBar.foreground': colors.foreground2,
       'statusBar.background': colors.background1,
@@ -186,24 +199,24 @@ module.exports = function createTheme({ name, colors }) {
       'statusBar.debuggingBackground': colors.yellow,
       'statusBar.debuggingForeground': colors.background1,
 
-      'searchEditor.textInputBorder': colors.black1,
+      'searchEditor.textInputBorder': colors.background1,
 
       // Breadcrumbs
       'breadcrumb.foreground': colors.foreground2,
-      'breadcrumb.focusForeground': colors.white,
-      'breadcrumb.background': colors.black2,
-      'breadcrumb.activeSelectionForeground': colors.white,
-      'breadcrumbPicker.background': colors.black2,
+      'breadcrumb.focusForeground': colors.foreground,
+      'breadcrumb.background': colors.background1,
+      'breadcrumb.activeSelectionForeground': colors.foreground,
+      'breadcrumbPicker.background': colors.background2,
 
       'diffEditor.insertedTextBorder': colors.added,
       'diffEditor.removedTextBorder': colors.deleted,
 
-      'scrollbar.shadow': colors.dark4_25,
-      'scrollbarSlider.background': colors.dark4_25,
-      'scrollbarSlider.hoverBackground': colors.dark4_50,
-      'scrollbarSlider.activeBackground': colors.dark4,
+      'scrollbar.shadow': colors.border,
+      'scrollbarSlider.background': colors.foregroundSubtle,
+      'scrollbarSlider.hoverBackground': colors.foreground2,
+      'scrollbarSlider.activeBackground': colors.foreground2,
 
-      'editorOverviewRuler.border': colors.black1,
+      'editorOverviewRuler.border': colors.background1,
 
       'panel.background': colors.background1,
       'panel.border': colors.border,
@@ -213,7 +226,7 @@ module.exports = function createTheme({ name, colors }) {
 
       'panelInput.border': '#2f363d',
       'terminal.foreground': colors.foreground,
-      'terminal.ansiBlack': colors.black1,
+      'terminal.ansiBlack': colors.black,
       'terminal.ansiBlue': colors.blue,
       'terminal.ansiBrightBlack': colors.dark4,
       'terminal.ansiBrightBlue': colors.blueBright,
@@ -240,9 +253,6 @@ module.exports = function createTheme({ name, colors }) {
       'gitDecoration.ignoredResourceForeground': colors.foreground,
       'gitDecoration.conflictingResourceForeground': colors.conflict,
       'gitDecoration.submoduleResourceForeground': colors.foreground,
-
-      'debugToolBar.background': colors.black1,
-      'debugToolBar.border': colors.black1,
 
       'settings.headerForeground': colors.white,
       'settings.modifiedItemIndicator': colors.modified,
@@ -402,7 +412,8 @@ module.exports = function createTheme({ name, colors }) {
       },
       {
         name: 'Components, tags',
-        scope: 'support.class.component, entity.name.tag',
+        scope:
+          'support.class.component, entity.name.tag, meta.property-name.scss',
         settings: {
           foreground: colors.syntax.components,
         },

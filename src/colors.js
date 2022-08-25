@@ -15,13 +15,13 @@ const palette = {
 
   white: '#f2f4f8',
   gray: '#8193B1',
-  black1: '#1D222A',
   black2: '#1d1f26',
   dark4: '#58667E',
   dark5: '#C8DCFF',
   red1: '#f2564f',
 
   //Bright versions, used for e.g, in terminal
+  black: '#1D222A',
   blueBright: chroma('#69a4fc').darken(0.9).hex(), //'#2f71e8',
   magentaBright: '#9D72F3',
   greenBright: '#73d783',
@@ -63,31 +63,23 @@ module.exports = {
 
   foreground: palette.white,
   foreground2: chroma('rgb(138, 143, 152)').hex(),
-
-  // accent #5e6ad2
-  // accent hover #717ce1
+  foregroundSubtle: chroma(palette.white).alpha(0.2).hex(),
+  foregroundInactive: chroma('rgb(98, 102, 109)').hex(),
 
   border: chroma('#ffffff').alpha(0.1).hex(),
-  input: chroma('#27282b').hex(),
-  inputForeground: palette.white,
-  foregroundInactive: chroma('rgb(98, 102, 109)').hex(),
-  inputBorder: chroma('#27282b').hex(),
 
-  background1: '#1f2023', //'#242734',
+  background1: chroma('rgb(31, 32, 35)').hex(), // main, most common bg
   background2: chroma('rgb(39, 40, 43)').hex(),
-  background3: '#1b1c1e',
-
+  background3: chroma('rgb(27, 28, 30)').hex(),
+  backgroundPopup: chroma('rgb(55, 55, 60)').hex(),
   backgroundHover: chroma('rgb(45, 47, 54)').hex(),
 
   blue10: chroma(palette.blue).alpha(0.1).hex(),
   blue15: chroma(palette.blue).alpha(0.15).hex(),
   blue25: chroma(palette.blue).alpha(0.25).hex(),
   yellow15: chroma(palette.yellow).alpha(0.15).hex(),
+  yellow30: chroma(palette.yellow).alpha(0.3).hex(),
   purple50: chroma(palette.purple).alpha(0.5).hex(),
-
-  dark4_25: chroma(palette.dark4).alpha(0.25).hex(),
-  dark4_50: chroma(palette.dark4).alpha(0.5).hex(),
-  black40: chroma(palette.black1).alpha(0.4).hex(),
 
   // Git decoration, gutter
   modified: palette.purple,
