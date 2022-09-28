@@ -1,4 +1,4 @@
-const { writeFile, mkdir } = require('fs/promises');
+const { writeFile } = require('fs/promises');
 const createTheme = require('./theme.js');
 const colors = require('./colors.js');
 
@@ -17,10 +17,8 @@ const buildTheme = async () => {
       ),
     });
 
-    await mkdir('./themes/', { recursive: true });
-
     await writeFile(
-      `./themes/${themeName}-color-theme.json`,
+      `./${themeName}-color-theme.json`,
       JSON.stringify(themeWithColors)
     );
     console.log('Theme built');

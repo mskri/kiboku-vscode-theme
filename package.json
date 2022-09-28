@@ -36,7 +36,7 @@
       {
         "label": "Kiboku",
         "uiTheme": "vs-dark",
-        "path": "./themes/kiboku-color-theme.json"
+        "path": "./kiboku-color-theme.json"
       }
     ]
   },
@@ -55,7 +55,7 @@
   },
   "nodemonConfig": {
     "ignore": [
-      "themes/*"
+      "*-color-theme.json"
     ]
   }
 }
