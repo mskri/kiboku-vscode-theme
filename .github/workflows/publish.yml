@@ -23,6 +23,8 @@ jobs:
           cache: 'pnpm'
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
+      - name: Build theme
+        run: pnpm run build
       - name: Publish extension
         run: pnpm run publish $VSCE_TOKEN
         env:
