@@ -66,6 +66,8 @@ module.exports = function createTheme({ name, colors }) {
       'sideBarSectionHeader.foreground': colors.foreground2,
       'sideBarSectionHeader.border': colors.background1,
 
+      'textLink.foreground': colors.link,
+
       // The Minimap shows a minified version of the current file.
       // https://code.visualstudio.com/api/references/theme-color#minimap
       //

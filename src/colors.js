@@ -21,6 +21,9 @@ const palette = {
   dark5: '#C8DCFF',
   red1: '#f2564f',
 
+  accent: '#5e6ad2',
+  accentBright: chroma('#5e6ad2').brighten(1.2).hex(),
+
   //Bright versions, used for e.g, in terminal
   blueBright: chroma('#69a4fc').darken(0.9).hex(), //'#2f71e8',
   magentaBright: '#9D72F3',
@@ -58,7 +61,7 @@ module.exports = {
     import: palette.yellow,
   },
 
-  accent: '#5e6ad2', //chroma(palette.purple).darken(0.8).hex(),
+  accent: palette.accent, //chroma(palette.purple).darken(0.8).hex(),
   accentHover: '#717ce1',
 
   foreground: palette.white,
@@ -72,6 +75,7 @@ module.exports = {
   inputForeground: palette.white,
   foregroundInactive: chroma('rgb(98, 102, 109)').hex(),
   inputBorder: chroma('#27282b').hex(),
+  link: palette.accentBright,
 
   background1: '#1f2023', //'#242734',
   background2: chroma('rgb(39, 40, 43)').hex(),
