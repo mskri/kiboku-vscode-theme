@@ -477,6 +477,28 @@ module.exports = function createTheme({ name, colors }) {
         },
       },
       {
+        name: 'CSS variables',
+        scope: 'variable.css, variable.argument.css',
+        settings: {
+          foreground: colors.yellow,
+        },
+      },
+      {
+        name: 'CSS meta selector',
+        scope:
+          'entity.other.attribute-name.pseudo-class.css, entity.other.attribute-name.pseudo-element.css',
+        settings: {
+          foreground: colors.pink,
+        },
+      },
+      {
+        name: 'CSS properties',
+        scope: 'meta.property-name.css',
+        settings: {
+          foreground: colors.dark5,
+        },
+      },
+      {
         name: 'CSS value',
         scope: 'support.constant.property-value.css',
         settings: {
